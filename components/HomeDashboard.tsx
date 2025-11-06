@@ -212,9 +212,10 @@ export default function HomeDashboard() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             onClick={() => setActiveView(null)}
-            className="fixed top-4 left-4 z-50 bg-white/90 backdrop-blur-md p-3 rounded-full shadow-lg hover:shadow-xl transition-all border border-white/20"
+            className="fixed top-3 left-3 sm:top-4 sm:left-4 z-50 bg-white/90 backdrop-blur-md p-2.5 sm:p-3 rounded-full shadow-lg hover:shadow-xl transition-all border border-white/20 text-sm sm:text-base"
           >
-            ← Back
+            <span className="hidden sm:inline">← Back</span>
+            <span className="sm:hidden">←</span>
           </motion.button>
         <motion.div
           key={activeView}
@@ -274,20 +275,20 @@ export default function HomeDashboard() {
       <div className="relative z-10">
         <VoiceCommandPanel />
         <EmergencyAlert />
-        <div className="container mx-auto px-4 py-8 max-w-6xl">
+        <div className="container mx-auto px-3 sm:px-4 py-4 sm:py-6 md:py-8 max-w-6xl">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="mb-8 flex items-center justify-between"
+          className="mb-6 sm:mb-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4"
         >
-          <div>
-            <h1 className="text-4xl font-bold text-gray-900 mb-2">
+          <div className="flex-1">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-1 sm:mb-2">
               {t.welcome}
             </h1>
-            <p className="text-gray-600">{t.appDescription}</p>
+            <p className="text-sm sm:text-base text-gray-600">{t.appDescription}</p>
           </div>
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2 sm:gap-3 w-full sm:w-auto justify-end">
             <LanguageSwitcher />
             {user ? (
               <AccountMenu />
@@ -296,9 +297,9 @@ export default function HomeDashboard() {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={() => router.push('/login')}
-                className="flex items-center gap-2 bg-gradient-to-r from-primary to-purple-600 text-white px-6 py-2.5 rounded-xl shadow-lg hover:shadow-xl transition-all font-semibold"
+                className="flex items-center gap-2 bg-gradient-to-r from-primary to-purple-600 text-white px-4 sm:px-6 py-2 sm:py-2.5 rounded-xl shadow-lg hover:shadow-xl transition-all font-semibold text-sm sm:text-base"
               >
-                <LogIn className="w-5 h-5" />
+                <LogIn className="w-4 h-4 sm:w-5 sm:h-5" />
                 <span className="hidden sm:inline">Login</span>
               </motion.button>
             )}
@@ -310,32 +311,32 @@ export default function HomeDashboard() {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.2 }}
-          className="bg-white/90 backdrop-blur-md rounded-2xl shadow-xl p-6 mb-8 border border-white/20"
+          className="bg-white/90 backdrop-blur-md rounded-2xl shadow-xl p-4 sm:p-6 mb-6 sm:mb-8 border border-white/20"
         >
           <div className="flex items-center justify-between mb-4">
-            <h2 className="text-xl font-semibold text-gray-900">
+            <h2 className="text-lg sm:text-xl font-semibold text-gray-900">
               Your Health Risk Score
             </h2>
-            <Activity className="w-6 h-6 text-primary" />
+            <Activity className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
           </div>
-          <div className="flex items-center gap-6">
-            <div className="relative w-32 h-32">
-              <svg className="transform -rotate-90 w-32 h-32">
+          <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
+            <div className="relative w-24 h-24 sm:w-32 sm:h-32 flex-shrink-0">
+              <svg className="transform -rotate-90 w-24 h-24 sm:w-32 sm:h-32" viewBox="0 0 96 96">
                 <circle
-                  cx="64"
-                  cy="64"
-                  r="56"
+                  cx="48"
+                  cy="48"
+                  r="42"
                   stroke="currentColor"
-                  strokeWidth="12"
+                  strokeWidth="10"
                   fill="none"
                   className="text-gray-200"
                 />
                 <motion.circle
-                  cx="64"
-                  cy="64"
-                  r="56"
+                  cx="48"
+                  cy="48"
+                  r="42"
                   stroke="currentColor"
-                  strokeWidth="12"
+                  strokeWidth="10"
                   fill="none"
                   strokeLinecap="round"
                   className={
@@ -351,13 +352,13 @@ export default function HomeDashboard() {
                 />
               </svg>
               <div className="absolute inset-0 flex items-center justify-center">
-                <span className="text-3xl font-bold text-gray-900">
+                <span className="text-2xl sm:text-3xl font-bold text-gray-900">
                   {riskScore}
                 </span>
               </div>
             </div>
-            <div className="flex-1">
-              <p className="text-gray-600 mb-2">
+            <div className="flex-1 text-center sm:text-left">
+              <p className="text-sm sm:text-base text-gray-600 mb-2">
                 {riskScore < 30
                   ? 'Your health risk is low. Keep maintaining a healthy lifestyle!'
                   : riskScore < 60
@@ -366,7 +367,7 @@ export default function HomeDashboard() {
               </p>
               <button
                 onClick={() => setActiveView('risk')}
-                className="text-primary font-semibold hover:underline"
+                className="text-primary font-semibold hover:underline text-sm sm:text-base"
               >
                 View detailed insights →
               </button>
@@ -375,7 +376,7 @@ export default function HomeDashboard() {
         </motion.div>
 
         {/* Quick Actions Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">
           {quickActions.map((action, index) => {
             const Icon = action.icon
             return (
@@ -387,7 +388,7 @@ export default function HomeDashboard() {
                 whileHover={{ scale: 1.05, y: -5 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={() => handleViewChange(action.id)}
-                className="bg-white/90 backdrop-blur-md rounded-2xl p-0 shadow-lg hover:shadow-xl transition-all text-left group border border-white/20 overflow-hidden relative"
+                className="bg-white/90 backdrop-blur-md rounded-xl sm:rounded-2xl p-0 shadow-lg hover:shadow-xl transition-all text-left group border border-white/20 overflow-hidden relative min-h-[120px] sm:min-h-[140px]"
               >
                 {/* Feature Image Background */}
                 <div 
@@ -398,14 +399,14 @@ export default function HomeDashboard() {
                     backgroundPosition: 'center',
                   }}
                 />
-                <div className="relative p-6">
-                  <div className={`${action.color} w-12 h-12 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform relative z-10`}>
-                    <Icon className="w-6 h-6 text-white" />
+                <div className="relative p-4 sm:p-6 h-full flex flex-col">
+                  <div className={`${action.color} w-10 h-10 sm:w-12 sm:h-12 rounded-lg sm:rounded-xl flex items-center justify-center mb-3 sm:mb-4 group-hover:scale-110 transition-transform relative z-10 flex-shrink-0`}>
+                    <Icon className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                   </div>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-1 relative z-10">
+                  <h3 className="text-sm sm:text-base md:text-lg font-semibold text-gray-900 mb-1 relative z-10 leading-tight">
                     {action.title}
                   </h3>
-                  <p className="text-sm text-gray-600 relative z-10">{action.description}</p>
+                  <p className="text-xs sm:text-sm text-gray-600 relative z-10 line-clamp-2">{action.description}</p>
                 </div>
               </motion.button>
             )
@@ -417,22 +418,22 @@ export default function HomeDashboard() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5 }}
-          className="mt-8 bg-white/90 backdrop-blur-md rounded-2xl shadow-xl p-6 border border-white/20"
+          className="mt-6 sm:mt-8 bg-white/90 backdrop-blur-md rounded-2xl shadow-xl p-4 sm:p-6 border border-white/20"
         >
-          <h2 className="text-xl font-semibold text-gray-900 mb-4">
+          <h2 className="text-lg sm:text-xl font-semibold text-gray-900 mb-3 sm:mb-4">
             Quick Tips
           </h2>
-          <div className="space-y-3 text-gray-600">
-            <p className="flex items-start gap-2">
-              <span className="text-green-500">✓</span>
+          <div className="space-y-2 sm:space-y-3 text-gray-600">
+            <p className="flex items-start gap-2 text-sm sm:text-base">
+              <span className="text-green-500 flex-shrink-0 mt-0.5">✓</span>
               <span>Stay hydrated - Drink at least 8 glasses of water daily</span>
             </p>
-            <p className="flex items-start gap-2">
-              <span className="text-green-500">✓</span>
+            <p className="flex items-start gap-2 text-sm sm:text-base">
+              <span className="text-green-500 flex-shrink-0 mt-0.5">✓</span>
               <span>Regular exercise - Aim for 30 minutes of activity daily</span>
             </p>
-            <p className="flex items-start gap-2">
-              <span className="text-green-500">✓</span>
+            <p className="flex items-start gap-2 text-sm sm:text-base">
+              <span className="text-green-500 flex-shrink-0 mt-0.5">✓</span>
               <span>Balanced diet - Include fruits, vegetables, and whole grains</span>
             </p>
           </div>
