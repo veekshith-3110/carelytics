@@ -18,7 +18,7 @@ interface HealthRecord {
 }
 
 export default function ElectronicHealthRecord() {
-  const { user, healthRecordFiles, addHealthRecordFile, removeHealthRecordFile, saveUserData, loadUserData } = useHealthStore()
+  const { user, healthRecordFiles, addHealthRecordFile, removeHealthRecordFile } = useHealthStore()
   const [records, setRecords] = useState<HealthRecord[]>([])
   const [newRecord, setNewRecord] = useState<Partial<HealthRecord>>({
     symptoms: [],
@@ -28,39 +28,52 @@ export default function ElectronicHealthRecord() {
   const [isAdding, setIsAdding] = useState(false)
   const [isUploading, setIsUploading] = useState(false)
   const [isUploadingRecordFiles, setIsUploadingRecordFiles] = useState(false)
+  const [isLoading, setIsLoading] = useState(true)
   const fileInputRef = useRef<HTMLInputElement>(null)
   const recordFileInputRef = useRef<HTMLInputElement>(null)
 
   // Load records and files from user-specific storage
   useEffect(() => {
-    if (user) {
-      // Load records
-      const savedRecords = localStorage.getItem(`health-records-${user.id}`)
-      if (savedRecords) {
+    if (user?.id) {
+      setIsLoading(true)
+      // Use setTimeout to prevent blocking the UI
+      setTimeout(() => {
         try {
-          setRecords(JSON.parse(savedRecords))
+          // Load records
+          const savedRecords = localStorage.getItem(`health-records-${user.id}`)
+          if (savedRecords) {
+            const parsed = JSON.parse(savedRecords)
+            setRecords(Array.isArray(parsed) ? parsed : [])
+          } else {
+            setRecords([])
+          }
         } catch (error) {
           console.error('Error loading records:', error)
+          setRecords([])
+        } finally {
+          setIsLoading(false)
         }
-      }
-      
-      // Ensure files are loaded from store (they should be loaded on login)
-      // This is a safety check
-      loadUserData(user.id)
+      }, 100) // Small delay to prevent UI freeze
+    } else {
+      setIsLoading(false)
     }
-  }, [user, loadUserData])
+  }, [user?.id]) // Only depend on user.id to avoid re-renders
 
   // Save records to user-specific storage (debounced)
   useEffect(() => {
-    if (user && records.length >= 0) {
+    if (user?.id && records.length >= 0) {
       const timeoutId = setTimeout(() => {
-        localStorage.setItem(`health-records-${user.id}`, JSON.stringify(records))
-        saveUserData(user.id)
-      }, 300) // Debounce saves
+        try {
+          localStorage.setItem(`health-records-${user.id}`, JSON.stringify(records))
+          // Only save user data if records changed, not on every render
+        } catch (error) {
+          console.error('Error saving records:', error)
+        }
+      }, 500) // Debounce saves
       
       return () => clearTimeout(timeoutId)
     }
-  }, [records, user, saveUserData])
+  }, [records, user?.id]) // Only depend on records and user.id
 
   const addRecord = () => {
     if (!newRecord.condition) return
@@ -228,6 +241,17 @@ export default function ElectronicHealthRecord() {
   const getFileIcon = (type: string) => {
     if (type.startsWith('image/')) return Image
     return File
+  }
+
+  if (isLoading) {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-16 w-16 border-b-4 border-primary mx-auto mb-4"></div>
+          <p className="text-gray-600 text-lg">Loading health records...</p>
+        </div>
+      </div>
+    )
   }
 
   return (

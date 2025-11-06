@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import { useRouter } from 'next/navigation'
+import { motion } from 'framer-motion'
 import Onboarding from '@/components/Onboarding'
 import HomeDashboard from '@/components/HomeDashboard'
 import EntryAnimation from '@/components/EntryAnimation'
@@ -116,17 +117,44 @@ export default function Home() {
     setHasCompletedOnboarding(true)
   }
 
-  // Show loading state while checking login (with timeout fallback)
-  if (!hasCheckedLogin) {
-    return (
-      <div suppressHydrationWarning className="min-h-screen flex items-center justify-center bg-gradient-to-br from-primary/10 via-purple-500/10 to-pink-500/10">
-        <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary mx-auto mb-4"></div>
-          <p className="text-gray-600">Loading...</p>
-        </div>
-      </div>
-    )
-  }
+      // Show loading state while checking login (with timeout fallback)
+      if (!hasCheckedLogin) {
+        return (
+          <div suppressHydrationWarning className="min-h-screen flex items-center justify-center bg-gradient-to-br from-primary/10 via-purple-500/10 to-pink-500/10">
+            <div className="text-center">
+              <motion.div
+                initial={{ scale: 0.8, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                transition={{ duration: 0.5 }}
+                className="mb-6"
+              >
+                <div className="relative">
+                  <div className="animate-spin rounded-full h-20 w-20 border-4 border-primary/20 border-t-primary mx-auto"></div>
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="w-12 h-12 bg-primary/10 rounded-full animate-pulse"></div>
+                  </div>
+                </div>
+              </motion.div>
+              <motion.p
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.2 }}
+                className="text-gray-600 text-lg font-medium"
+              >
+                Loading Carelytics...
+              </motion.p>
+              <motion.div
+                initial={{ width: 0 }}
+                animate={{ width: '100%' }}
+                transition={{ duration: 1, repeat: Infinity, repeatType: 'reverse' }}
+                className="mt-4 h-1 bg-primary/20 rounded-full max-w-xs mx-auto"
+              >
+                <div className="h-full bg-primary rounded-full"></div>
+              </motion.div>
+            </div>
+          </div>
+        )
+      }
 
   // Show dashboard even when not logged in (login button will be visible in header)
   // Always show something - never blank page
