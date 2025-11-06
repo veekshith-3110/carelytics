@@ -231,8 +231,10 @@ export default function ElectronicHealthRecord() {
   }
 
   return (
-    <div className="bg-white rounded-2xl shadow-xl p-8 max-w-6xl mx-auto">
-      <div className="flex justify-between items-center mb-6">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 py-8">
+      <div className="container mx-auto px-4">
+        <div className="bg-white rounded-2xl shadow-xl p-6 sm:p-8 max-w-6xl mx-auto">
+          <div className="flex justify-between items-center mb-6">
         <div>
           <h2 className="text-3xl font-bold text-gray-900 mb-2">My Health Records</h2>
           <p className="text-gray-600">Store and manage your health records and documents</p>
@@ -612,6 +614,8 @@ export default function ElectronicHealthRecord() {
             ))}
           </div>
         )}
+          </div>
+        </div>
       </div>
     </div>
   )
