@@ -30,6 +30,7 @@ import ElectronicHealthRecord from './ElectronicHealthRecord'
 import VoiceCommandPanel from './VoiceCommandPanel'
 import EmergencyAlert from './EmergencyAlert'
 import DoctorDashboard from './DoctorDashboard'
+import TreatmentPlan from './TreatmentPlan'
 import { useTranslation } from '@/hooks/useTranslation'
 import { analytics } from '@/lib/analytics'
 import { voiceCommandHandler } from '@/lib/voiceCommands'
@@ -196,6 +197,18 @@ export default function HomeDashboard() {
       })
     }
     
+    // Add Treatment Plan for doctors
+    if (user?.role === 'doctor' || user?.role === 'admin') {
+      baseActions.push({
+        id: 'treatment-plan',
+        title: 'Treatment Plan',
+        icon: FileText,
+        color: 'bg-emerald-500',
+        description: 'Create treatment plans',
+        image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&q=80',
+      })
+    }
+    
     return baseActions
   }, [user])
   
@@ -269,6 +282,7 @@ export default function HomeDashboard() {
           {activeView === 'medicine-info' && <MedicineInfo />}
           {activeView === 'health-records' && <ElectronicHealthRecord />}
           {activeView === 'doctor-dashboard' && <DoctorDashboard />}
+          {activeView === 'treatment-plan' && <TreatmentPlan />}
         </motion.div>
         </div>
       </div>

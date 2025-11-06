@@ -54,8 +54,122 @@ export interface User {
   phone?: string
   authProvider: 'google' | 'phone' | 'email'
   password?: string // For login verification
-  role?: 'patient' | 'doctor' // User role
+  role?: 'patient' | 'doctor' | 'nurse' | 'attendant' | 'pharmacist' | 'admin' // User role
   doctorId?: string // For doctors: license/registration ID
+}
+
+// Treatment Plan Data Models
+export interface Patient {
+  id: string
+  name: string
+  dob?: string
+  allergies: string[]
+  guardians: Array<{ name: string; phone: string; relation: string }>
+  contact: { phone?: string; email?: string; address?: string }
+  createdAt: string
+}
+
+export interface Visit {
+  id: string
+  patientId: string
+  date: string
+  notes?: string
+  doctorId: string
+  clinic?: string
+  createdAt: string
+}
+
+export interface Diagnosis {
+  id: string
+  visitId: string
+  code?: string // ICD-10
+  name: string
+  onsetDate: string
+  notes?: string
+  createdAt: string
+  createdBy: string
+}
+
+export interface MedicationOrder {
+  id: string
+  visitId: string
+  drugName: string
+  strength: string
+  form: 'tablet' | 'capsule' | 'syrup' | 'injection' | 'other'
+  dose: string // e.g., "1 tab"
+  route: string // e.g., "oral", "IV"
+  frequency: string // e.g., "BID", "TID", "QID"
+  meals: 'before' | 'after' | 'with' | 'anytime'
+  startDate: string
+  endDate?: string
+  numberOfDays?: number
+  prn: boolean
+  maxDailyDose?: string
+  specialInstructions?: string
+  status: 'active' | 'stopped' | 'completed'
+  refillCount?: number
+  nextReviewDate?: string
+  createdAt: string
+  createdBy: string
+  stoppedAt?: string
+  stoppedBy?: string
+  stopReason?: string
+}
+
+export interface DoseSchedule {
+  id: string
+  medicationOrderId: string
+  timesOfDay: string[] // e.g., ["08:00", "14:00", "20:00"]
+  daysOfWeek: number[] // 0-6 (Sunday-Saturday), empty = all days
+  timezone: string
+  createdAt: string
+}
+
+export interface DoseEvent {
+  id: string
+  scheduleId: string
+  medicationOrderId: string
+  plannedDateTime: string
+  status: 'due' | 'given' | 'missed' | 'skipped'
+  recordedBy?: string
+  recordedAt?: string
+  note?: string
+  vitals?: Record<string, any>
+  adverseReaction?: string
+  canUndo: boolean
+  undoUntil?: string
+}
+
+export interface PrescriptionFile {
+  id: string
+  visitId: string
+  patientId: string
+  fileUrl: string
+  fileType: 'pdf' | 'jpg' | 'jpeg' | 'png'
+  ocrText?: string
+  extractedMeds?: any[]
+  uploadedBy: string
+  uploadedAt: string
+  version: number
+  isLatest: boolean
+  doctor?: string
+  date?: string
+  clinic?: string
+  notes?: string
+  tags?: string[]
+}
+
+export interface AuditLog {
+  id: string
+  actorId: string
+  actorName: string
+  entityType: 'diagnosis' | 'medication' | 'dose' | 'prescription' | 'patient'
+  entityId: string
+  action: 'create' | 'update' | 'delete' | 'given' | 'missed' | 'skipped' | 'stopped'
+  before?: any
+  after?: any
+  at: string
+  ipAddress?: string
 }
 
 export interface HealthRecordFile {
@@ -98,6 +212,34 @@ interface HealthStore {
   removeHealthRecordFile: (id: string) => void
   loadUserData: (userId: string) => void
   saveUserData: (userId: string) => void
+  // Treatment Plan methods
+  patients: Patient[]
+  addPatient: (patient: Patient) => void
+  updatePatient: (id: string, patient: Partial<Patient>) => void
+  visits: Visit[]
+  addVisit: (visit: Visit) => void
+  diagnoses: Diagnosis[]
+  addDiagnosis: (diagnosis: Diagnosis) => void
+  updateDiagnosis: (id: string, diagnosis: Partial<Diagnosis>) => void
+  medicationOrders: MedicationOrder[]
+  addMedicationOrder: (order: MedicationOrder) => void
+  updateMedicationOrder: (id: string, order: Partial<MedicationOrder>) => void
+  stopMedicationOrder: (id: string, reason: string, stoppedBy: string) => void
+  doseSchedules: DoseSchedule[]
+  addDoseSchedule: (schedule: DoseSchedule) => void
+  updateDoseSchedule: (id: string, schedule: Partial<DoseSchedule>) => void
+  doseEvents: DoseEvent[]
+  addDoseEvent: (event: DoseEvent) => void
+  updateDoseEvent: (id: string, event: Partial<DoseEvent>) => void
+  markDoseGiven: (eventId: string, recordedBy: string, note?: string) => void
+  markDoseMissed: (eventId: string, recordedBy: string, note?: string) => void
+  markDoseSkipped: (eventId: string, recordedBy: string, reason: string) => void
+  undoDoseEvent: (eventId: string) => void
+  prescriptionFiles: PrescriptionFile[]
+  addPrescriptionFile: (file: PrescriptionFile) => void
+  updatePrescriptionFile: (id: string, file: Partial<PrescriptionFile>) => void
+  auditLogs: AuditLog[]
+  addAuditLog: (log: AuditLog) => void
 }
 
 // Helper functions for user-specific storage
@@ -350,6 +492,275 @@ export const useHealthStore = create<HealthStore>()(
           textToSpeechPitch: state.textToSpeechPitch,
         }
         saveUserDataToStorage(userId, dataToSave)
+      },
+      // Treatment Plan initial state
+      patients: [],
+      addPatient: (patient) => {
+        set((state) => ({ patients: [...state.patients, patient] }))
+        const { user } = get()
+        if (user) {
+          get().addAuditLog({
+            id: `audit-${Date.now()}`,
+            actorId: user.id,
+            actorName: user.name || 'Unknown',
+            entityType: 'patient',
+            entityId: patient.id,
+            action: 'create',
+            after: patient,
+            at: new Date().toISOString(),
+          })
+        }
+      },
+      updatePatient: (id, updates) => {
+        set((state) => ({
+          patients: state.patients.map((p) => (p.id === id ? { ...p, ...updates } : p)),
+        }))
+        const { user } = get()
+        if (user) {
+          get().addAuditLog({
+            id: `audit-${Date.now()}`,
+            actorId: user.id,
+            actorName: user.name || 'Unknown',
+            entityType: 'patient',
+            entityId: id,
+            action: 'update',
+            after: updates,
+            at: new Date().toISOString(),
+          })
+        }
+      },
+      visits: [],
+      addVisit: (visit) => {
+        set((state) => ({ visits: [...state.visits, visit] }))
+      },
+      diagnoses: [],
+      addDiagnosis: (diagnosis) => {
+        set((state) => ({ diagnoses: [...state.diagnoses, diagnosis] }))
+        const { user } = get()
+        if (user) {
+          get().addAuditLog({
+            id: `audit-${Date.now()}`,
+            actorId: user.id,
+            actorName: user.name || 'Unknown',
+            entityType: 'diagnosis',
+            entityId: diagnosis.id,
+            action: 'create',
+            after: diagnosis,
+            at: new Date().toISOString(),
+          })
+        }
+      },
+      updateDiagnosis: (id, updates) => {
+        set((state) => ({
+          diagnoses: state.diagnoses.map((d) => (d.id === id ? { ...d, ...updates } : d)),
+        }))
+        const { user } = get()
+        if (user) {
+          get().addAuditLog({
+            id: `audit-${Date.now()}`,
+            actorId: user.id,
+            actorName: user.name || 'Unknown',
+            entityType: 'diagnosis',
+            entityId: id,
+            action: 'update',
+            after: updates,
+            at: new Date().toISOString(),
+          })
+        }
+      },
+      medicationOrders: [],
+      addMedicationOrder: (order) => {
+        set((state) => ({ medicationOrders: [...state.medicationOrders, order] }))
+        const { user } = get()
+        if (user) {
+          get().addAuditLog({
+            id: `audit-${Date.now()}`,
+            actorId: user.id,
+            actorName: user.name || 'Unknown',
+            entityType: 'medication',
+            entityId: order.id,
+            action: 'create',
+            after: order,
+            at: new Date().toISOString(),
+          })
+        }
+      },
+      updateMedicationOrder: (id, updates) => {
+        set((state) => ({
+          medicationOrders: state.medicationOrders.map((o) => (o.id === id ? { ...o, ...updates } : o)),
+        }))
+        const { user } = get()
+        if (user) {
+          get().addAuditLog({
+            id: `audit-${Date.now()}`,
+            actorId: user.id,
+            actorName: user.name || 'Unknown',
+            entityType: 'medication',
+            entityId: id,
+            action: 'update',
+            after: updates,
+            at: new Date().toISOString(),
+          })
+        }
+      },
+      stopMedicationOrder: (id, reason, stoppedBy) => {
+        const now = new Date().toISOString()
+        set((state) => ({
+          medicationOrders: state.medicationOrders.map((o) =>
+            o.id === id
+              ? { ...o, status: 'stopped' as const, stoppedAt: now, stoppedBy, stopReason: reason }
+              : o
+          ),
+        }))
+        get().addAuditLog({
+          id: `audit-${Date.now()}`,
+          actorId: stoppedBy,
+          actorName: 'Unknown',
+          entityType: 'medication',
+          entityId: id,
+          action: 'stopped',
+          after: { reason },
+          at: now,
+        })
+      },
+      doseSchedules: [],
+      addDoseSchedule: (schedule) => {
+        set((state) => ({ doseSchedules: [...state.doseSchedules, schedule] }))
+      },
+      updateDoseSchedule: (id, updates) => {
+        set((state) => ({
+          doseSchedules: state.doseSchedules.map((s) => (s.id === id ? { ...s, ...updates } : s)),
+        }))
+      },
+      doseEvents: [],
+      addDoseEvent: (event) => {
+        set((state) => ({ doseEvents: [...state.doseEvents, event] }))
+      },
+      updateDoseEvent: (id, updates) => {
+        set((state) => ({
+          doseEvents: state.doseEvents.map((e) => (e.id === id ? { ...e, ...updates } : e)),
+        }))
+      },
+      markDoseGiven: (eventId, recordedBy, note) => {
+        const now = new Date().toISOString()
+        const undoUntil = new Date(Date.now() + 5 * 60 * 1000).toISOString() // 5 minutes
+        set((state) => ({
+          doseEvents: state.doseEvents.map((e) =>
+            e.id === eventId
+              ? {
+                  ...e,
+                  status: 'given' as const,
+                  recordedBy,
+                  recordedAt: now,
+                  note,
+                  canUndo: true,
+                  undoUntil,
+                }
+              : e
+          ),
+        }))
+        get().addAuditLog({
+          id: `audit-${Date.now()}`,
+          actorId: recordedBy,
+          actorName: 'Unknown',
+          entityType: 'dose',
+          entityId: eventId,
+          action: 'given',
+          after: { note, recordedAt: now },
+          at: now,
+        })
+      },
+      markDoseMissed: (eventId, recordedBy, note) => {
+        const now = new Date().toISOString()
+        set((state) => ({
+          doseEvents: state.doseEvents.map((e) =>
+            e.id === eventId
+              ? { ...e, status: 'missed' as const, recordedBy, recordedAt: now, note }
+              : e
+          ),
+        }))
+        get().addAuditLog({
+          id: `audit-${Date.now()}`,
+          actorId: recordedBy,
+          actorName: 'Unknown',
+          entityType: 'dose',
+          entityId: eventId,
+          action: 'missed',
+          after: { note, recordedAt: now },
+          at: now,
+        })
+      },
+      markDoseSkipped: (eventId, recordedBy, reason) => {
+        const now = new Date().toISOString()
+        set((state) => ({
+          doseEvents: state.doseEvents.map((e) =>
+            e.id === eventId
+              ? { ...e, status: 'skipped' as const, recordedBy, recordedAt: now, note: reason }
+              : e
+          ),
+        }))
+        get().addAuditLog({
+          id: `audit-${Date.now()}`,
+          actorId: recordedBy,
+          actorName: 'Unknown',
+          entityType: 'dose',
+          entityId: eventId,
+          action: 'skipped',
+          after: { reason, recordedAt: now },
+          at: now,
+        })
+      },
+      undoDoseEvent: (eventId) => {
+        const event = get().doseEvents.find((e) => e.id === eventId)
+        if (event && event.canUndo && event.undoUntil && new Date(event.undoUntil) > new Date()) {
+          set((state) => ({
+            doseEvents: state.doseEvents.map((e) =>
+              e.id === eventId
+                ? { ...e, status: 'due' as const, recordedBy: undefined, recordedAt: undefined, note: undefined, canUndo: false }
+                : e
+            ),
+          }))
+          get().addAuditLog({
+            id: `audit-${Date.now()}`,
+            actorId: event.recordedBy || 'unknown',
+            actorName: 'Unknown',
+            entityType: 'dose',
+            entityId: eventId,
+            action: 'update',
+            after: { status: 'undone' },
+            at: new Date().toISOString(),
+          })
+        }
+      },
+      prescriptionFiles: [],
+      addPrescriptionFile: (file) => {
+        set((state) => ({ prescriptionFiles: [...state.prescriptionFiles, file] }))
+        const { user } = get()
+        if (user) {
+          get().addAuditLog({
+            id: `audit-${Date.now()}`,
+            actorId: user.id,
+            actorName: user.name || 'Unknown',
+            entityType: 'prescription',
+            entityId: file.id,
+            action: 'create',
+            after: file,
+            at: new Date().toISOString(),
+          })
+        }
+      },
+      updatePrescriptionFile: (id, updates) => {
+        set((state) => ({
+          prescriptionFiles: state.prescriptionFiles.map((f) => (f.id === id ? { ...f, ...updates } : f)),
+        }))
+      },
+      auditLogs: [],
+      addAuditLog: (log) => {
+        set((state) => ({ auditLogs: [...state.auditLogs, log] }))
+        // Keep only last 1000 logs
+        if (get().auditLogs.length > 1000) {
+          set((state) => ({ auditLogs: state.auditLogs.slice(-1000) }))
+        }
       },
     }),
     {
