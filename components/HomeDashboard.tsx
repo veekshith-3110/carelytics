@@ -15,6 +15,7 @@ import {
   MapPin,
   TrendingUp,
   FileText,
+  LogIn,
 } from 'lucide-react'
 import SymptomChecker from './SymptomChecker'
 import BMICalculator from './BMICalculator'
@@ -35,7 +36,7 @@ import { useRouter } from 'next/navigation'
 
 export default function HomeDashboard() {
   const [activeView, setActiveView] = useState<string | null>(null)
-  const { profile, riskScore, updateRiskScore, language, logout } = useHealthStore()
+  const { profile, riskScore, updateRiskScore, language, logout, user } = useHealthStore()
   const t = useTranslation()
   const router = useRouter()
   
@@ -288,7 +289,19 @@ export default function HomeDashboard() {
           </div>
           <div className="flex items-center gap-3">
             <LanguageSwitcher />
-            <AccountMenu />
+            {user ? (
+              <AccountMenu />
+            ) : (
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                onClick={() => router.push('/login')}
+                className="flex items-center gap-2 bg-gradient-to-r from-primary to-purple-600 text-white px-6 py-2.5 rounded-xl shadow-lg hover:shadow-xl transition-all font-semibold"
+              >
+                <LogIn className="w-5 h-5" />
+                <span className="hidden sm:inline">Login</span>
+              </motion.button>
+            )}
           </div>
         </motion.div>
 

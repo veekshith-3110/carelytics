@@ -37,26 +37,23 @@ export default function Home() {
               setHasCompletedOnboarding(false)
             }
           } else {
-            // No user data, clear login and redirect
+            // No user data, clear login but don't redirect - show dashboard with login button
             localStorage.removeItem('isLoggedIn')
             setIsLoggedIn(false)
             setHasCompletedOnboarding(false)
             setShowEntryAnimation(false)
-            router.push('/login')
           }
         } else {
-          // Redirect to login page if not logged in
+          // Not logged in - show dashboard with login button in header
           setIsLoggedIn(false)
           setHasCompletedOnboarding(false)
           setShowEntryAnimation(false)
-          router.push('/login')
         }
       } catch (error) {
-        // If any error, redirect to login
+        // If any error, show dashboard with login button
         console.error('Error checking login status:', error)
         setIsLoggedIn(false)
         setHasCompletedOnboarding(false)
-        router.push('/login')
       } finally {
         setHasCheckedLogin(true)
       }
@@ -76,7 +73,7 @@ export default function Home() {
       setHasCompletedOnboarding(false)
       setShowEntryAnimation(false)
       setHasCheckedLogin(true)
-      router.push('/login')
+      // Don't redirect - show dashboard with login button
     }
     
     window.addEventListener('user-logout', handleLogout)
@@ -106,14 +103,8 @@ export default function Home() {
     )
   }
 
-  // Redirect to login if not logged in (handled in useEffect, but show loading here)
-  if (!isLoggedIn) {
-    return (
-      <div suppressHydrationWarning className="min-h-screen flex items-center justify-center">
-        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary"></div>
-      </div>
-    )
-  }
+  // Show dashboard even when not logged in (login button will be visible in header)
+  // Only redirect to login if explicitly needed, otherwise show dashboard with login button
 
   if (showEntryAnimation) {
     return <EntryAnimation onComplete={handleEntryComplete} />
