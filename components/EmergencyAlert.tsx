@@ -144,12 +144,12 @@ export default function EmergencyAlert() {
 
   return (
     <>
-      {/* Emergency Button - Fixed Position */}
+      {/* Emergency Button - Mobile optimized */}
       <motion.button
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
         onClick={handleEmergency}
-        className="fixed bottom-6 right-6 z-50 bg-red-600 hover:bg-red-700 text-white p-6 rounded-full shadow-2xl flex items-center justify-center group"
+        className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 bg-red-600 hover:bg-red-700 text-white p-4 sm:p-6 rounded-full shadow-2xl flex items-center justify-center group"
         style={{
           boxShadow: '0 10px 40px rgba(220, 38, 38, 0.5)',
         }}
@@ -160,7 +160,7 @@ export default function EmergencyAlert() {
           transition={{ duration: 2, repeat: Infinity }}
           className="absolute inset-0 bg-red-600 rounded-full opacity-50"
         />
-        <AlertTriangle className="w-8 h-8 relative z-10" />
+        <AlertTriangle className="w-6 h-6 sm:w-8 sm:h-8 relative z-10" />
       </motion.button>
 
       {/* Emergency Modal */}

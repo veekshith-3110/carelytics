@@ -64,29 +64,29 @@ export default function VoiceCommandPanel() {
 
   return (
     <>
-      {/* Floating Voice Button - Moved to top-left */}
+      {/* Floating Voice Button - Mobile optimized */}
       <motion.button
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
         onClick={() => setIsOpen(!isOpen)}
-        className={`fixed top-6 left-6 z-50 w-14 h-14 rounded-full shadow-2xl flex items-center justify-center transition-colors ${
+        className={`fixed top-4 left-4 sm:top-6 sm:left-6 z-40 w-12 h-12 sm:w-14 sm:h-14 rounded-full shadow-2xl flex items-center justify-center transition-colors ${
           isListening
             ? 'bg-red-500 text-white animate-pulse'
             : 'bg-primary text-white hover:bg-primary-dark'
         }`}
         aria-label="Voice commands"
       >
-        {isListening ? <Mic className="w-5 h-5" /> : <MicOff className="w-5 h-5" />}
+        {isListening ? <Mic className="w-5 h-5 sm:w-6 sm:h-6" /> : <MicOff className="w-5 h-5 sm:w-6 sm:h-6" />}
       </motion.button>
 
-      {/* Voice Command Panel - Moved to top-left */}
+      {/* Voice Command Panel - Mobile optimized */}
       {isOpen && (
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="fixed top-20 left-6 z-50 bg-white rounded-2xl shadow-2xl p-6 max-w-sm w-full border border-gray-200"
+          className="fixed top-16 sm:top-20 left-4 sm:left-6 z-50 bg-white rounded-2xl shadow-2xl p-4 sm:p-6 max-w-[calc(100vw-2rem)] sm:max-w-sm w-full border border-gray-200"
         >
           <div className="flex items-center justify-between mb-4">
             <h3 className="text-lg font-bold text-gray-900">Voice Commands</h3>

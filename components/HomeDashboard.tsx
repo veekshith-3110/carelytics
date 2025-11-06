@@ -324,7 +324,7 @@ export default function HomeDashboard() {
       </div>
       
       {/* Content */}
-      <div className="relative z-10">
+      <div className="relative z-10 pb-20 sm:pb-6">
         <VoiceCommandPanel />
         <EmergencyAlert />
         <div className="container mx-auto px-3 sm:px-4 py-4 sm:py-6 md:py-8 max-w-6xl">

@@ -74,18 +74,18 @@ export default function TextToSpeech() {
 
   return (
     <>
-      {/* Floating TTS Button - Positioned to the left of emergency button */}
+      {/* Floating TTS Button - Mobile optimized positioning */}
       <motion.div
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
-        className="fixed bottom-6 right-20 sm:right-24 z-50"
+        className="fixed bottom-20 sm:bottom-6 right-4 sm:right-20 z-40"
       >
         <div className="relative">
           <motion.button
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
             onClick={handleToggle}
-            className={`w-14 h-14 rounded-full shadow-lg flex items-center justify-center transition-colors ${
+            className={`w-12 h-12 sm:w-14 sm:h-14 rounded-full shadow-lg flex items-center justify-center transition-colors ${
               textToSpeechEnabled
                 ? 'bg-primary text-white'
                 : 'bg-white text-gray-700 hover:bg-gray-100'
@@ -93,13 +93,13 @@ export default function TextToSpeech() {
             aria-label={textToSpeechEnabled ? 'Disable text-to-speech' : 'Enable text-to-speech'}
           >
             {textToSpeechEnabled ? (
-              <Volume2 className="w-6 h-6" />
+              <Volume2 className="w-5 h-5 sm:w-6 sm:h-6" />
             ) : (
-              <VolumeX className="w-6 h-6" />
+              <VolumeX className="w-5 h-5 sm:w-6 sm:h-6" />
             )}
           </motion.button>
 
-          {/* Read Page Button */}
+          {/* Read Page Button - Hidden on mobile, shown on desktop */}
           {textToSpeechEnabled && (
             <motion.button
               initial={{ opacity: 0, y: 10 }}
@@ -107,7 +107,7 @@ export default function TextToSpeech() {
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
               onClick={handleReadPage}
-              className={`absolute -top-16 left-1/2 transform -translate-x-1/2 w-12 h-12 rounded-full shadow-lg flex items-center justify-center transition-colors z-10 ${
+              className={`hidden sm:block absolute -top-16 left-1/2 transform -translate-x-1/2 w-12 h-12 rounded-full shadow-lg flex items-center justify-center transition-colors z-10 ${
                 isReadingPage && isSpeaking()
                   ? 'bg-green-500 text-white'
                   : 'bg-white text-gray-700 hover:bg-gray-100'
@@ -124,7 +124,7 @@ export default function TextToSpeech() {
             </motion.button>
           )}
 
-          {/* Settings Button */}
+          {/* Settings Button - Hidden on mobile, shown on desktop */}
           {textToSpeechEnabled && (
             <motion.button
               initial={{ opacity: 0, y: 10 }}
@@ -133,7 +133,7 @@ export default function TextToSpeech() {
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
               onClick={() => setShowSettings(!showSettings)}
-              className="absolute -top-32 left-1/2 transform -translate-x-1/2 w-12 h-12 rounded-full bg-white text-gray-700 shadow-lg flex items-center justify-center hover:bg-gray-100 transition-colors z-10"
+              className="hidden sm:block absolute -top-32 left-1/2 transform -translate-x-1/2 w-12 h-12 rounded-full bg-white text-gray-700 shadow-lg flex items-center justify-center hover:bg-gray-100 transition-colors z-10"
               aria-label="Text-to-speech settings"
             >
               <Settings className="w-5 h-5" />
@@ -149,7 +149,7 @@ export default function TextToSpeech() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 20 }}
-            className="fixed bottom-24 right-20 sm:right-24 z-50 bg-white rounded-xl shadow-2xl p-4 sm:p-6 w-72 sm:w-80 border border-gray-200"
+            className="fixed bottom-28 sm:bottom-24 right-4 sm:right-20 z-50 bg-white rounded-xl shadow-2xl p-4 sm:p-6 w-[calc(100vw-2rem)] sm:w-72 md:w-80 max-w-sm border border-gray-200"
           >
             <div className="flex items-center justify-between mb-4">
               <h3 className="text-lg font-semibold text-gray-900">Text-to-Speech Settings</h3>
