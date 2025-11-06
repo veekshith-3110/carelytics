@@ -28,15 +28,26 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  // Handle missing Google Client ID gracefully
+  const googleClientId = GOOGLE_CLIENT_ID || ''
+  
   return (
     <html lang="en" suppressHydrationWarning>
       <body suppressHydrationWarning>
         <ErrorBoundary>
-          <GoogleOAuthProvider clientId={GOOGLE_CLIENT_ID}>
-            {children}
-            <ToastContainer />
-            <TextToSpeech />
-          </GoogleOAuthProvider>
+          {googleClientId ? (
+            <GoogleOAuthProvider clientId={googleClientId}>
+              {children}
+              <ToastContainer />
+              <TextToSpeech />
+            </GoogleOAuthProvider>
+          ) : (
+            <>
+              {children}
+              <ToastContainer />
+              <TextToSpeech />
+            </>
+          )}
         </ErrorBoundary>
       </body>
     </html>

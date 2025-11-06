@@ -16,6 +16,8 @@ export default function Home() {
   useEffect(() => {
     // Only check login status in browser
     if (typeof window === 'undefined') {
+      // On server, mark as checked and show dashboard
+      setHasCheckedLogin(true)
       return
     }
     
@@ -59,10 +61,11 @@ export default function Home() {
       }
     }
     
-    // Check login status
+    // Check login status immediately and with timeout as fallback
+    checkLoginStatus()
     const timer = setTimeout(() => {
-      checkLoginStatus()
-    }, 100)
+      setHasCheckedLogin(true)
+    }, 1000) // Fallback timeout - always set to true after 1 second
     
     // Listen for storage changes (for logout from other tabs)
     window.addEventListener('storage', checkLoginStatus)
@@ -94,23 +97,26 @@ export default function Home() {
     setHasCompletedOnboarding(true)
   }
 
-  // Show loading state while checking login
+  // Show loading state while checking login (with timeout fallback)
   if (!hasCheckedLogin) {
     return (
-      <div suppressHydrationWarning className="min-h-screen flex items-center justify-center">
-        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary"></div>
+      <div suppressHydrationWarning className="min-h-screen flex items-center justify-center bg-gradient-to-br from-primary/10 via-purple-500/10 to-pink-500/10">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary mx-auto mb-4"></div>
+          <p className="text-gray-600">Loading...</p>
+        </div>
       </div>
     )
   }
 
   // Show dashboard even when not logged in (login button will be visible in header)
-  // Only redirect to login if explicitly needed, otherwise show dashboard with login button
+  // Always show something - never blank page
 
   if (showEntryAnimation) {
     return <EntryAnimation onComplete={handleEntryComplete} />
   }
 
-  if (!hasCompletedOnboarding) {
+  if (!hasCompletedOnboarding && isLoggedIn) {
     return (
       <div suppressHydrationWarning>
         <Onboarding onComplete={handleOnboardingComplete} />
@@ -118,6 +124,7 @@ export default function Home() {
     )
   }
 
+  // Always show dashboard (with or without login)
   return (
     <div suppressHydrationWarning>
       <HomeDashboard />
