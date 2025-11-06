@@ -64,14 +64,14 @@ export default function VoiceCommandPanel() {
 
   return (
     <>
-      {/* Floating Voice Button - Mobile optimized */}
+      {/* Floating Voice Button - Moved to top-left, below TTS if both visible */}
       <motion.button
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
         onClick={() => setIsOpen(!isOpen)}
-        className={`fixed top-4 left-4 sm:top-6 sm:left-6 z-40 w-12 h-12 sm:w-14 sm:h-14 rounded-full shadow-2xl flex items-center justify-center transition-colors ${
+        className={`fixed top-16 left-4 sm:top-20 sm:left-6 z-40 w-12 h-12 sm:w-14 sm:h-14 rounded-full shadow-2xl flex items-center justify-center transition-colors ${
           isListening
             ? 'bg-red-500 text-white animate-pulse'
             : 'bg-primary text-white hover:bg-primary-dark'
@@ -86,7 +86,7 @@ export default function VoiceCommandPanel() {
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="fixed top-16 sm:top-20 left-4 sm:left-6 z-50 bg-white rounded-2xl shadow-2xl p-4 sm:p-6 max-w-[calc(100vw-2rem)] sm:max-w-sm w-full border border-gray-200"
+          className="fixed top-28 sm:top-32 left-4 sm:left-6 z-50 bg-white rounded-2xl shadow-2xl p-4 sm:p-6 max-w-[calc(100vw-2rem)] sm:max-w-sm w-full border border-gray-200"
         >
           <div className="flex items-center justify-between mb-4">
             <h3 className="text-lg font-bold text-gray-900">Voice Commands</h3>

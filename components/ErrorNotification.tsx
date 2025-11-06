@@ -39,10 +39,73 @@ export default function ErrorNotification() {
 
   const handleDismiss = () => {
     setIsVisible(false)
-    // Clear errors
-    errorHandler.clearErrors()
-    setErrorCount(0)
+    // Clear errors from localStorage
+    try {
+      localStorage.removeItem('errorLogs')
+      localStorage.removeItem('lastError')
+      errorHandler.clearErrors()
+      setErrorCount(0)
+    } catch (error) {
+      console.error('Error clearing error logs:', error)
+    }
   }
+
+  // Auto-clear old errors on mount (older than 30 minutes)
+  useEffect(() => {
+    try {
+      const errorLogs = localStorage.getItem('errorLogs')
+      if (errorLogs) {
+        const logs = JSON.parse(errorLogs)
+        const thirtyMinutesAgo = Date.now() - 30 * 60 * 1000
+        const recentLogs = logs.filter((log: any) => {
+          const logTime = new Date(log.timestamp).getTime()
+          return logTime > thirtyMinutesAgo
+        })
+        
+        if (recentLogs.length === 0) {
+          // Clear all errors if none are recent
+          localStorage.removeItem('errorLogs')
+          localStorage.removeItem('lastError')
+          errorHandler.clearErrors()
+          setErrorCount(0)
+          setIsVisible(false)
+        } else if (recentLogs.length !== logs.length) {
+          // Update with only recent errors
+          localStorage.setItem('errorLogs', JSON.stringify(recentLogs))
+          setErrorCount(recentLogs.length)
+          setIsVisible(recentLogs.length > 0)
+        }
+      }
+      
+      // Also clear lastError if it exists
+      const lastError = localStorage.getItem('lastError')
+      if (lastError) {
+        try {
+          const errorData = JSON.parse(lastError)
+          const errorTime = new Date(errorData.timestamp).getTime()
+          const thirtyMinutesAgo = Date.now() - 30 * 60 * 1000
+          if (errorTime < thirtyMinutesAgo) {
+            localStorage.removeItem('lastError')
+          }
+        } catch (e) {
+          // If parsing fails, just remove it
+          localStorage.removeItem('lastError')
+        }
+      }
+    } catch (error) {
+      console.error('Error cleaning old errors:', error)
+      // On error, clear everything to be safe
+      try {
+        localStorage.removeItem('errorLogs')
+        localStorage.removeItem('lastError')
+        errorHandler.clearErrors()
+        setErrorCount(0)
+        setIsVisible(false)
+      } catch (e) {
+        // Ignore cleanup errors
+      }
+    }
+  }, [])
 
   if (!isVisible || errorCount === 0) return null
 
@@ -56,12 +119,13 @@ export default function ErrorNotification() {
       >
         <AlertCircle className="w-5 h-5 flex-shrink-0" />
         <span className="flex-1 text-sm sm:text-base font-semibold">
-          {errorCount} error{errorCount > 1 ? 's' : ''}
+          {errorCount} error{errorCount > 1 ? 's' : ''} detected
         </span>
         <button
           onClick={handleDismiss}
-          className="flex-shrink-0 hover:bg-red-700 rounded-lg p-1 transition-colors"
-          aria-label="Dismiss error notification"
+          className="flex-shrink-0 hover:bg-red-700 rounded-lg p-1.5 transition-colors"
+          aria-label="Clear all errors"
+          title="Clear all errors"
         >
           <X className="w-4 h-4 sm:w-5 sm:h-5" />
         </button>

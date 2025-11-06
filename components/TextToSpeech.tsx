@@ -74,11 +74,11 @@ export default function TextToSpeech() {
 
   return (
     <>
-      {/* Floating TTS Button - Mobile optimized positioning */}
+      {/* Floating TTS Button - Moved to top-right corner */}
       <motion.div
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
-        className="fixed bottom-20 sm:bottom-6 right-4 sm:right-20 z-40"
+        className="fixed top-4 right-4 sm:top-6 sm:right-6 z-40"
       >
         <div className="relative">
           <motion.button
@@ -149,7 +149,7 @@ export default function TextToSpeech() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 20 }}
-            className="fixed bottom-28 sm:bottom-24 right-4 sm:right-20 z-50 bg-white rounded-xl shadow-2xl p-4 sm:p-6 w-[calc(100vw-2rem)] sm:w-72 md:w-80 max-w-sm border border-gray-200"
+            className="fixed top-16 sm:top-20 right-4 sm:right-6 z-50 bg-white rounded-xl shadow-2xl p-4 sm:p-6 w-[calc(100vw-2rem)] sm:w-72 md:w-80 max-w-sm border border-gray-200"
           >
             <div className="flex items-center justify-between mb-4">
               <h3 className="text-lg font-semibold text-gray-900">Text-to-Speech Settings</h3>
