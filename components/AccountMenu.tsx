@@ -15,9 +15,17 @@ export default function AccountMenu() {
   const handleLogout = () => {
     logout()
     setIsOpen(false)
-    router.push('/')
+    
+    // Clear all login-related localStorage
     if (typeof window !== 'undefined') {
-      window.location.reload()
+      localStorage.removeItem('isLoggedIn')
+      localStorage.removeItem('onboarding_completed')
+      
+      // Dispatch custom event to notify other components
+      window.dispatchEvent(new Event('user-logout'))
+      
+      // Redirect to login page
+      router.push('/login')
     }
   }
 

@@ -2,6 +2,9 @@ import type { Metadata, Viewport } from 'next'
 import './globals.css'
 import { ErrorBoundary } from '@/components/ErrorBoundary'
 import { ToastContainer } from '@/components/Toast'
+import TextToSpeech from '@/components/TextToSpeech'
+import { GoogleOAuthProvider } from '@react-oauth/google'
+import { GOOGLE_CLIENT_ID } from '@/lib/googleAuth'
 
 export const metadata: Metadata = {
   title: 'Carelytics — AI Smart Health & Wellness Assistant',
@@ -26,11 +29,14 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body>
+    <html lang="en" suppressHydrationWarning>
+      <body suppressHydrationWarning>
         <ErrorBoundary>
-          {children}
-          <ToastContainer />
+          <GoogleOAuthProvider clientId={GOOGLE_CLIENT_ID}>
+            {children}
+            <ToastContainer />
+            <TextToSpeech />
+          </GoogleOAuthProvider>
         </ErrorBoundary>
       </body>
     </html>

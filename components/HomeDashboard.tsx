@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useMemo, useCallback } from 'react'
 import { motion } from 'framer-motion'
 import { useHealthStore } from '@/lib/store'
 import { calculateRiskScore, calculateBMI, getBMICategory } from '@/lib/utils'
@@ -14,6 +14,7 @@ import {
   Calendar,
   MapPin,
   TrendingUp,
+  FileText,
 } from 'lucide-react'
 import SymptomChecker from './SymptomChecker'
 import BMICalculator from './BMICalculator'
@@ -21,10 +22,8 @@ import MedicationManager from './MedicationManager'
 import RiskDashboard from './RiskDashboard'
 import MentalHealthChecker from './MentalHealthChecker'
 import DoctorDirectory from './DoctorDirectory'
-import HealthHistory from './HealthHistory'
 import LanguageSwitcher from './LanguageSwitcher'
-import CameraEmotionCheck from './CameraEmotionCheck'
-import FoodPlantRecognition from './FoodPlantRecognition'
+import MedicineInfo from './MedicineInfo'
 import AccountMenu from './AccountMenu'
 import ElectronicHealthRecord from './ElectronicHealthRecord'
 import VoiceCommandPanel from './VoiceCommandPanel'
@@ -49,9 +48,8 @@ export default function HomeDashboard() {
       voiceCommandHandler.registerCommand('symptoms', () => setActiveView('symptom'))
       voiceCommandHandler.registerCommand('bmi', () => setActiveView('bmi'))
       voiceCommandHandler.registerCommand('medications', () => setActiveView('medication'))
-      voiceCommandHandler.registerCommand('history', () => setActiveView('history'))
       voiceCommandHandler.registerCommand('doctors', () => setActiveView('doctors'))
-      voiceCommandHandler.registerCommand('mood', () => setActiveView('camera-mood'))
+      voiceCommandHandler.registerCommand('medicine', () => setActiveView('medicine-info'))
       voiceCommandHandler.registerCommand('logout', () => {
         logout()
         if (typeof window !== 'undefined') {
@@ -67,7 +65,6 @@ export default function HomeDashboard() {
         voiceCommandHandler.unregisterCommand('symptoms')
         voiceCommandHandler.unregisterCommand('bmi')
         voiceCommandHandler.unregisterCommand('medications')
-        voiceCommandHandler.unregisterCommand('history')
         voiceCommandHandler.unregisterCommand('doctors')
         voiceCommandHandler.unregisterCommand('mood')
         voiceCommandHandler.unregisterCommand('logout')
@@ -104,7 +101,7 @@ export default function HomeDashboard() {
     }
   }, [riskScore])
 
-  const quickActions = [
+  const quickActions = useMemo(() => [
     {
       id: 'symptom',
       title: 'Describe Symptoms',
@@ -138,12 +135,12 @@ export default function HomeDashboard() {
       image: 'https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=400&q=80',
     },
     {
-      id: 'camera-mood',
-      title: 'Camera Mood Check',
-      icon: Activity,
-      color: 'bg-purple-500',
-      description: 'AI emotion detection',
-      image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&q=80',
+      id: 'medicine-info',
+      title: 'Medicine Info',
+      icon: Pill,
+      color: 'bg-blue-500',
+      description: 'Search medicine details',
+      image: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=400&q=80',
     },
     {
       id: 'risk',
@@ -162,26 +159,37 @@ export default function HomeDashboard() {
       image: 'https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=400&q=80',
     },
     {
-      id: 'history',
-      title: 'Health History',
-      icon: Calendar,
+      id: 'health-records',
+      title: 'My Health Records',
+      icon: FileText,
       color: 'bg-indigo-500',
-      description: 'View logs',
+      description: 'Store health records',
       image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400&q=80',
     },
-    {
-      id: 'food-recognition',
-      title: 'Food Recognition',
-      icon: Activity,
-      color: 'bg-green-500',
-      description: 'Identify food/plants',
-      image: 'https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=400&q=80',
-    },
-  ]
+  ], [])
+  
+  const handleViewChange = useCallback((viewId: string) => {
+    setActiveView(viewId)
+  }, [])
 
   if (activeView) {
-    return (
-      <div className="min-h-screen relative">
+  return (
+    <div className="min-h-screen relative z-0">
+      {/* Spline 3D Background - Only visible after login */}
+      <div className="fixed inset-0 -z-10 w-full h-full overflow-hidden">
+        <iframe 
+          src="https://my.spline.design/genkubgreetingrobot-8XdGsIZHgtG3hdWVjI6xOarf/" 
+          frameBorder="0" 
+          width="100%" 
+          height="100%"
+          className="w-full h-full absolute top-0 left-0"
+          style={{ pointerEvents: 'none', border: 'none' }}
+          allow="autoplay; fullscreen; xr-spatial-tracking"
+          title="3D Background Animation"
+          aria-hidden="true"
+          loading="lazy"
+        />
+      </div>
         {/* Healthcare AI Background Image for active views - Futuristic Blue Holographic Theme */}
         <div 
           className="fixed inset-0 bg-cover bg-center bg-no-repeat bg-fixed z-0"
@@ -199,32 +207,54 @@ export default function HomeDashboard() {
           />
         </div>
         <div className="relative z-10">
-          <button
+          <motion.button
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
             onClick={() => setActiveView(null)}
-            className="fixed top-4 left-4 z-50 bg-white/90 backdrop-blur-md p-3 rounded-full shadow-lg hover:shadow-xl transition-shadow border border-white/20"
+            className="fixed top-4 left-4 z-50 bg-white/90 backdrop-blur-md p-3 rounded-full shadow-lg hover:shadow-xl transition-all border border-white/20"
           >
             ← Back
-          </button>
-        {activeView === 'symptom' && <SymptomChecker />}
-        {activeView === 'bmi' && <BMICalculator />}
-        {activeView === 'medication' && <MedicationManager />}
-        {activeView === 'risk' && <RiskDashboard />}
-        {activeView === 'mental' && <MentalHealthChecker />}
-        {activeView === 'doctors' && <DoctorDirectory />}
-        {activeView === 'history' && <HealthHistory />}
-        {activeView === 'camera-mood' && <CameraEmotionCheck />}
-        {activeView === 'food-recognition' && <FoodPlantRecognition />}
-        {activeView === 'health-records' && <ElectronicHealthRecord />}
+          </motion.button>
+        <motion.div
+          key={activeView}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.3, ease: 'easeOut' }}
+        >
+          {activeView === 'symptom' && <SymptomChecker />}
+          {activeView === 'bmi' && <BMICalculator />}
+          {activeView === 'medication' && <MedicationManager />}
+          {activeView === 'risk' && <RiskDashboard />}
+          {activeView === 'mental' && <MentalHealthChecker />}
+          {activeView === 'doctors' && <DoctorDirectory />}
+          {activeView === 'medicine-info' && <MedicineInfo />}
+          {activeView === 'health-records' && <ElectronicHealthRecord />}
+        </motion.div>
         </div>
       </div>
     )
   }
 
   return (
-    <div className="min-h-screen relative">
+    <div className="min-h-screen relative z-0">
+      {/* Spline 3D Background - Only visible after login */}
+      <div className="fixed inset-0 -z-10 w-full h-full overflow-hidden">
+        <iframe 
+          src="https://my.spline.design/genkubgreetingrobot-8XdGsIZHgtG3hdWVjI6xOarf/" 
+          frameBorder="0" 
+          width="100%" 
+          height="100%"
+          className="w-full h-full absolute top-0 left-0"
+          style={{ pointerEvents: 'none', border: 'none' }}
+          allow="autoplay; fullscreen; xr-spatial-tracking"
+          title="3D Background Animation"
+          aria-hidden="true"
+          loading="lazy"
+        />
+      </div>
       {/* Healthcare AI Background Image - Futuristic Blue Holographic Theme */}
       <div 
-        className="fixed inset-0 bg-cover bg-center bg-no-repeat bg-fixed z-0"
+        className="fixed inset-0 bg-cover bg-center bg-no-repeat bg-fixed z-0 opacity-30"
         style={{
           backgroundImage: 'url("https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=1920&q=80")',
         }}
@@ -343,7 +373,7 @@ export default function HomeDashboard() {
                 transition={{ delay: index * 0.1 }}
                 whileHover={{ scale: 1.05, y: -5 }}
                 whileTap={{ scale: 0.95 }}
-                onClick={() => setActiveView(action.id)}
+                onClick={() => handleViewChange(action.id)}
                 className="bg-white/90 backdrop-blur-md rounded-2xl p-0 shadow-lg hover:shadow-xl transition-all text-left group border border-white/20 overflow-hidden relative"
               >
                 {/* Feature Image Background */}

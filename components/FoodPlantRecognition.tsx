@@ -6,6 +6,7 @@ import { Upload, Image as ImageIcon, CheckCircle, XCircle, Volume2, Leaf, Apple 
 import { useHealthStore } from '@/lib/store'
 import { analytics } from '@/lib/analytics'
 import { searchPlantDataset, recognizePlantFromImage, getAllPlants, type MedicinalPlant } from '@/lib/medicinalPlantsDataset'
+import TTSButton from './TTSButton'
 
 interface FoodAnalysis {
   name: string
@@ -287,9 +288,14 @@ export default function FoodPlantRecognition() {
           animate={{ opacity: 1, y: 0 }}
           className="bg-white rounded-2xl shadow-xl p-8"
         >
-          <div className="flex items-center gap-3 mb-6">
-            <ImageIcon className="w-8 h-8 text-primary" />
-            <h1 className="text-3xl font-bold text-gray-900">Food & Plant Recognition</h1>
+          <div className="flex items-center justify-between mb-6">
+            <div className="flex items-center gap-3">
+              <ImageIcon className="w-8 h-8 text-primary" />
+              <h1 className="text-3xl font-bold text-gray-900">Food & Plant Recognition</h1>
+            </div>
+            <TTSButton 
+              text={`Food and Plant Recognition. Upload an image of a food item or plant to get information about its edibility, nutritional benefits, and health properties. ${analysis ? `${analysis.name}. ${analysis.details}. ${analysis.isEdible ? 'This is safe to eat.' : 'This may not be safe to eat.'}` : ''}`}
+            />
           </div>
 
           <p className="text-gray-600 mb-6">

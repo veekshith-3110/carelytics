@@ -6,6 +6,7 @@ import { useHealthStore } from '@/lib/store'
 import { calculateBMI, getBMICategory } from '@/lib/utils'
 import { Calculator, TrendingUp, Apple, UtensilsCrossed } from 'lucide-react'
 import { useTranslation } from '@/hooks/useTranslation'
+import TTSButton from './TTSButton'
 
 export default function BMICalculator() {
   const { profile, updateProfile, language } = useHealthStore()
@@ -65,6 +66,8 @@ export default function BMICalculator() {
     ],
   }
 
+  const pageContent = `BMI Calculator. Calculate your Body Mass Index by entering your height and weight. ${bmi ? `Your BMI is ${bmi.toFixed(1)}. Category: ${category?.category || 'Unknown'}.` : 'Enter your measurements to calculate your BMI.'}`
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-primary/5 to-accent/5">
       <div className="container mx-auto px-4 py-8 max-w-4xl">
@@ -73,9 +76,12 @@ export default function BMICalculator() {
           animate={{ opacity: 1, y: 0 }}
           className="bg-white rounded-2xl shadow-xl p-8"
         >
-          <div className="flex items-center gap-3 mb-6">
-            <Calculator className="w-8 h-8 text-primary" />
-            <h1 className="text-3xl font-bold text-gray-900">BMI Calculator</h1>
+          <div className="flex items-center justify-between mb-6">
+            <div className="flex items-center gap-3">
+              <Calculator className="w-8 h-8 text-primary" />
+              <h1 className="text-3xl font-bold text-gray-900">BMI Calculator</h1>
+            </div>
+            <TTSButton text={pageContent} />
           </div>
 
           {/* Unit Toggle */}
