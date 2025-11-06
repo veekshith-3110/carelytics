@@ -1,0 +1,2576 @@
+{
+  "dataset_path": "C:\\Users\\vemul\\.cache\\kagglehub\\datasets\\ammarmoustafa\\mediterranean-plants\\versions\\1",
+  "plants": [
+    {
+      "﻿plant_id": "1",
+      "Scientific_Name": "Abies cilicica (Antoine & Kotschy) Carrière",
+      "Arabic_Name": "الشوح (Shouh)",
+      "English_Name": "Cilician Fir",
+      "Part_Used": "Resin",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Topical",
+      "Folk_Uses": "An aromatic oil; the resin is used externally as an antiseptic, it helps in relaxing the muscles, and getting rid of unpleasant odors of the body."
+    },
+    {
+      "﻿plant_id": "2",
+      "Scientific_Name": "Acanthus syriacus boiss.",
+      "Arabic_Name": "أقنثا، مارعويلا (Akensa)",
+      "English_Name": "Syrian Bear’s Breeches",
+      "Part_Used": "Leaf",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Infusion",
+      "Folk_Uses": "An infusion of the leaves is used externally to ease irritation."
+    },
+    {
+      "﻿plant_id": "3",
+      "Scientific_Name": "Acer syriacum Boiss. & Gaill.",
+      "Arabic_Name": "القيقب السوري (Qyqab souri)",
+      "English_Name": "Syrian Maple",
+      "Part_Used": "Fruit",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Juice",
+      "Folk_Uses": "Sugary maple juice is produced in a primitive way, by inserting tubes into the tree trunks on spring days between February and March. Maple fruits are used in the treatment of diabetes, urinary infections, and prostate disorders."
+    },
+    {
+      "﻿plant_id": "4",
+      "Scientific_Name": "Achillea falcata L.",
+      "Arabic_Name": "قيصومة منجلية، قيسون (Qauesoun)",
+      "English_Name": "Sickle-leaved Yarrow",
+      "Part_Used": "Root",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of roots is used as diuretic."
+    },
+    {
+      "﻿plant_id": "5",
+      "Scientific_Name": "Achillea fragrantissima (Forssk.) Sch. Bip.",
+      "Arabic_Name": "ألفية (Alphieh)",
+      "English_Name": "Fragrant Yarrow",
+      "Part_Used": "Leaf",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Infusion",
+      "Folk_Uses": "An infusion of the leaves is used in the treatment of fever, common cold, hay fever, absence of menstruation, dysentery, diarrhea, loss of appetite, gastrointestinal (GI) tract discomfort, and to induce sweating."
+    },
+    {
+      "﻿plant_id": "6",
+      "Scientific_Name": "Achillea millefolium L.",
+      "Arabic_Name": "عشبة النجارين (Eshbet alnajareen)",
+      "English_Name": "Common Yarrow",
+      "Part_Used": "Leaf, Flower",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Infusion",
+      "Folk_Uses": "An infusion of leaves and flowers is used for asthma and common cold, as well as in the treatment of urinary infections."
+    },
+    {
+      "﻿plant_id": "7",
+      "Scientific_Name": "Achillea maritima (L.) Ehrend. & Y.P.Guo",
+      "Arabic_Name": "أخيليا (Akhelia)",
+      "English_Name": "Cottonweed",
+      "Part_Used": "Leaf",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Infusion",
+      "Folk_Uses": "An infusion of leaves is used as a cough suppressant, expectorant, and anthelmintic, as well as in the treatment of varicose veins, relieving menstrual pain, diuretic, urinary disinfectant, and treatment of hemorrhoids."
+    },
+    {
+      "﻿plant_id": "8",
+      "Scientific_Name": "Acorus calamus L.",
+      "Arabic_Name": "عرق أكر، قصب الذريرة، عود الإيكر (Arak aker)",
+      "English_Name": "Sweet Flag",
+      "Part_Used": "Root",
+      "Cultivation": "Cultivated",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of roots is used as diuretic and tonic."
+    },
+    {
+      "﻿plant_id": "9",
+      "Scientific_Name": "Adiantum capillus-veneris L.",
+      "Arabic_Name": "كزبرة البئر (Kezbarte el-bier)",
+      "English_Name": "Maidenhair Fern",
+      "Part_Used": "Leaf",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Infusion",
+      "Folk_Uses": "An infusion of leaves is used for cleansing respiratory system, treating asthma, gastrointestinal disorders such as jaundice, diarrhea, as well as a diuretic agent."
+    },
+    {
+      "﻿plant_id": "10",
+      "Scientific_Name": "Aeluropus lagopoides (L.) Thwaites",
+      "Arabic_Name": "رجل الأرنب (Rejel alarnab)",
+      "English_Name": "Desert Saltgrass",
+      "Part_Used": "Leaf",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Fresh",
+      "Folk_Uses": "The fresh green leaves are used as a tonic."
+    },
+    {
+      "﻿plant_id": "11",
+      "Scientific_Name": "Agrimonia eupatoria L.",
+      "Arabic_Name": "شجرة البراغيث، الغافث (Shajarat el-barāghith)",
+      "English_Name": "Agrimony",
+      "Part_Used": "Whole Plant, Flower",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Infusion",
+      "Folk_Uses": "An infusion of the whole herb with flowers is used in the treatment of cough, diabetes, diarrhea, and jaundice; and used as diuretic. An infusion of flowers is used as gargle for the symptomatic relief of minor inflammations of the mouth and throat; the decoction of flowers is used for skin diseases as an anti-itching element, and to relief congestion of hemorrhoids."
+    },
+    {
+      "﻿plant_id": "12",
+      "Scientific_Name": "Agropyron junceum (L.) P.Beauv.",
+      "Arabic_Name": "حشيشة القمح الطويلة (Hasheshet elqameh elraweleh)",
+      "English_Name": "Sand Couch Grass",
+      "Part_Used": "Root",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of roots is used as diuretic."
+    },
+    {
+      "﻿plant_id": "13",
+      "Scientific_Name": "Alcea setosa (Boiss.) Alef.",
+      "Arabic_Name": "ختمية (Khetmi)",
+      "English_Name": "Bristly Hollyhock",
+      "Part_Used": "Flower, Whole Plant",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Infusion",
+      "Folk_Uses": "An infusion of flowers is used as demulcent, expectorant, diuretic, emollient, digestive, decongestant, and for joint pain; also it is used topically in the treatment of injuries and burns."
+    },
+    {
+      "﻿plant_id": "14",
+      "Scientific_Name": "Alchemilla vulgaris L.",
+      "Arabic_Name": "كف الأسد (Kaf el-assad)",
+      "English_Name": "Lady’s Mantle",
+      "Part_Used": "Aerial Parts",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Infusion",
+      "Folk_Uses": "An infusion of aerial parts is used for stomach problems, mild diarrhea, diabetes, and as anti-obesity ingredient."
+    },
+    {
+      "﻿plant_id": "15",
+      "Scientific_Name": "Allium cepa L.",
+      "Arabic_Name": "البصل (Al-basal)",
+      "English_Name": "Onion",
+      "Part_Used": "Bulb",
+      "Cultivation": "Cultivated",
+      "Method_of_Use": "Juice",
+      "Folk_Uses": "Juice of the fresh bulb is used internally for cough, asthma attacks, and typhoid; the roasted bulb is eaten for diabetes. Juice of the fresh bulb is used externally for whooping cough, back pain, neck pain, and warts."
+    },
+    {
+      "﻿plant_id": "16",
+      "Scientific_Name": "Allium sativum",
+      "Arabic_Name": "ثوم  (Thoum)",
+      "English_Name": "Garlic",
+      "Part_Used": "Bulb",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Fresh",
+      "Folk_Uses": "The fresh bulb is used for hypertension treatment, vermifuge, diseases of the gastrointestinal tract, urinary tract infection, relief of atherosclerosis, diabetes, and as an anti-inflammatory agent; the bulb oil is mainly used for joint pain, dandruff, scabies, fungi, and treatment of insect bites."
+    },
+    {
+      "﻿plant_id": "17",
+      "Scientific_Name": "Alnus orientalis Decne.",
+      "Arabic_Name": "النغت (Nagat)",
+      "English_Name": "Oriental Alder",
+      "Part_Used": "Leaf, Bark",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of leaves is used in the treatment of joint pain, hemorrhoids and for wound healing; a decoction of bark is used for insect bites, and skin irritations."
+    },
+    {
+      "﻿plant_id": "18",
+      "Scientific_Name": "Ammi visnaga (L.) Lam.",
+      "Arabic_Name": "خلة سورية (Khelleh)",
+      "English_Name": "Toothpick Plant",
+      "Part_Used": "Stick, Seed",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "Sticks of this plant are used to clean the teeth, and decoction of seeds is used as a diuretic, antispasmodic and for bladder stones. Also, it is used as a smooth muscle relaxant for asthma, and whooping cough fits."
+    },
+    {
+      "﻿plant_id": "19",
+      "Scientific_Name": "Amygdalus communis L./ Prunus dulcis (Mill.) D.A.Webb",
+      "Arabic_Name": "اللوز البري الشائع (Lawz)",
+      "English_Name": "Almond",
+      "Part_Used": "Seed",
+      "Cultivation": "Cultivated",
+      "Method_of_Use": "Topical and Oral",
+      "Folk_Uses": "Oil of sweet almond seed is used internally for constipation and for bronchial diseases and asthma, and for digestive system. The oil is also used externally for skin diseases, massage, to nourish the skin, and in traditional recipes for hair care. Oil of bitter almond seed is used mainly for increasing hair growth, and to relieve mild pain. "
+    },
+    {
+      "﻿plant_id": "20",
+      "Scientific_Name": "Anagallis arvensis L.",
+      "Arabic_Name": "عين القط (Eyn el-qet)",
+      "English_Name": "Scarlet Pimpernel",
+      "Part_Used": "Aerial Parts",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "Despite the toxicity of the herb, an infusion of aerial parts is used in the treatment of joint pain and gout; and as a diuretic and expectorant. "
+    },
+    {
+      "﻿plant_id": "21",
+      "Scientific_Name": "Anchusa azurea Mill.",
+      "Arabic_Name": "أبو الغصون، زلاع (Zalaa')",
+      "English_Name": "Italian Bugloss",
+      "Part_Used": "Whole Plant",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Cooked",
+      "Folk_Uses": "The cooked herb is used as diuretic in bladder and kidney stones cases; as a tonic; and as relief agent in cases of fever, cough and asthma."
+    },
+    {
+      "﻿plant_id": "22",
+      "Scientific_Name": "Anthemis cotula L.",
+      "Arabic_Name": "أقحوان نتن (Eqhowan naten)",
+      "English_Name": "Stinking Chamomile",
+      "Part_Used": "Flower, Aerial Parts",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Infusion",
+      "Folk_Uses": "Boiled infusion of flowers is used mainly to treat hemorrhoids and as insect repellent. It is used internally for mentrual pain and pain and intestinal ailments. The plant is toxic and causes miscarriage. The aerial parts powder is used as a very effective insecticide."
+    },
+    {
+      "﻿plant_id": "23",
+      "Scientific_Name": "Anthemis tinctoria L.",
+      "Arabic_Name": "أقحوان أصفر (Eqhowan asfar)",
+      "English_Name": "Golden Marguerite",
+      "Part_Used": "Flower",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Infusion",
+      "Folk_Uses": "An infusion of flowers is used as diuretic, and for menstrual pain, migraine, and for relaxing."
+    },
+    {
+      "﻿plant_id": "24",
+      "Scientific_Name": "Arachis hypogaea L.",
+      "Arabic_Name": "فستق عبيد (Fostok abeed)",
+      "English_Name": "Peanut",
+      "Part_Used": "Seed",
+      "Cultivation": "Cultivated",
+      "Method_of_Use": "Fresh",
+      "Folk_Uses": "The seeds are an important source of protein that is used to provide the body with energy; peanut butter is used to improve mood and reduce feelings of tiredness and fatigue, and stimulate blood circulation."
+    },
+    {
+      "﻿plant_id": "25",
+      "Scientific_Name": "Arbutus andrachne L.",
+      "Arabic_Name": "قطلب (Katlab)",
+      "English_Name": "Eastern Strawberry Tree",
+      "Part_Used": "Leaf, Fruit, Root",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of leaves and fruits is used for urinary infections, cystitis and urethritis. It is also used as diuretic, a tonic for digestive system and as an antispasmodic. A decoction of roots is used for lowering high blood pressure. Its ripe fruits are eaten but cause diarrhea."
+    },
+    {
+      "﻿plant_id": "26",
+      "Scientific_Name": "Arctium lappa L.",
+      "Arabic_Name": "أرقطيون (Arkatuin)",
+      "English_Name": "Great Burdock",
+      "Part_Used": "Leaf, Seed, Root",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of leaves, seeds and roots is used as diuretic and for diabetes."
+    },
+    {
+      "﻿plant_id": "27",
+      "Scientific_Name": "Arisarum vulgare O.Targ.Tozz.",
+      "Arabic_Name": "قبوع الراهب (Kabue el-raheb)",
+      "English_Name": "Friar’s Cowl",
+      "Part_Used": "Root",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of roots is used for constipation and joint pain."
+    },
+    {
+      "﻿plant_id": "28",
+      "Scientific_Name": "Aristolochia sempervirens L.",
+      "Arabic_Name": "عريتيشة (Aretesheh)",
+      "English_Name": "Evergreen Birthwort",
+      "Part_Used": "Whole Plant, Aerial Parts",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Fresh",
+      "Folk_Uses": "An edible herb; aerial parts are used as liver tonic."
+    },
+    {
+      "﻿plant_id": "29",
+      "Scientific_Name": "Armeniaca vulgaris L.",
+      "Arabic_Name": "مشمش (mushamash)",
+      "English_Name": "Apricot",
+      "Part_Used": "Fruit",
+      "Cultivation": "Cultivated",
+      "Method_of_Use": "Dried",
+      "Folk_Uses": "Dried fruits are eaten to enhance immunity."
+    },
+    {
+      "﻿plant_id": "30",
+      "Scientific_Name": "Artemisia herba-alba Asso.",
+      "Arabic_Name": "الشيح الأبيض (Shieh abiad)",
+      "English_Name": "White Wormwood",
+      "Part_Used": "Leaf",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Infusion",
+      "Folk_Uses": "An infusion of leaves is used for cancer, nervous system disorders, heart diseases, diabetes, to increase appetite, and as an anthelmintic."
+    },
+    {
+      "﻿plant_id": "31",
+      "Scientific_Name": "Artemisia verlotiorum Lamotte.",
+      "Arabic_Name": "شيح فرلوه (Shieh farloweh)",
+      "English_Name": "Chinese Mugwort",
+      "Part_Used": "Leaf",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of leaves is used as anthelmintic, for diabetes, respiratory problems, and diarrhea. Powder of leaves is used for skin diseases, sores, and wounds."
+    },
+    {
+      "﻿plant_id": "32",
+      "Scientific_Name": "Arum dioscoridis Sm.",
+      "Arabic_Name": "لوف (Louf)",
+      "English_Name": "Dragon Arum",
+      "Part_Used": "Leaf",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Cooked",
+      "Folk_Uses": "Cooked leaves are used in the treatment of digestive disorders, asthma, internal bacterial infection, and as an anthelmintic."
+    },
+    {
+      "﻿plant_id": "33",
+      "Scientific_Name": "Asparagus officinalis L.",
+      "Arabic_Name": "هليون، عربيش (Heliun)",
+      "English_Name": "Garden Asparagus",
+      "Part_Used": "Root, Shoot",
+      "Cultivation": "Cultivated",
+      "Method_of_Use": "Cooked",
+      "Folk_Uses": "Cooked roots and shoots are used for urinary tract diseases, lowering blood pressure, as an analgesic, and an anti-inflammatory agent."
+    },
+    {
+      "﻿plant_id": "34",
+      "Scientific_Name": "Asphodelus microcarpus Salzm. et Viv.",
+      "Arabic_Name": "العيصلان، مبشرة الشتاء، بروق (Aesalan)",
+      "English_Name": "Small-fruited Asphodel",
+      "Part_Used": "Whole Plant",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Juice",
+      "Folk_Uses": "The juice of this plant by squizing the fresh plant in traditional way has been applied dermatologically to treat cutaneous lichen, even though the plant is poisonous."
+    },
+    {
+      "﻿plant_id": "35",
+      "Scientific_Name": "Avena sativa L.",
+      "Arabic_Name": "شوفان (Shofan)",
+      "English_Name": "Oat",
+      "Part_Used": "Seed, Peel",
+      "Cultivation": "Cultivated",
+      "Method_of_Use": "Fresh",
+      "Folk_Uses": "The bran husk of seeds is a mealy nutritive herb used for weight loss, and constipation treatment. The whole grinded seeds are used for diabetes, hypercholesterolemia, also as a diuretic, an antispasmodic, and a tonic for the nervous system."
+    },
+    {
+      "﻿plant_id": "36",
+      "Scientific_Name": "Bellis sylvestris Cirillo",
+      "Arabic_Name": "خروف، شاش القاضي (Kharoof)",
+      "English_Name": "Southern Daisy",
+      "Part_Used": "Stem",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Infusion",
+      "Folk_Uses": "An infusion of stems is used in the treatment of catarrh, joint pain, liver and kidney disorders, and as a blood purifier. Mild decoction may ease symptoms of the respiratory tract, rheumatic pains and painful or heavy menstruation."
+    },
+    {
+      "﻿plant_id": "37",
+      "Scientific_Name": "Beta vulgaris L.",
+      "Arabic_Name": "سلق (Solk)",
+      "English_Name": "Beet",
+      "Part_Used": "Aerial Parts",
+      "Cultivation": "Cultivated",
+      "Method_of_Use": "Fresh",
+      "Folk_Uses": "Green parts of the herb are eaten to treat constipation, diabetes, anemia and general weakness, and are used for hypertension."
+    },
+    {
+      "﻿plant_id": "38",
+      "Scientific_Name": "Bidens pilosa L.",
+      "Arabic_Name": "حسيكة وبرية (Hosikeh wabarieh)",
+      "English_Name": "Blackjack",
+      "Part_Used": "Aerial Parts",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction is used for digestive disorders, and fresh aerial parts are used to treat bites, and wounds."
+    },
+    {
+      "﻿plant_id": "39",
+      "Scientific_Name": "Borago officinalis L.",
+      "Arabic_Name": "لسان الثور، بلغصون (Lisan athaur)",
+      "English_Name": "Borage",
+      "Part_Used": "Leaf, Seed, Fruit",
+      "Cultivation": "Cultivated",
+      "Method_of_Use": "Infusion",
+      "Folk_Uses": "An infusion of leaves, seeds and flowers is used in the treatment of infections, respiratory symptoms, depression, joint pain, and asthma. The fresh leaves are used as mealy nutritive herb and diuretic."
+    },
+    {
+      "﻿plant_id": "40",
+      "Scientific_Name": "Calendula arvensis M.Bieb.",
+      "Arabic_Name": "أزريون، عين البقر (Ain El-Baqar)",
+      "English_Name": "Field Marigold",
+      "Part_Used": "Aerial Parts",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Infusion",
+      "Folk_Uses": "An infusion of the aerial parts is used as a remedy for skin problems and is applied externally to bites and stings, sprains, wounds, sore eyes, and varicose veins."
+    },
+    {
+      "﻿plant_id": "41",
+      "Scientific_Name": "Capparis spinosa L.",
+      "Arabic_Name": "قبار (Cabar)",
+      "English_Name": "Caper Bush",
+      "Part_Used": "Shoot, Root",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Fresh",
+      "Folk_Uses": "Young shoots are either pickled in vinegar or preserved in granular salt and used for diseases of the nervous system, back pain, liver diseases. The fresh roots are used mainly for back pain and joint pain."
+    },
+    {
+      "﻿plant_id": "42",
+      "Scientific_Name": "Capsella bursa-pastoris (L.) Medik.",
+      "Arabic_Name": "كيس الراعي (Kees elraie)",
+      "English_Name": "Shepherd’s Purse",
+      "Part_Used": "Leaf",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of leaves is used in the treatment of sores, menstrual pain, hypertension, as a diuretic and to relieve stomach acid."
+    },
+    {
+      "﻿plant_id": "43",
+      "Scientific_Name": "Capsicum annuum L.",
+      "Arabic_Name": "فليفلة (Flefleh)",
+      "English_Name": "Chili Pepper",
+      "Part_Used": "Fruit",
+      "Cultivation": "Cultivated",
+      "Method_of_Use": "Fresh",
+      "Folk_Uses": "The fresh fruits are used for common cold, and are soaked in olive oil and used mainly for joint pain and back pain."
+    },
+    {
+      "﻿plant_id": "44",
+      "Scientific_Name": "Carissa edulis (Forssk.) Vahl",
+      "Arabic_Name": "عيرون (Airon)",
+      "English_Name": "Natal Plum",
+      "Part_Used": "Root",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoctiom of root is used topically for lichen disease."
+    },
+    {
+      "﻿plant_id": "45",
+      "Scientific_Name": "Carduus argentatus L.",
+      "Arabic_Name": "خرفيش صغير، شوك عنتر (Kharfiesh sagheer)",
+      "English_Name": "Silver Thistle",
+      "Part_Used": "Aerial Parts",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of aerial parts is used for liver diseases, hypoglycemia, and cases of infertility."
+    },
+    {
+      "﻿plant_id": "46",
+      "Scientific_Name": "Carduus pycnocephalus L.",
+      "Arabic_Name": "لسان الكلب، خرفيش (Lesan el-kalb)",
+      "English_Name": "Italian Thistle",
+      "Part_Used": "Leaf",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of leaves is used in the treatment of the gallbladder and liver diseases, hepatitis, diabetes and atherosclerosis. It is also used as a tunic, anti-worms agent, to reduce blood cholesterol levels, stimulate digestion and strengthen the appetite."
+    },
+    {
+      "﻿plant_id": "47",
+      "Scientific_Name": "Carex stenophylla Wahlenb.",
+      "Arabic_Name": "نميص (Namees)",
+      "English_Name": "Narrow-leaved Sedge",
+      "Part_Used": "Whole Plant",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of grass is used as diaphoretic and carminative."
+    },
+    {
+      "﻿plant_id": "48",
+      "Scientific_Name": "Cirsium vulgare (Savi) Ten.",
+      "Arabic_Name": "مقصيطة، قسيطة (Makseta)",
+      "English_Name": "Spear Thistle",
+      "Part_Used": "Aerial Parts",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Boiled",
+      "Folk_Uses": "The aerial parts of the plant are boiled, then squeezed and fried in oil and consumed as a nutrient."
+    },
+    {
+      "﻿plant_id": "49",
+      "Scientific_Name": "Carthamus tinctorius L.",
+      "Arabic_Name": "عصفر (Isfer)",
+      "English_Name": "Safflower",
+      "Part_Used": "Seed",
+      "Cultivation": "Cultivated",
+      "Method_of_Use": "Fresh",
+      "Folk_Uses": "The seed oil is used to prevent heart disease, dysmenorrhea, amenorrhea, postpartum abdominal pain, and pain of joints."
+    },
+    {
+      "﻿plant_id": "50",
+      "Scientific_Name": "Celosia cristata L.",
+      "Arabic_Name": "عرف الديك، القطيفة (Eurif aldiyk)",
+      "English_Name": "Cockscomb",
+      "Part_Used": "Leaf, Seed",
+      "Cultivation": "Cultivated",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of leaves is used as an antidiarrheal, decoction of seeds is used as a laxative in cases of cough, and dysarthria urination, and for pain relief."
+    },
+    {
+      "﻿plant_id": "51",
+      "Scientific_Name": "Centaurea calcitrapa L.",
+      "Arabic_Name": "كليبة، دردار (Kllybeh)",
+      "English_Name": "Purple Starthistle",
+      "Part_Used": "Leaf",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Fresh",
+      "Folk_Uses": "The fresh leaves are used as appetite enhancer, and for diarrhea. The cooked leaves are edible as special traditional Syrian recipe known as “Syrian saleeg”."
+    },
+    {
+      "﻿plant_id": "52",
+      "Scientific_Name": "Centaurea cyanus L.",
+      "Arabic_Name": "ندى العنبر (Nada amber)",
+      "English_Name": "Cornflower",
+      "Part_Used": "Flower",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Infusion",
+      "Folk_Uses": "An infusion of flowers is used for treating fever, constipation and urinary tract infections. Flower water is used topically as an antiseptic agent."
+    },
+    {
+      "﻿plant_id": "53",
+      "Scientific_Name": "Centaurium erythraea Rafn",
+      "Arabic_Name": "القنطريون الصغير، قنطارية (Kontareeh)",
+      "English_Name": "Common Centaury",
+      "Part_Used": "Aerial Parts",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Infusion",
+      "Folk_Uses": "An infusion of aerial parts is used for diabetes, digestive system disorders, and is topical in treatment of sores."
+    },
+    {
+      "﻿plant_id": "54",
+      "Scientific_Name": "Cephalanthera kurdica Bornm. ex Kraenzl.",
+      "Arabic_Name": "أوركيد (Orkid)",
+      "English_Name": "Kurdish Orchid",
+      "Part_Used": "Tuber",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Dried",
+      "Folk_Uses": "Orchid powder (Salep) is extracted from orchid tubers, and it is the main ingredient of the winter Syrian traditional drink with milk, which is used for reducing heartburn and indigestion."
+    },
+    {
+      "﻿plant_id": "55",
+      "Scientific_Name": "Cephalaria joppensis (Rchb.) Coult. ex DC.",
+      "Arabic_Name": "الطقطاق، الفوقعان (Tactak)",
+      "English_Name": "Joppa Scabious",
+      "Part_Used": "Leaf",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Infusion",
+      "Folk_Uses": "An infusion of leaves is used in the treatment of diabetes, digestive disorders, and as a laxative and diuretic."
+    },
+    {
+      "﻿plant_id": "56",
+      "Scientific_Name": "Ceratonia siliqua L.",
+      "Arabic_Name": "خروب، خرنوب (Carob)",
+      "English_Name": "Carob",
+      "Part_Used": "Fruit",
+      "Cultivation": "Cultivated",
+      "Method_of_Use": "Boiled",
+      "Folk_Uses": "The carob fruits are soaked in water (1 kilogram/two liters of water) for three hours, then boiled on a strong fire for evaporation of the water to obtain a syrup about an hour, then left to cool down. The liquid is then filtered with a clean piece of gauze, then two cups of sugar are added for sweetening and preservation. Afterwards, it is added to Damask rose water, then used for the treatment of heartburn, to reduce vomiting and constipation, and increase breast milk supply."
+    },
+    {
+      "﻿plant_id": "57",
+      "Scientific_Name": "Cercis siliquastrum L.",
+      "Arabic_Name": "الزمزريق، أرجوان الساحل (Zamzareek)",
+      "English_Name": "Judas Tree",
+      "Part_Used": "Flower, Bark",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Infusion",
+      "Folk_Uses": "Honey of the flower's nectar is used in the treatment of some diseases, such as anemia, general weakness, fatigue, and stress. An infusion of flowers and bark is used as a tonic, and for digestive disorders."
+    },
+    {
+      "﻿plant_id": "58",
+      "Scientific_Name": "Chrozophora tinctoria (L.) A.Juss.",
+      "Arabic_Name": "صفيرة (Sofyreh)",
+      "English_Name": "Dyer’s Croton",
+      "Part_Used": "Leaf",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Fresh",
+      "Folk_Uses": "The fresh leaves are used as diuretic, and for kidney stones."
+    },
+    {
+      "﻿plant_id": "59",
+      "Scientific_Name": "Cichorium intybus L.",
+      "Arabic_Name": "هندباء (Hinduba)",
+      "English_Name": "Chicory",
+      "Part_Used": "Leaf, Root",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Infusion",
+      "Folk_Uses": "An infusion of leaves is used for improving immunity, protecting the heart, in cancer cases, and for eye inflammation. The fresh leaves are used as diuretic, laxative, and for slimming purposes. The roasted roots are used for liver diseases, and leaves are edible as special salad."
+    },
+    {
+      "﻿plant_id": "60",
+      "Scientific_Name": "Cirsium amani Post.",
+      "Arabic_Name": "القصوان (Qaswan)",
+      "English_Name": "Amanus Thistle",
+      "Part_Used": "Leaf",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of leaves is used as expectorant and diuretic."
+    },
+    {
+      "﻿plant_id": "61",
+      "Scientific_Name": "Cistus creticus L.",
+      "Arabic_Name": "القريضة الوبرية، القريضة الكريتية (Koreda wabareeh)",
+      "English_Name": "Cretan Rockrose",
+      "Part_Used": "Leaf, Gum",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Infusion",
+      "Folk_Uses": "An infusion of leaves is used as an expectorant, and an emmenagogue. The gum of its tree is dissolved with olive oil and typically used for bronchitis."
+    },
+    {
+      "﻿plant_id": "62",
+      "Scientific_Name": "Cistus salviifolius L.",
+      "Arabic_Name": "القريضة البيضاء، القريضة ميرمية الأوراق  (Koreda bayda)",
+      "English_Name": "Sage-leaved Rockrose",
+      "Part_Used": "Aerial Parts",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of aerial parts is used as an anti-diarrheal and digestive tea, and for diabetes and gastrointestinal ulcers."
+    },
+    {
+      "﻿plant_id": "63",
+      "Scientific_Name": "Citrus limon (L.) Osbeck",
+      "Arabic_Name": "ليمون حامض (Limun hamd)",
+      "English_Name": "Lemon",
+      "Part_Used": "Fruit",
+      "Cultivation": "Cultivated",
+      "Method_of_Use": "Juice",
+      "Folk_Uses": "The fresh juice of fruits is used in the treatment of flu and common cold. The dried peels of fruits are used for diseases of stomach, intestine and urinary tract."
+    },
+    {
+      "﻿plant_id": "64",
+      "Scientific_Name": "Citrus × aurantium L.",
+      "Arabic_Name": "برتقال (Bortokal)",
+      "English_Name": "Bitter Orange",
+      "Part_Used": "Fruit",
+      "Cultivation": "Cultivated",
+      "Method_of_Use": "Juice",
+      "Folk_Uses": "The fresh juice of fruits is used as a refreshing, anti-cough and anti-flu drink. The aromatic essential oil of peels is used via inhalation as a decongestant."
+    },
+    {
+      "﻿plant_id": "65",
+      "Scientific_Name": "Clematis flammula L.",
+      "Arabic_Name": "الظيان، ياسمين بري (Zayyan)",
+      "English_Name": "Fragrant Virgin’s Bower",
+      "Part_Used": "Leaf, Flower",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Infusion",
+      "Folk_Uses": "The ancient use of the leaves and flowers is for gout and joint pain both orally as an infusion, and topically with olive oil, also the dried grinded leaves and flowers are used for vitiligo topically with a vinegar. Caution is advised due to reports of toxicity."
+    },
+    {
+      "﻿plant_id": "66",
+      "Scientific_Name": "Cochlearia officinalis L.",
+      "Arabic_Name": "حشيشة الملاعق (Hasheshate elmalaek)",
+      "English_Name": "Scurvy Grass",
+      "Part_Used": "Whole Plant, Aerial Parts",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Fresh",
+      "Folk_Uses": "A fresh herb that is used as tonic and nutritious agent; an infusion of aerial parts is used internally for joint pain and as a diuretic, while for external applications, a decoction is used as a mouthwash for diseases of the mouth, throat and larynx."
+    },
+    {
+      "﻿plant_id": "67",
+      "Scientific_Name": "Convolvulus betonicifolius Mill.",
+      "Arabic_Name": "المدادة البيضاء (Maddadeh byda)",
+      "English_Name": "Betony-leaved Bindweed",
+      "Part_Used": "Aerial Parts",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of aerial parts is used internally for fever, loss of memory, insomnia, and as antispasmodic, laxative, and diuretic."
+    },
+    {
+      "﻿plant_id": "68",
+      "Scientific_Name": "Convolvulus cantabrica L.",
+      "Arabic_Name": "المدادة  (Maddadeh)",
+      "English_Name": "Cantabrian Bindweed",
+      "Part_Used": "Leaf",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Infusion",
+      "Folk_Uses": "An infusion of leaves is used as diuretic, and for kidney stones."
+    },
+    {
+      "﻿plant_id": "69",
+      "Scientific_Name": "Convolvulus sepium L.",
+      "Arabic_Name": "لبلاب السياج (Leblab elsiaj)",
+      "English_Name": "Hedge Bindweed",
+      "Part_Used": "Root, Flower",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of roots and flowering herbs is used in the treatment constipation."
+    },
+    {
+      "﻿plant_id": "70",
+      "Scientific_Name": "Coriandrum sativum L.",
+      "Arabic_Name": "كزبرة برية (Kuzbara)",
+      "English_Name": "Coriander",
+      "Part_Used": "Seed",
+      "Cultivation": "Cultivated",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of seeds is used for intestinal inflammation, weight loss and intestinal gas, treating narrowed arteries, and diabetes."
+    },
+    {
+      "﻿plant_id": "71",
+      "Scientific_Name": "Cornus sanguinea subsp. australis (C.A.Mey.) Jáv.",
+      "Arabic_Name": "القرانية المدماة (Koraneh modamate)",
+      "English_Name": "Southern Dogwood",
+      "Part_Used": "Fruit, Flower",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Infusion",
+      "Folk_Uses": "An infusion of the fruits and flowers is used for joint pain, menstrual bleeding, and as tonic."
+    },
+    {
+      "﻿plant_id": "72",
+      "Scientific_Name": "Crataegus azarolus L.",
+      "Arabic_Name": "الزعرور الشائع (Zaaroor)",
+      "English_Name": "Azarole Hawthorn",
+      "Part_Used": "Fruit",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of fruits is used for cardiovascular diseases, hypertension, sexual weakness, cancer and diabetes."
+    },
+    {
+      "﻿plant_id": "73",
+      "Scientific_Name": "Crepis reuteriana Boiss. / Crepis syriaca (Bornm.) Babc. & Navashin",
+      "Arabic_Name": "سَراغَة خُفِّيَّة (Souraga)",
+      "English_Name": "Syrian Hawk’s-beard",
+      "Part_Used": "Whole Plant",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Fresh",
+      "Folk_Uses": "The fresh young leaves are so similar to the dandelion that they are confused, and this wild edible plant is used as salad to relieve joint diseases pain, and as an appetizer."
+    },
+    {
+      "﻿plant_id": "74",
+      "Scientific_Name": "Cupressus sempervirens L.",
+      "Arabic_Name": "سرو دائم الاخضرار (Saru akhdar)",
+      "English_Name": "Mediterranean Cypress",
+      "Part_Used": "Leaf",
+      "Cultivation": "Cultivated",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of leaves and cones is used as an antispasmodic and for treating colds, flu and sore throats. Externally, cypress oil is used for varicose veins and hemorrhoids and as anti-rheumatic."
+    },
+    {
+      "﻿plant_id": "75",
+      "Scientific_Name": "Cucurbita Pepo L.",
+      "Arabic_Name": "قرع الكوسا  (Kare elkousa)",
+      "English_Name": "Pumpkin",
+      "Part_Used": "Seed",
+      "Cultivation": "Cultivated",
+      "Method_of_Use": "Dried",
+      "Folk_Uses": "The dried and roasted seeds, and the oil are used to get rid of intestinal worms, especially tapeworms. It is also used for relieving the symptoms of benign prostatic hyperplasia in the elderly, and for vomiting in pregnant women; also for seasickness."
+    },
+    {
+      "﻿plant_id": "76",
+      "Scientific_Name": "Cyclamen persicum Mill.",
+      "Arabic_Name": "بخور مريم، الدغنينة (Bakhkhour Maryam)",
+      "English_Name": "Persian Cyclamen",
+      "Part_Used": "Leaf, Tuber",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Cooked",
+      "Folk_Uses": "Its leaves are wrapped with rice like vine leaves which is called (ybraq or warak enab) and cooked. It is used in cases of impotence by eating, the boiled herb is used for expelling abdominal worms, constipation, and joint pain; and to treat lack of sensation in the limbs in patients with diabetes and peptic ulcers. Externally, the tubers are used to treat boils, sores and festering wounds. The tuber is grinded and placed in a piece of cloth then placed on them, but it is toxic, so must be used carefully. Skin burns are also treated by drying leaves, grinding them and spraying their powder on the burns."
+    },
+    {
+      "﻿plant_id": "77",
+      "Scientific_Name": "Cynodon dactylon (L.) Pers.",
+      "Arabic_Name": "نجيل، ثيل، عكرش (Najeel)",
+      "English_Name": "Bermuda Grass",
+      "Part_Used": "Root",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of roots is used internally as bile tonic, fever repellent, anthelmintic, to get rid of toxins and joint pain, diuretic, and to help in in slimming down; and externally used for urticaria and skin eczema."
+    },
+    {
+      "﻿plant_id": "78",
+      "Scientific_Name": "Cydonia oblonga Mill.",
+      "Arabic_Name": "سفرجل (Sapharjal)",
+      "English_Name": "Quince",
+      "Part_Used": "Fruit",
+      "Cultivation": "Cultivated",
+      "Method_of_Use": "Juice",
+      "Folk_Uses": "The fruits juice is used for gastric acidity moderation, and as astringent and intestinal disinfectant. It contributes to the treatment of peptic ulcers and intestinal upsets, and in the treatment of diarrhea, intestinal infections and constipation. Quince is considered a diuretic and thus helps in cleaning the body from toxins, and commonly the fruits jam is prepared to use for the same medicinal and nutritional values mentioned above."
+    },
+    {
+      "﻿plant_id": "79",
+      "Scientific_Name": "Cynoglossum creticum Mill.",
+      "Arabic_Name": "لسان الكلب (Lisan elkalb)",
+      "English_Name": "Cretan Hound’s-tongue",
+      "Part_Used": "Leaf, Root",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Fresh or Dried",
+      "Folk_Uses": "Fresh or dried young leaves are used internally in the form of infusions or boiled as antipyretic and diuretic. It is useful for lung diseases, and as an antispasmodic. The decoction of roots is used as analgesic for cough, and the fresh leaves are used as salad. Externally the oil of the herb is used for sores, and for treatment of skin infections."
+    },
+    {
+      "﻿plant_id": "80",
+      "Scientific_Name": "Cyperus rotundus L.",
+      "Arabic_Name": "السعد (Sued)",
+      "English_Name": "Nutgrass",
+      "Part_Used": "Tuber, Seed",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of tuber part is used for digestion, bedwetting, diarrhea, diabetes, inflammation, and gastrointestinal disorders; the oil of seeds is used topically for permanent hair removal and burns."
+    },
+    {
+      "﻿plant_id": "81",
+      "Scientific_Name": "Dactylis glomerata L.",
+      "Arabic_Name": "الإصبعية المتكتلة العنقودية (Espaieeh)",
+      "English_Name": "Orchard Grass",
+      "Part_Used": "Root",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Boiled",
+      "Folk_Uses": "Boiled roots water is used for gargling to relief dental pain, and the decoction of boiled roots is applied to the skin to treat rash. Internally, boiled roots water is used as a diuretic, and for cystitis and joint pain."
+    },
+    {
+      "﻿plant_id": "82",
+      "Scientific_Name": "Datura stramonium L.",
+      "Arabic_Name": "داتورة (Datura)",
+      "English_Name": "Jimsonweed",
+      "Part_Used": "Root",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "Although it is a toxic plant, a decoction of roots is used for some skin diseases."
+    },
+    {
+      "﻿plant_id": "83",
+      "Scientific_Name": "Daucus carota L.",
+      "Arabic_Name": "جزر بري (Jazar barrieh)",
+      "English_Name": "Carrot",
+      "Part_Used": "Root, Leaf, Seed",
+      "Cultivation": "Cultivated",
+      "Method_of_Use": "Juice",
+      "Folk_Uses": "The juice of roots is used for intestinal infections, and stomach ulcers, and as diuretic for kidney patients. The leaves decoction is used as antiseptic for skin. The seeds decoction is used as diuretic for those with kidney problems. An infusion of the roots, leaves and seeds is used for acne, skin infections, and eczema."
+    },
+    {
+      "﻿plant_id": "84",
+      "Scientific_Name": "Dianthus strictus Banks ex Sol.",
+      "Arabic_Name": "قرنفل بري منتصب (Koronfel barrieh)",
+      "English_Name": "Upright Pink",
+      "Part_Used": "Fruit",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of fruits is used for toothache topically, and sometimes this decoction is used internally as liver tonic and laxative."
+    },
+    {
+      "﻿plant_id": "85",
+      "Scientific_Name": "Dianthus caryophyllus L.",
+      "Arabic_Name": "قرنفل بلدي، زهرة القطف(Koronfel baladi)",
+      "English_Name": "Carnation",
+      "Part_Used": "Bu",
+      "Cultivation": "Cultivated",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of buds is used in the treatment of gum infections, gastrointestinal disorder, wounds, throat, and used as vermifuge."
+    },
+    {
+      "﻿plant_id": "86",
+      "Scientific_Name": "Ecballium elaterium (L.) A. Rich.",
+      "Arabic_Name": "عجور الجقل (Ajour eljacal)",
+      "English_Name": "Squirting Cucumber",
+      "Part_Used": "Fruit",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Juice",
+      "Folk_Uses": "A fresh juice of fruits is used for liver diseases, jaundice and sinusitis by nasal administration (just one drop of juice is inhaled in each nostril).It is also used topically for eczema."
+    },
+    {
+      "﻿plant_id": "87",
+      "Scientific_Name": "Echinops viscosus Rchb.",
+      "Arabic_Name": "رأس العبد (Ras elabed)",
+      "English_Name": "Sticky Globe Thistle",
+      "Part_Used": "Stem, Root, Leaf",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of stem, root and leaf is used for renal disorders."
+    },
+    {
+      "﻿plant_id": "88",
+      "Scientific_Name": "Echium glomeratum Poir.",
+      "Arabic_Name": "حشيشة الأفعى، أخيون (Hasheshet elafaa)",
+      "English_Name": "Clustered Viper’s Bugloss",
+      "Part_Used": "Aerial Parts",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of aerial parts is used as folk remedy internally for dry mouth and belching, for rheumatic pain, treatment of diabetes, and as diuretic. It is also used topically for wound healing."
+    },
+    {
+      "﻿plant_id": "89",
+      "Scientific_Name": "Elymus repens L. Gould = Agropyron repens (L.) P.Beauv.",
+      "Arabic_Name": "نجيل (Najeel)",
+      "English_Name": "Couch Grass",
+      "Part_Used": "Root",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of roots is used as laxative, diuretic, and diaphoretic in cases of fever, cystitis."
+    },
+    {
+      "﻿plant_id": "90",
+      "Scientific_Name": "Ephedra campylopoda C.A.Mey.",
+      "Arabic_Name": "قضاب، علندة (Kodab)",
+      "English_Name": "Joint Pine",
+      "Part_Used": "Whole Plant",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of the whole herb is used for reducing arterial blood pressure and for respiratory diseases such as asthma and chest infections."
+    },
+    {
+      "﻿plant_id": "91",
+      "Scientific_Name": "Epipactis latifolia (L.) All.",
+      "Arabic_Name": "العنطريف، الغنطريف، الوليفة السحلبية(Antaref)",
+      "English_Name": "Broad-leaved Helleborine",
+      "Part_Used": "Tuber, Rm, Leaf",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of plant tubers is used in the treatment of gout, and joint pain. The rhizomes powder is used to treat nervous disorders, and for its aphrodisiac properties. Infusion of leaves is given in fever cases, and used as an enema in the cases of colitis, intestinal colic and hemorrhoids."
+    },
+    {
+      "﻿plant_id": "92",
+      "Scientific_Name": "Equisetum arvense L.",
+      "Arabic_Name": "ذنب الخيل (Zanab elkhyl)",
+      "English_Name": "Field Horsetail",
+      "Part_Used": "Leaf, Shoot",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Infusion",
+      "Folk_Uses": "An infusion of the leaves and shoots is used for kidney stones and has diuretic effect in gout cases."
+    },
+    {
+      "﻿plant_id": "93",
+      "Scientific_Name": "Eremopyrum orientale (L.) Jaub. & Spach.",
+      "Arabic_Name": "القمحاء الشرقية (Qamha sharkieh)",
+      "English_Name": "Eastern Wild Rye",
+      "Part_Used": "Root",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of roots is used to cleanse wounds."
+    },
+    {
+      "﻿plant_id": "94",
+      "Scientific_Name": "Eremostachys laciniata L. Bunge",
+      "Arabic_Name": "حزنبل (Hoznobul)",
+      "English_Name": "Cut-leaved Desert Candle",
+      "Part_Used": "Root, Flower",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of roots and flowers is used for allergy, headache, liver diseases, and as a sedative."
+    },
+    {
+      "﻿plant_id": "95",
+      "Scientific_Name": "Erica manipuliflora Salisb.",
+      "Arabic_Name": "عجرم، شيحان، خلنج، السمسمية (Ajram)",
+      "English_Name": "Autumn Heather",
+      "Part_Used": "Flower",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of flowers is used as diuretic, sedative, and in the treatment of gout and urinary tract infection. The heather honey is commonly used as tonic, expectorant, laxative, disinfectant for the respiratory tract, and useful in acute nephritis, bladder and urinary tract infections, prostate pain and enlargement, relieving nerve pain, treating insomnia and depression. It is also used as an anti-asthma, and anti-joint pain agent, in addition to its use in cases of dysmenorrhea."
+    },
+    {
+      "﻿plant_id": "96",
+      "Scientific_Name": "Eriobotrya japonica (Thunb.) Lindl.",
+      "Arabic_Name": "أكيدنيا (Akedenia)",
+      "English_Name": "Loquat",
+      "Part_Used": "Leaf",
+      "Cultivation": "Cultivated",
+      "Method_of_Use": "Infusion",
+      "Folk_Uses": "An infusion of leaves is used as a sedative and liver tonic, as well as for diabetes and respiratory diseases."
+    },
+    {
+      "﻿plant_id": "97",
+      "Scientific_Name": "Eruca sativa Miller.",
+      "Arabic_Name": "جرجير (Jarjeer)",
+      "English_Name": "Arugula",
+      "Part_Used": "Leaf, Seed",
+      "Cultivation": "Cultivated",
+      "Method_of_Use": "Fresh",
+      "Folk_Uses": "Fresh leaves are used in the treatment of sexual weakness and for blood purification, diabetes, and as an anti-toxicant. Oil from seeds is used as a tonic for hair, burns, and skin lesions. The leaves are edible as special salad."
+    },
+    {
+      "﻿plant_id": "98",
+      "Scientific_Name": "Eryngium creticum Lam.",
+      "Arabic_Name": "قرصعنة (Korsanneh)",
+      "English_Name": "Cretan Eryngo",
+      "Part_Used": "Root, Leaf",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of roots and leaves is used for liver diseases, poisonous insect bites, anemia and infertility problems. The whole plant is edible as special salad."
+    },
+    {
+      "﻿plant_id": "99",
+      "Scientific_Name": "Eucalyptus globulus Labill.",
+      "Arabic_Name": "كينا الشام (Kenna el-Sham)",
+      "English_Name": "Blue Gum",
+      "Part_Used": "Leaf",
+      "Cultivation": "Cultivated",
+      "Method_of_Use": "Infusion",
+      "Folk_Uses": "An infusion of leaves is used as inhalation solvent for respiratory diseases."
+    },
+    {
+      "﻿plant_id": "100",
+      "Scientific_Name": "Eupatorium album L.",
+      "Arabic_Name": "الغافثية  (Gapheceh)",
+      "English_Name": "White Thoroughwort",
+      "Part_Used": "Aerial Parts, Root",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Infusion",
+      "Folk_Uses": "An infusion of aerial part and roots is used as expectorant and diuretic."
+    },
+    {
+      "﻿plant_id": "101",
+      "Scientific_Name": "Euphorbia paralias L.",
+      "Arabic_Name": "الحلاب، اللبينة، الجيجان، حلبلوب (Halab)",
+      "English_Name": "Sea Spurge",
+      "Part_Used": "Root, Rhizome",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of roots and rhizomes is used for expectorating phlegm and relieving congestion of the respiratory system. It is also used for cases of gout and joint pain, and in cases of constipation."
+    },
+    {
+      "﻿plant_id": "102",
+      "Scientific_Name": "Ficus carica L.",
+      "Arabic_Name": "التين (At-tīn)",
+      "English_Name": "Fig",
+      "Part_Used": "Fruit",
+      "Cultivation": "Cultivated",
+      "Method_of_Use": "Dried",
+      "Folk_Uses": "The dried fruits are used externally for wounds, the latex is used topically for warts. A decoction of the fruits is used orally for catarrh, bronchitis, diabetes, hypertriglyceridemia, and as a laxative."
+    },
+    {
+      "﻿plant_id": "103",
+      "Scientific_Name": "Filipendula ulmaria L. Maxim.",
+      "Arabic_Name": "اكليل أبيض (Eklil abiad)",
+      "English_Name": "Meadowsweet",
+      "Part_Used": "Aerial Parts",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Infusion",
+      "Folk_Uses": "An infusion of aerial parts is used as a diuretic."
+    },
+    {
+      "﻿plant_id": "104",
+      "Scientific_Name": "Foeniculum vulgare L.",
+      "Arabic_Name": "شمرة (Shomra)",
+      "English_Name": "Fennel",
+      "Part_Used": "Seed",
+      "Cultivation": "Cultivated",
+      "Method_of_Use": "Infusion",
+      "Folk_Uses": "An infusion of seeds is used as a carminative, a digestive, and a diuretic. It is also used for increasing breast milk supply and in treatment of respiratory and gastrointestinal disorders."
+    },
+    {
+      "﻿plant_id": "105",
+      "Scientific_Name": "Frankenia hirsute L.",
+      "Arabic_Name": "الحمرة (Hamrah)",
+      "English_Name": "Hairy Sea Heath",
+      "Part_Used": "Whole Plant",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Topical",
+      "Folk_Uses": "The herb is used in cosmetics due to its astringent action."
+    },
+    {
+      "﻿plant_id": "106",
+      "Scientific_Name": "Fraxinus Syriaca L.",
+      "Arabic_Name": "دردار (Dardar)",
+      "English_Name": "Syrian Ash",
+      "Part_Used": "Leaf",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Infusion",
+      "Folk_Uses": "An infusion of leaves is used to facilitate digestion, treat tracheitis, and strengthen the immune system. It is famous for its honey which is called (Asal El-Dardar) meaning Syrian ash-tree honey."
+    },
+    {
+      "﻿plant_id": "107",
+      "Scientific_Name": "Fumana thymifolia (L.) Spach",
+      "Arabic_Name": "ورد الشمس (Ward elsham)",
+      "English_Name": "Thyme-leaved Fumana",
+      "Part_Used": "Aerial Parts",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Infusion",
+      "Folk_Uses": "An infusion of aerial parts is used in the treatment of common cold, flu and as a diuretic and an analgesic. It is recommended for cases of pain during menstruation."
+    },
+    {
+      "﻿plant_id": "108",
+      "Scientific_Name": "Galium aparine L.",
+      "Arabic_Name": "بلسكاء (Balsaka)",
+      "English_Name": "Cleavers",
+      "Part_Used": "Aerial Parts",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Infusion",
+      "Folk_Uses": "An infusion of aerial parts is used as a diuretic."
+    },
+    {
+      "﻿plant_id": "109",
+      "Scientific_Name": "Genista acanthoclada DC.",
+      "Arabic_Name": "الشويك (Shweek)",
+      "English_Name": "Thorny Broom",
+      "Part_Used": "Aerial Parts",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Infusion",
+      "Folk_Uses": "An infusion of aerial parts is used in the treatment of respiratory diseases, rheumatic disorders, diabetes and ulcer."
+    },
+    {
+      "﻿plant_id": "110",
+      "Scientific_Name": "Geranium crenophilum Boiss.",
+      "Arabic_Name": "إبرة الراعي، غرنوقي (Ebret elraee)",
+      "English_Name": "Crenate Geranium",
+      "Part_Used": "Flower",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Infusion",
+      "Folk_Uses": "An infusion of flowering herb is used as an analgesic and antiseptic. It is used topically to stop bleeding."
+    },
+    {
+      "﻿plant_id": "111",
+      "Scientific_Name": "Gladiolus segetum Ker Gawl.",
+      "Arabic_Name": "دم الغزال، سيف الغراب (Dam elgazal)",
+      "English_Name": "Field Gladiolus",
+      "Part_Used": "Aerial Parts",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Infusion",
+      "Folk_Uses": "An infusion of aerial parts is used in cases of stomachache, delayed menstruation, and gout."
+    },
+    {
+      "﻿plant_id": "112",
+      "Scientific_Name": "Glaucium flavum Crantz",
+      "Arabic_Name": "ماميثا صفراء، المزراق (Mametha safra)",
+      "English_Name": "Yellow Horned Poppy",
+      "Part_Used": "Whole Plant",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of the whole plant is used in the treatment of wounds, burns and hemorrhoids. It is also used in the form of cough medicine and as a mild sedative. It was used in the past as a diuretic and galactagogue."
+    },
+    {
+      "﻿plant_id": "113",
+      "Scientific_Name": "Gundelia tournifortii L.",
+      "Arabic_Name": "سلبين، عكوب (Akkoub)",
+      "English_Name": "Tumble Thistle",
+      "Part_Used": "Root, Seed, Leaf",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of roots and stems is used for improving digestion, increasing sexual ability in both sexes, and treating diabetes. It is also used as liver tonic, and an anti-constipation agent. The fresh leaves are used in traditional recipes of food after removing the spines, where it is boiled and then fried in ghee or olive oil."
+    },
+    {
+      "﻿plant_id": "114",
+      "Scientific_Name": "Hedera helix L.",
+      "Arabic_Name": "لبلاب  (Leblab)",
+      "English_Name": "Ivy",
+      "Part_Used": "Leaf",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Topical",
+      "Folk_Uses": "The multiple types of this plant in Syria, including the small \"ivy\", the madadeh Calystegia sepium (L.) R. Br., the Convolvulus arvensis L. field ivy, the \"crow's cowl\", and the commonly used is the Convolvulus althaeoides L. \"khatami ivy\" are widely spread in coastal villages, and used as animal fodder because they contain great nutritional value that reflect positively on production. Also a decoction of leaves is used externally in treatment of joint pain and warts, sores, wounds, burns, and fingernails as a dermal paste which it is placed on the affected places."
+    },
+    {
+      "﻿plant_id": "115",
+      "Scientific_Name": "Hibiscus esculentus L.",
+      "Arabic_Name": "بامياء (Bamieh)",
+      "English_Name": "Okra",
+      "Part_Used": "Fruit, Seed, Pod",
+      "Cultivation": "Cultivated",
+      "Method_of_Use": "Fresh or Dried",
+      "Folk_Uses": "An edible pod-like fruits that can be used fresh or dried. An infusion of the roasted seeds is used to treat diabetes. It also facilitates the digestion process, due to its high content of fiber. It is used in the treatment of sore throats, joint pain, asthma, and urinary infections."
+    },
+    {
+      "﻿plant_id": "116",
+      "Scientific_Name": "Hordeum bulbosum L.",
+      "Arabic_Name": "الشعير البصيلي، شعير بري (Shaeer bosaily)",
+      "English_Name": "Bulbous Barley",
+      "Part_Used": "Whole Plant",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Infusion",
+      "Folk_Uses": "The barley water as an infusion is used for chest pain and coughs; and topically for scabies, and melisma conditions. The barley tea as a decoction is used as diuretic and anti-constipation agent, and for the treatment of common colds and nerve infections. The sprouted barley is used as antioxidant."
+    },
+    {
+      "﻿plant_id": "117",
+      "Scientific_Name": "Humulus lupulus L.",
+      "Arabic_Name": "جنجل، حشيشة الدينار(Gengel)",
+      "English_Name": "Hops",
+      "Part_Used": "Flower",
+      "Cultivation": "Cultivated",
+      "Method_of_Use": "Infusion",
+      "Folk_Uses": "An infusion of flowering parts is used as anxiolytic, and digestive tonic."
+    },
+    {
+      "﻿plant_id": "118",
+      "Scientific_Name": "Hypecoum pendulum L.",
+      "Arabic_Name": "بربارة بندولية (Barbara penduleh)",
+      "English_Name": "Sickle-fruited Hypecoum",
+      "Part_Used": "Root",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of roots is used as diaphoretic and diuretic."
+    },
+    {
+      "﻿plant_id": "119",
+      "Scientific_Name": "Hypericum perforatum L.",
+      "Arabic_Name": "حشيشة القلب (Hashesheta elqalb)",
+      "English_Name": "St. John’s Wort",
+      "Part_Used": "Aerial Parts",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Infusion",
+      "Folk_Uses": "An infusion of aerial parts is used internally for cases of constipation and spasms, and as antiseptic and analgesic. Externally, it is used for the treatment of wounds and ulcers."
+    },
+    {
+      "﻿plant_id": "120",
+      "Scientific_Name": "Hypericum triquetrifolium Turra.",
+      "Arabic_Name": "عرن (Aran)",
+      "English_Name": "Wavy-leaved St. John’s Wort",
+      "Part_Used": "Flower",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Infusion",
+      "Folk_Uses": "An infusion of flowers is used as anxiolytic, and for gastric spasm."
+    },
+    {
+      "﻿plant_id": "121",
+      "Scientific_Name": "Inula viscosa L.",
+      "Arabic_Name": "الطيون (At-tayun)",
+      "English_Name": "Sticky Fleabane",
+      "Part_Used": "Leaf, Flower",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of leaves is used externally for burns, wounds, cutaneous leishmaniasis, and the oil of the flowers is prepared in olive oil for topical use. It is used orally for anemia, respiratory problems, ulcers of the gums, and diarrhea."
+    },
+    {
+      "﻿plant_id": "122",
+      "Scientific_Name": "Iris unguicularis Poir.",
+      "Arabic_Name": "عوينات، غزيّل، سوسن كريت (Aouenate)",
+      "English_Name": "Algerian Iris",
+      "Part_Used": "Seed, Leaf, Rhizome, Flower",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Infusion",
+      "Folk_Uses": "An infusion of seeds, rhizomes, leaves and flowers is used for treating colds, influenza, malaria, toothache, trauma and diabetes. The volatile oil is used for preparing perfume, and is used due to its aromatic smell which is close to the smell of violet."
+    },
+    {
+      "﻿plant_id": "123",
+      "Scientific_Name": "Jasminum fruticans L.",
+      "Arabic_Name": "ياسمين بري (Yasmin bari)",
+      "English_Name": "Wild Jasmine",
+      "Part_Used": "Flower",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Infusion",
+      "Folk_Uses": "An infusion of flowers is used internally to relieve liver pain resulting from inflammation. It is also used in the treatment of stomachache, intestinal pain and headache which result from sunstroke. It is also used externally in the treatment of skin ulcers and burns."
+    },
+    {
+      "﻿plant_id": "124",
+      "Scientific_Name": "Juglans regia L.",
+      "Arabic_Name": "جوز (Jauz)",
+      "English_Name": "Walnut",
+      "Part_Used": "Seed, Fruit, Leaf",
+      "Cultivation": "Cultivated",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of seeds and leaves is used orally for sexual impotence, blood purification, lymph gland enlargement, and bleeding. Topically, it is used for scrofula disease, sores, and blisters. The fresh fruits are used for weak memory, and to strengthen immunity."
+    },
+    {
+      "﻿plant_id": "125",
+      "Scientific_Name": "Juncus acutus L.",
+      "Arabic_Name": "أسل، سمار مر (Asel)",
+      "English_Name": "Sharp Rush",
+      "Part_Used": "Seed, Root",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "This is a toxic plant, but rarely a decoction of seeds is used in the treatment of diarrhea, anemia, and as hypoallergenic. A decoction of roots is used in the treatment of some skin diseases."
+    },
+    {
+      "﻿plant_id": "126",
+      "Scientific_Name": "Juniperus communis L.",
+      "Arabic_Name": "عرعر (Arâr)",
+      "English_Name": "Common Juniper",
+      "Part_Used": "Fruit",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of fruits is used for joint pain, paralysis, tuberculosis, anemia, urinary tract infection, and as a diuretic."
+    },
+    {
+      "﻿plant_id": "127",
+      "Scientific_Name": "Juniperus drupacea Labill.",
+      "Arabic_Name": "عدريش، عرعر سوري (Adrish)",
+      "English_Name": "Syrian Juniper",
+      "Part_Used": "Fruit",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of Syrian juniper fruits is used for treating nervous disorders, kidney and bladder diseases, and used as antispasmodic."
+    },
+    {
+      "﻿plant_id": "128",
+      "Scientific_Name": "Juniperus oxycedrus L.",
+      "Arabic_Name": "شربين (Sherpeen)",
+      "English_Name": "Prickly Juniper",
+      "Part_Used": "Fruit",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "Decoction of berries was used internally as tea for diabetes, obesity, bronchitis, and pneumonia. Externally, it is used for chronic eczema and other several skin diseases."
+    },
+    {
+      "﻿plant_id": "129",
+      "Scientific_Name": "Lactuca saligna L.",
+      "Arabic_Name": "خس بري ",
+      "English_Name": "Willow-leaved Lettuce",
+      "Part_Used": "Leaf",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of leaves drink is taken before bedtime for those who suffer from insomnia. Because of its analgesic property, it is used to relieve intestinal colic pain in cases of irritable bowel syndrome. It is used in mental illnesses as a sedative for nerves and as a remedy for tension, frustration, and epilepsy. It also eliminates depression. The leaves infusion is used to increase sweating, relieve gout pain, and as antipyretic, diuretic, and to remove stones from the kidneys. Other uses include quenching thirst, and in cases of summer heat and sunstroke, as a tonic, and an aperitif. A decoction of leaves is used externally as a tonic for hair."
+    },
+    {
+      "﻿plant_id": "130",
+      "Scientific_Name": "Lamium album L.",
+      "Arabic_Name": " (Khas bari)",
+      "English_Name": "White Deadnettle",
+      "Part_Used": "Flower",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of flowers without calyx is used as analgesic and for gynecological diseases."
+    },
+    {
+      "﻿plant_id": "131",
+      "Scientific_Name": "Lathyrus aphaca L.",
+      "Arabic_Name": "لاميون (Lamiun)",
+      "English_Name": "Yellow Vetchling",
+      "Part_Used": "Seed",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Cooked",
+      "Folk_Uses": "The seed - cooked and used only when immature - is used for respiratory tract infection, anti-obesity, and anti-constipation."
+    },
+    {
+      "﻿plant_id": "132",
+      "Scientific_Name": "Lagenaria siceraria (Molina) Standl.",
+      "Arabic_Name": "جلبان بري (Jelban bari)",
+      "English_Name": "Bottle Gourd",
+      "Part_Used": "Seed",
+      "Cultivation": "Cultivated",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of seed and its oil is used internally for cases of hypertension, and for kidney diseases as diuretic. It is also useful for liver, stomach, intestine, diabetes, obesity, and for removing worms. Topically, it is used for rashes."
+    },
+    {
+      "﻿plant_id": "133",
+      "Scientific_Name": "Laurus nobilis L.",
+      "Arabic_Name": "غار (Gar)",
+      "English_Name": "Bay Laurel",
+      "Part_Used": "Leaf, Fruit",
+      "Cultivation": "Cultivated",
+      "Method_of_Use": "Topical and Oral",
+      "Folk_Uses": "The industry of Aleppo laurel soap in Syria from laurel oil is famous in the Syrian coast, especially the Kassab region, with olive oil. This industry has increasingly developed that it produces one of the best types of soap in the world. An infusion of leaves is used to treat common cold, flu, bronchitis, to facilitate digestion, appetite, and in the treatment of stomach and intestinal infections, diabetes, relief from fatigue and psychological frustration. It is also used as body refreshment, and for migraine and headache relief. Gargling with laurel leaves water helps to clean the mouth, throat and nose, and to calm toothache. Laurel fruits oil is used externally to relieve joint pain, and muscle pain, treat mycosis, skin diseases, psoriasis, and to treat boils and premolars. Aromatic laurel leaves water is used for cosmetic purposes, to cleanse the face, and to relieve acne and pimples."
+    },
+    {
+      "﻿plant_id": "134",
+      "Scientific_Name": "Lavandula stoechas L.",
+      "Arabic_Name": "خزامى (Khozama)",
+      "English_Name": "French Lavender",
+      "Part_Used": "Aerial Parts",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of aerial parts is used as an antispasmodic in colic pain and for various diseases of the central nervous system, such as epilepsy and migraine. It is also used in the treatment of urinary tract infections, as an analgesic, sedative and antiseptic, while a decoction of aerial parts is used topically for wounds, and eczema."
+    },
+    {
+      "﻿plant_id": "135",
+      "Scientific_Name": "Malva sylvestris L.",
+      "Arabic_Name": "خبيزة (Khobezeh)",
+      "English_Name": "Common Mallow",
+      "Part_Used": "Leaf, Flower",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of leaves is used in cases of bronchitis, cough accompanied by dry sputum that makes it easier to pass, harshness of the voice, and as a sedative to relieve minor pain and inflammation of the membranes. It can also be used to treat inflammation of the digestive system and is useful in relieving constipation, ulcers, hemorrhoids, and urinary system infections. It is used as diuretics, and in cases of asthenia. It can also be used externally to treat skin diseases such as: wounds, sores, insect stings and hemorrhoids. A decoction of flowers is used as a pain reliever for throat pain and used as a gargle for the mouth and throat. Also the mucilage of leaves is useful for the skin and used in preparing cosmetic creams that nourish the skin and remove wrinkles. It is also used in the manufacture of soap and shampoo. Making dips with the boiled leaves soothes uterine congestion."
+    },
+    {
+      "﻿plant_id": "136",
+      "Scientific_Name": "Lepidium sativum L.",
+      "Arabic_Name": "رشاد (Rashad)",
+      "English_Name": "Garden Cress",
+      "Part_Used": "Leaf, Seed",
+      "Cultivation": "Cultivated",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of leaves is used for kidney disorders, kidney stones; as a diuretic, a tonic; to increase breast milk supply and regulate menstrual cycle. It is also used to reduce levels of sugar, triglyceride, and cholesterol in blood. The oil of seeds is used as a hair tunic. "
+    },
+    {
+      "﻿plant_id": "137",
+      "Scientific_Name": "Linum pubescens L.",
+      "Arabic_Name": "كتان (kettan)",
+      "English_Name": "Hairy Flax",
+      "Part_Used": "Seed",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Fresh or Dried",
+      "Folk_Uses": "Seeds oil is used as laxative and in obesity cases. The seeds are used in treatment of urinary tract infections and hypertriglyceridemia."
+    },
+    {
+      "﻿plant_id": "138",
+      "Scientific_Name": "Lonicera orientalis Lam.",
+      "Arabic_Name": "سلطان الجبل، العسلة البرية (Asaleh)",
+      "English_Name": "Eastern Honeysuckle",
+      "Part_Used": "Aerial Parts",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Infusion",
+      "Folk_Uses": "An infusion of aerial parts is used for respiratory infections."
+    },
+    {
+      "﻿plant_id": "139",
+      "Scientific_Name": "Lotus corniculatus L.",
+      "Arabic_Name": "قرن الغزال، لوتس قريني (Karn elgazal)",
+      "English_Name": "Bird’s-foot Trefoil",
+      "Part_Used": "Root, Tuber",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Infusion",
+      "Folk_Uses": "An infusion of roots is used for constipation, snakebite, prostate diseases, and peptic ulcers. It helps eliminate the problem of frequent urination, cough, joint pain, and diarrhea. The tubers powder is used externally in elimination of boils and burns, especially in diabetics, and in the treatment of fungi and nail fungi that grow on the skin."
+    },
+    {
+      "﻿plant_id": "140",
+      "Scientific_Name": "Lotus gebelia Vent.",
+      "Arabic_Name": "رجل العصفور الجبلية (Rejel el-asphor aljabalyeh)",
+      "English_Name": "Gebel’s Trefoil",
+      "Part_Used": "Root",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of roots is used as diaphoretic and carminative."
+    },
+    {
+      "﻿plant_id": "141",
+      "Scientific_Name": "Malus sylvestris L. Mill.",
+      "Arabic_Name": "تفاح (Tofah)",
+      "English_Name": "Crab Apple",
+      "Part_Used": "Fruit",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Topical and Oral",
+      "Folk_Uses": "Apple cider vinegar is used orally for slimming and reducing blood lipids; and externally in the treatment of skin diseases, corns’ removal, as an antiseptic, and for lichen treatment."
+    },
+    {
+      "﻿plant_id": "142",
+      "Scientific_Name": "Marrubium vulgare L.",
+      "Arabic_Name": "فراسيون أبيض، حشيشة الكلاب (Fraceon abyad)",
+      "English_Name": "White Horehound",
+      "Part_Used": "Leaf",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of leaves is used as expectorant."
+    },
+    {
+      "﻿plant_id": "143",
+      "Scientific_Name": "Matricaria aurea (Loefl.) Sch.Bip.",
+      "Arabic_Name": "بابونج ذهبي (Babunaj dahabi)",
+      "English_Name": "Golden Chamomile",
+      "Part_Used": "Flower",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "The flower decoction or infusion is used orally for fever, cough treatment, heart diseases, chest pain, headache, and kidney stones. It is used externally to treat skin infections, burns, wounds, and eczema."
+    },
+    {
+      "﻿plant_id": "144",
+      "Scientific_Name": "Matricaria chamomilla L. (Loefl) Sch.Bip.",
+      "Arabic_Name": "بابونج عادي (Babunaj a'adi)",
+      "English_Name": "Wild Chamomile",
+      "Part_Used": "Flower",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "The flower decoction or infusion is used orally for chest diseases, treatment of stomach ache, diabetes, and as an antispasmodic."
+    },
+    {
+      "﻿plant_id": "145",
+      "Scientific_Name": "Medicago ciliaris (L.) Krock.",
+      "Arabic_Name": "فصة (Fasa)",
+      "English_Name": "Ciliate Medick",
+      "Part_Used": "Flower, Leaf",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Infusion",
+      "Folk_Uses": "An infusion of flowers and leaves is used in the treatment of menopause, diabetes, respiratory infections, dermatitis, gastrointestinal disorders, joint pain, and kidney problems. It also helps to increase breast milk supply, and to relieve coughing."
+    },
+    {
+      "﻿plant_id": "146",
+      "Scientific_Name": "Melia azedarach L.",
+      "Arabic_Name": "الزنزلخت، ازدرخت (Zanzalakht)",
+      "English_Name": "Chinaberry",
+      "Part_Used": "Seed, Leaf",
+      "Cultivation": "Cultivated",
+      "Method_of_Use": "Topical",
+      "Folk_Uses": "The tree is a repellent to insects and mosquitoes, and the seed oil is used externally to strengthen and lengthen hair, to treat eczema, cramping pain and nerve pain. The boiled leaves are also used to prevent hair loss. Also housewives put daisies and leaves under bedsheets and carpets to prevent moth."
+    },
+    {
+      "﻿plant_id": "147",
+      "Scientific_Name": "Melica angustifolia Boiss. & Blanche.",
+      "Arabic_Name": "مليقة ضيقة (Malika dayka)",
+      "English_Name": "Narrow-leaved Melic Grass",
+      "Part_Used": "Flower",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of flowers is used as diuretics, antispasmodic, analgesic and to treat stomachache. One of the uses of this plant is as bundles in small bags placed in wardrobes for its pleasant scent."
+    },
+    {
+      "﻿plant_id": "148",
+      "Scientific_Name": "Lippia citriodora (Palau) Kunth",
+      "Arabic_Name": "مليسة، حشيشة النحل (Mellisa)",
+      "English_Name": "Lemon Verbena",
+      "Part_Used": "Leaf",
+      "Cultivation": "Cultivated",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of leaves is used orally as carminative and antispasmodic. It is also used to relieve depression, anxiety, cough and respiratory infection."
+    },
+    {
+      "﻿plant_id": "149",
+      "Scientific_Name": "Mentha pulegium L.",
+      "Arabic_Name": "نعناع بري (Nana bari)",
+      "English_Name": "Pennyroyal",
+      "Part_Used": "Leaf",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of leaves is used orally as an antiseptic, a diaphoretic, a sedative, and an antispasmodic. It is also used for menstrual complaints, itching, common cold, and respiratory tract disorder"
+    },
+    {
+      "﻿plant_id": "150",
+      "Scientific_Name": "Menyanthes trifoliata L.",
+      "Arabic_Name": "نفل الماء (Nafl elmaa)",
+      "English_Name": "Bogbean",
+      "Part_Used": "Leaf",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of leaves is used for treating joint pain, improving digestion, increasing appetite and weight, stimulating secretion of glands, and as a tonic."
+    },
+    {
+      "﻿plant_id": "151",
+      "Scientific_Name": "Michauxia campanuloides L'Hér.",
+      "Arabic_Name": "شلفون حرّاق، فرقعون (Kafraoun)",
+      "English_Name": "Bellflower Michauxia",
+      "Part_Used": "Root, Stem, Leaf",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Fresh",
+      "Folk_Uses": "Roots and stems are peeled and eaten raw. Young leaves are sautéed with onions and oil to be consumed as a nutritious and digestive stimulant."
+    },
+    {
+      "﻿plant_id": "152",
+      "Scientific_Name": "Micromeria myrtifolia Boiss. & Hohen.",
+      "Arabic_Name": "زوفا (Zufa)",
+      "English_Name": "Myrtle-leaved Micromeria",
+      "Part_Used": "Leaf",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of leaves is used externally for wounds, sores, skin diseases; and orally for colic, cold, heart diseases, digestive system, asthma, as an expectorant, and a carminative."
+    },
+    {
+      "﻿plant_id": "153",
+      "Scientific_Name": "Myrtus communis L.",
+      "Arabic_Name": "آس، حنبلاس (Aass)",
+      "English_Name": "Myrtle",
+      "Part_Used": "Leaf",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of leaves is used for diarrhea, respiratory tract diseases, and topically for hemorrhoids."
+    },
+    {
+      "﻿plant_id": "154",
+      "Scientific_Name": "Nigella sativa L.",
+      "Arabic_Name": "حبة البركة (Habbet barakeh)",
+      "English_Name": "Black Cumin",
+      "Part_Used": "Seed",
+      "Cultivation": "Cultivated",
+      "Method_of_Use": "Dried",
+      "Folk_Uses": "Seeds are grounded finely and used as an expectorant, a carminative, an antispasmodic, and for impotence in males, in addition to its use as blood glucose stabilizer. Oil of the seeds is used topically in the treatment of skin diseases, and hair growth purposes; and orally to strengthen immunity."
+    },
+    {
+      "﻿plant_id": "155",
+      "Scientific_Name": "Nerium oleander L.",
+      "Arabic_Name": "دفلة (Dephleh)",
+      "English_Name": "Oleander",
+      "Part_Used": "Fruit, Root",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Juice",
+      "Folk_Uses": "It is a toxic plant; the juice of fruits is rarely used topically with careful administration for anal fissure. The oil which is extracted from the peel of the roots is used topically for treating psoriasis disease and dandruff cases."
+    },
+    {
+      "﻿plant_id": "156",
+      "Scientific_Name": "Olea europaea L.",
+      "Arabic_Name": "زيتون (Zaitoon)",
+      "English_Name": "Olive",
+      "Part_Used": "Leaf",
+      "Cultivation": "Cultivated",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of leaves is used for diabetes, hypertension, and for slimming purposes; the olive oil is used for coughing, vasodilator, laxative, hyperacidity and kidney stones. It is used topically for skin diseases."
+    },
+    {
+      "﻿plant_id": "157",
+      "Scientific_Name": "Ononis hirta Poir. & Ononis Spinosa L.",
+      "Arabic_Name": "شبرق أشعث (Shabrak)",
+      "English_Name": "Spiny Rest-harrow",
+      "Part_Used": "Root, Flower, Leaf",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of roots is used in the treatment of kidney and bladder stones, as diuretic, for gout, cystitis, excessive fluid retention and joint pain. It is also popularly used for slimming purposes and as antitussive. Externally, it was used for the healing of wounds, eczema and other skin disorders. An infusion of leaves and flowers is used as astringent, and antiseptic."
+    },
+    {
+      "﻿plant_id": "158",
+      "Scientific_Name": "Opuntia ficus-indica L. Mill.",
+      "Arabic_Name": "تين الصبار (Tīn alsabr)",
+      "English_Name": "Prickly Pear",
+      "Part_Used": "Fruit, Leaf",
+      "Cultivation": "Cultivated",
+      "Method_of_Use": "Fresh",
+      "Folk_Uses": "Fresh fruits and leaves extract or juice is used orally as laxative, anti-inflammatory, carminative, digestive, and is used topically for sun burns, skin care, burns, and wounds."
+    },
+    {
+      "﻿plant_id": "159",
+      "Scientific_Name": "Origanum syriacum L.",
+      "Arabic_Name": "زوبع، مردقوش، زعتر خليلي (Zoba'a)",
+      "English_Name": "Syrian Oregano",
+      "Part_Used": "Aerial Parts",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of aerial parts is used for catarrh, headache, joint pain, neck stiffness, stomach cramps and discomfort, indigestion, cholesterol reduction. It is also used as carminative, antiseptic, expectorant and diuretic."
+    },
+    {
+      "﻿plant_id": "160",
+      "Scientific_Name": "Scandix pecten-veneris L.",
+      "Arabic_Name": "الحرتمنة (Hortmeneh)",
+      "English_Name": "Shepherd’s Needle",
+      "Part_Used": "Whole Plant",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Cooked",
+      "Folk_Uses": "It is cooked as a mixture with other types of edible herbs, and this is called (marshousheh)."
+    },
+    {
+      "﻿plant_id": "161",
+      "Scientific_Name": "Oryzopsis miliacea L. Asch.& Schweinf.",
+      "Arabic_Name": "الرزية الناعمة (Rezieh naemeh)",
+      "English_Name": "Smilo Grass",
+      "Part_Used": "Whole Plant, Root",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of grass and roots is used as diuretic."
+    },
+    {
+      "﻿plant_id": "162",
+      "Scientific_Name": "Osyris alba L.",
+      "Arabic_Name": "المكنس (Maknis)",
+      "English_Name": "White Osyris",
+      "Part_Used": "Whole Plant",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of the whole plant is used rarely for diarrhea and dysentery."
+    },
+    {
+      "﻿plant_id": "163",
+      "Scientific_Name": "Paliurus spina-christi Mill.",
+      "Arabic_Name": "شبهان، شوك المسيح  (Shabhan)",
+      "English_Name": "Christ’s Thorn",
+      "Part_Used": "Fruit",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of fruits is used as anti-rheumatic, diuretic, antihypertensive, for diarrhea, and lowering cholesterol and triglyceride levels in the blood."
+    },
+    {
+      "﻿plant_id": "164",
+      "Scientific_Name": "Anemone coronaria L.",
+      "Arabic_Name": "شقائق النعمان (Shakaek alnuman)",
+      "English_Name": "Crown Anemone",
+      "Part_Used": "Flower",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of flowers is used for whooping cough, headache, and has a hypnotic effect, and analgesic, as it relieves stress."
+    },
+    {
+      "﻿plant_id": "165",
+      "Scientific_Name": "Paronychia argentea Lam.",
+      "Arabic_Name": "زهرة الماسة (Zahret el-maseh)",
+      "English_Name": "Silvery Paronychia",
+      "Part_Used": "Flower",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Infusion",
+      "Folk_Uses": "An infusion of flowers is used as diuretic, and for kidney stones."
+    },
+    {
+      "﻿plant_id": "166",
+      "Scientific_Name": "Petroselinum sativum Hoffm.",
+      "Arabic_Name": "بقدونس (Bakdoones)",
+      "English_Name": "Parsley",
+      "Part_Used": "Whole Plant",
+      "Cultivation": "Cultivated",
+      "Method_of_Use": "Infusion",
+      "Folk_Uses": "An infusion of whole plant is used for anemia, to calms nerves, for treating bruises, insect bites and rough skin, and as anti-toxic. It also helps reduce inflammation and also helps cleanse the liver."
+    },
+    {
+      "﻿plant_id": "167",
+      "Scientific_Name": "Phaseolus vulgaris L.",
+      "Arabic_Name": "فاصولياء (Phasolieh)",
+      "English_Name": "Common Bean",
+      "Part_Used": "Fruit, Bud",
+      "Cultivation": "Cultivated",
+      "Method_of_Use": "Boiled",
+      "Folk_Uses": "The fruits are boiled and taken as diuretic and for treatment of kidney diseases, diabetes, joint diseases and joint pain. Also, it is topically used by grinding the buds and placing them in the form of dermal paste on the affected area."
+    },
+    {
+      "﻿plant_id": "168",
+      "Scientific_Name": "Phlomis longifolia Boiss. & Blanche",
+      "Arabic_Name": "اللهيب، العيزارة (Laheeb)",
+      "English_Name": "Long-leaved Jerusalem Sage",
+      "Part_Used": "Aerial Parts",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Infusion",
+      "Folk_Uses": "It is a bee plant and a source of nectar and pollen. An infusion of aerial parts is used for cases of rotting and pus."
+    },
+    {
+      "﻿plant_id": "169",
+      "Scientific_Name": "Phragmites communis Trin.",
+      "Arabic_Name": "القصب البري (Kasab bari)",
+      "English_Name": "Common Reed",
+      "Part_Used": "Stem, Root",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of stems and roots is used as diuretic; also the ashes of plants with apple cider vinegar are used in the treatment of alopecia. Peasants sometimes use the green parts of the plant after cutting it to prepare organic fertilizers."
+    },
+    {
+      "﻿plant_id": "170",
+      "Scientific_Name": "Phillyrea media L.",
+      "Arabic_Name": "الزرود البيبود (Zarwd)",
+      "English_Name": "Mock Privet",
+      "Part_Used": "Whole Plant",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Infusion",
+      "Folk_Uses": "An infusion of the plant is used as diuretic, and for menstrual pain, and as mouthwash."
+    },
+    {
+      "﻿plant_id": "171",
+      "Scientific_Name": "Pistacia atlantica Desf.",
+      "Arabic_Name": "بطم (Batm)",
+      "English_Name": "Atlas Pistachio",
+      "Part_Used": "Fruit, Gum",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Fresh",
+      "Folk_Uses": "The fruits of the mastic are called green ivory in the Syrian countryside; fresh green fruits are used in the treatment of liver diseases, tumors, joint diseases, cold, headaches, and joint pain. Gum tree is useful in treating scabies, wounds and fungal diseases. Moreover, the traditional Jarmashi bread is made from the fruits of the mastic, where the green fruits give it a delicious taste and provide great energy and vitality. Mastic tree keeps poisonous insects away."
+    },
+    {
+      "﻿plant_id": "172",
+      "Scientific_Name": "Pinus brutia Ten.",
+      "Arabic_Name": "صنوبر بروتي (Sanobar bruti)",
+      "English_Name": "Turkish Pine",
+      "Part_Used": "Bark, Gum, Resin",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of bark is used topically for wounds as a soothing plaster. A boiled extract of the gum of Calabrian pine is also used as a pain reliever for joint pain, and the resin is used for colds, constipation and chronic bronchitis. Externally, the tar was incorporated into an ointment, or tar shampoo, and employed as remedy for such chronic skin diseases as psoriasis, eczema, and similar skin problems. It is used internally for hemorrhoids, as astringent for diarrhea, and in cough remedies."
+    },
+    {
+      "﻿plant_id": "173",
+      "Scientific_Name": "Pinus halepensis Mill.",
+      "Arabic_Name": "صنوبر حلبي (Sanobar halabi)",
+      "English_Name": "Aleppo Pine",
+      "Part_Used": "Bark, Bud, Seed",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Infusion",
+      "Folk_Uses": "The infusion of bark, buds and needles is used in the treatment of kidney and bladder diseases, as antihelminthic, antiseptic and diuretic. Other uses include treatment of mucous membranes and respiratory diseases, such as: colds, coughs, tuberculosis, influenza, bronchitis, and stuffy nose, and in herbal baths as a treatment for rheumatic diseases. It is used in the form of compresses, and pine seed oil is used in the treatment of cold, and joint pain symptoms, and is also useful for various skin problems, such as: wounds, burns, boils, and sores, and to relieve muscle and nerve pain."
+    },
+    {
+      "﻿plant_id": "174",
+      "Scientific_Name": "Pistacia lentiscus L.",
+      "Arabic_Name": "بطم عدسي، المستكة (Batem)",
+      "English_Name": "Mastic Tree",
+      "Part_Used": "Leaf, Gum",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Infusion",
+      "Folk_Uses": "An infusion of leaves is used internally to treat respiratory problems such as: sore throat, bronchitis, allergies, and asthma, as well as stomach ulcers. The mastic gum is used to relief sore throat, stomachaches, diabetes, jaundice and gastrointestinal disorders. Topically, it is used for healing of wounds, burns, and haemorrhoids."
+    },
+    {
+      "﻿plant_id": "175",
+      "Scientific_Name": "Pisum elatius M.Bieb.",
+      "Arabic_Name": "بازلاء برية (Bazela barieh)",
+      "English_Name": "Tall Pea",
+      "Part_Used": "Pod, Seed",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of pods is used for diabetes, as digestion tonic, irritable bowel syndrom (IBS), and decreasing lipid levels in the blood. The seed powder is used topically to treat some skin diseases."
+    },
+    {
+      "﻿plant_id": "176",
+      "Scientific_Name": "Plantago lanceolata L.",
+      "Arabic_Name": "لسان الحمل، خناتيف النعجة (Lisan elhamal)",
+      "English_Name": "Ribwort Plantain",
+      "Part_Used": "Leaf, Seed",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Infusion",
+      "Folk_Uses": "An infusion of leaves and seeds is used as expectorant, and for slimming purposes."
+    },
+    {
+      "﻿plant_id": "177",
+      "Scientific_Name": "Platanus orientalis L.",
+      "Arabic_Name": "دلب (Delb)",
+      "English_Name": "Oriental Plane",
+      "Part_Used": "Phloem",
+      "Cultivation": "Cultivated",
+      "Method_of_Use": "Fresh",
+      "Folk_Uses": "The phloem is used as phlegm remover."
+    },
+    {
+      "﻿plant_id": "178",
+      "Scientific_Name": "Plumbago europaea L.",
+      "Arabic_Name": "خامشة (khamisheh)",
+      "English_Name": "European Leadwort",
+      "Part_Used": "Flower",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Infusion",
+      "Folk_Uses": "An infusion of flowers is used topically for treating alopecia and psoriasis."
+    },
+    {
+      "﻿plant_id": "179",
+      "Scientific_Name": "Portulaca oleracea L.",
+      "Arabic_Name": "بقلة (bakleh)",
+      "English_Name": "Purslane",
+      "Part_Used": "Whole Plant, Flower",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Fresh",
+      "Folk_Uses": "The fresh herb is used as tonic and laxative. An infusion of flowering herbs is used for kidney disorders, and stomach diseases. It is also used to improve digestion, prevent heart disease and cancer, help in weight loss, and strengthen bones."
+    },
+    {
+      "﻿plant_id": "180",
+      "Scientific_Name": "Polygala supina Schreb.",
+      "Arabic_Name": "مستدرة مفترشة (Mostadera moftaresheh)",
+      "English_Name": "Prostrate Milkwort",
+      "Part_Used": "Whole Plant",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of the whole plant is used as anthelmintic and expectorant."
+    },
+    {
+      "﻿plant_id": "181",
+      "Scientific_Name": "Polygala amara L.",
+      "Arabic_Name": "مستدرة مرّة، عنبر غالي  (Amber ghali)",
+      "English_Name": "Bitter Milkwort",
+      "Part_Used": "Flower",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Infusion",
+      "Folk_Uses": "An infusion of flowering herb is used as diuretic, tonic, digestive, and expectorant."
+    },
+    {
+      "﻿plant_id": "182",
+      "Scientific_Name": "Polygonum maritimum L.",
+      "Arabic_Name": "البطباط، عصا الراعي (Batbat)",
+      "English_Name": "Sea Knotgrass",
+      "Part_Used": "Flower",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of flowering herb is used as analgesic, antiseptic, astringent, bile tonic, laxative, diuretic, tonic and anthelmintic."
+    },
+    {
+      "﻿plant_id": "183",
+      "Scientific_Name": "Populus nigra L.",
+      "Arabic_Name": "الحور الأسود (Hour aswad)",
+      "English_Name": "Black Poplar",
+      "Part_Used": "Bark, Bud",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Infusion",
+      "Folk_Uses": "An infusion of bark and buds is used for fever, gout, kidney disease, prostatic hypertrophy, prostatitis, colds, influenza, and toothache. It is also used topically for burns, hemorrhoids, and joint pain."
+    },
+    {
+      "﻿plant_id": "184",
+      "Scientific_Name": "Sarcopoterium spinosum (L.) Spach",
+      "Arabic_Name": "البلان (Ballan)",
+      "English_Name": "Thorny Burnet",
+      "Part_Used": "Root",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of roots is used internally as expectorant, digestive, diuretic, anti-diarrhea, and for diabetics, while a decoction of aerial parts is used topically for hemorrhoids."
+    },
+    {
+      "﻿plant_id": "185",
+      "Scientific_Name": "Primula vulgaris Huds.",
+      "Arabic_Name": "زهرة الربيع (Zahrate elrabee)",
+      "English_Name": "Primrose",
+      "Part_Used": "Flower, Root",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Infusion",
+      "Folk_Uses": "An infusion of flowers and roots is used internally as expectorant, and externally for eczema."
+    },
+    {
+      "﻿plant_id": "186",
+      "Scientific_Name": "Prunella orientalis Bornm.",
+      "Arabic_Name": "قلاع السمراء، حشيشة الجراح، ريحان بري (Kelaa elsamra)",
+      "English_Name": "Eastern Self-heal",
+      "Part_Used": "Aerial Parts",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Infusion",
+      "Folk_Uses": "An infusion of aerial parts is used internally for hypertension."
+    },
+    {
+      "﻿plant_id": "187",
+      "Scientific_Name": "Prunus avium (L.) L.",
+      "Arabic_Name": "كرز (Karaz)",
+      "English_Name": "Wild Cherry",
+      "Part_Used": "Stem, Fruit",
+      "Cultivation": "Cultivated",
+      "Method_of_Use": "Infusion",
+      "Folk_Uses": "Cherry stalks infusion is used as a sedative, helps in losing weight, is good for the liver, and is a diuretic in case of kidney stone. The fruits are nutritious and useful for diseases of the respiratory tract infections."
+    },
+    {
+      "﻿plant_id": "188",
+      "Scientific_Name": "Prunus divaricata Ledeb.",
+      "Arabic_Name": "جانرك(Janerek)",
+      "English_Name": "Wild Plum",
+      "Part_Used": "Fruit",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Fresh",
+      "Folk_Uses": "Cherry plum fruits are used as an appetite suppressant, as it helps in the digestion process. It is also useful to prevent kidney disease, and control blood pressure."
+    },
+    {
+      "﻿plant_id": "189",
+      "Scientific_Name": "Prunus mahaleb L.",
+      "Arabic_Name": "محلب (Mahlab)",
+      "English_Name": "Mahaleb Cherry",
+      "Part_Used": "Fruit",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "The Mahlab cherry is used in the manufacture of \"pastries\" and \"sweets\", and the decoction of the cherries necks of Mahleb is used for treatment of kidney diseases."
+    },
+    {
+      "﻿plant_id": "190",
+      "Scientific_Name": "Prunus persica (L.) Batsch.",
+      "Arabic_Name": "دراق (Doraak)",
+      "English_Name": "Peach",
+      "Part_Used": "Fruit",
+      "Cultivation": "Cultivated",
+      "Method_of_Use": "Juice",
+      "Folk_Uses": "Fruits juice is used for digestive disorders, helps fight constipation, kidney diseases, and joint pain."
+    },
+    {
+      "﻿plant_id": "191",
+      "Scientific_Name": "Psoralea bituminosa L.",
+      "Arabic_Name": "عوينة زفتية، بازلاء عربية(Owayneh zeftieh)",
+      "English_Name": "Bituminous Pea",
+      "Part_Used": "Flower, Leaf",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Infusion",
+      "Folk_Uses": "An infusion of flowers and leaves is used externally to treat some skin diseases such as psoriasis, vitiligo, and skin ulcers."
+    },
+    {
+      "﻿plant_id": "192",
+      "Scientific_Name": "Pteridium aquilinum (L.) Kuhn",
+      "Arabic_Name": "سرخس النسر(Sarkhas elneser)",
+      "English_Name": "Bracken Fern",
+      "Part_Used": "Root, Leaf",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of roots is useful in treating varicose veins and chronic headaches. It is also used as laxative and anthelmintic. The crushed leaves are applied to pain areas, the patient in this case will feel severe pain, but it will end after a short time. It is mainly used for back pain, joint pain, and gout."
+    },
+    {
+      "﻿plant_id": "193",
+      "Scientific_Name": "Punica granatum L.",
+      "Arabic_Name": "رمان (Rumman)",
+      "English_Name": "Pomegranate",
+      "Part_Used": "Fruit, Bark",
+      "Cultivation": "Cultivated",
+      "Method_of_Use": "Juice",
+      "Folk_Uses": "The fruit juice is used for mouth sores, cough, malabsorption syndrome, and hypercholesterolemia. The bark is used as anthelmintic, and for diarrhea, amebic dysentery, antibacterial, and ulcer."
+    },
+    {
+      "﻿plant_id": "194",
+      "Scientific_Name": "Pyrus syriaca Boiss.",
+      "Arabic_Name": "أجاص بري (Ajas)",
+      "English_Name": "Syrian Pear",
+      "Part_Used": "Fruit",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Fresh",
+      "Folk_Uses": "The fresh fruit is used to improve digestion, and lose weight, while its syrup is used as diuretic and laxative."
+    },
+    {
+      "﻿plant_id": "195",
+      "Scientific_Name": "Quercus calliprinos Webb",
+      "Arabic_Name": "سنديان عادي (Cendyan Ady)",
+      "English_Name": "Palestine Oak",
+      "Part_Used": "Bark",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of bark is used as antiseptics and to treat gastrointestinal tract (GIT) disorders such as chronic diarrhea, dysentery, and jaundice. It is used topically for hemorrhoids and wound healing."
+    },
+    {
+      "﻿plant_id": "196",
+      "Scientific_Name": "Quercus infectoria G.Olivier  ",
+      "Arabic_Name": "بلوط (Ballot)",
+      "English_Name": "Aleppo Oak",
+      "Part_Used": "Fruit, Bark",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of fruits and bark is used as anti-bleeding and pain reliever, and helps in digestion, blood purification, coughing. It is used topically for eczema treatment."
+    },
+    {
+      "﻿plant_id": "197",
+      "Scientific_Name": "Quercus ithaburensis Decne.",
+      "Arabic_Name": "سنديان (Cendyan)",
+      "English_Name": "Mount Tabor Oak",
+      "Part_Used": "Stem, Bark, Fruit",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of stem, bark and fruit is used for cancer, fever, bed wetting, high blood pressure and ulcer."
+    },
+    {
+      "﻿plant_id": "198",
+      "Scientific_Name": "Raphanus raphanistrum L.",
+      "Arabic_Name": "فجل بري، فجيلة (Fejel barri)",
+      "English_Name": "Wild Radish",
+      "Part_Used": "Root, Leaf, Stem",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of roots is used as diuretic, anti-cancer, and for joint pain. The dried roots are used for liver diseases. A decoction of leaves and stems is used as diuretic."
+    },
+    {
+      "﻿plant_id": "199",
+      "Scientific_Name": "Rhamnus alaternus L.",
+      "Arabic_Name": "نبق (Nabak)",
+      "English_Name": "Mediterranean Buckthorn",
+      "Part_Used": "Leaf",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of leaves is used as diuretic, laxative, hypotensive drug and for treatment of diabetes."
+    },
+    {
+      "﻿plant_id": "200",
+      "Scientific_Name": "Rhus coriaria L.",
+      "Arabic_Name": "سماق (Sumac)",
+      "English_Name": "Sicilian Sumac",
+      "Part_Used": "Fruit",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of fruits is used internally for respiratory tract infection, cough, colds and influenza, and bronchitis. It is also used for digestive disorders, constipation and stomach disorders; while a gargling is used for sore throat and mouth. A boiled sumac peel is used in the treatment of skin fungus, burns and skin ulcers."
+    },
+    {
+      "﻿plant_id": "201",
+      "Scientific_Name": "Rhus cotinus L.",
+      "Arabic_Name": "البقص (Bakas)",
+      "English_Name": "Smoke Tree",
+      "Part_Used": "Whole Plant",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of herb is used to prepare herbal tea in the treatment of diarrhea, mouth inflammation and gastric and peptic ulcers. It is also used as antiseptic, and anti-inflammatory; while topically it is used for hair loss, leg sweating and wound healing."
+    },
+    {
+      "﻿plant_id": "202",
+      "Scientific_Name": "Rhus tripartita (Ucria) Grande",
+      "Arabic_Name": "عرينة (Aryneh)",
+      "English_Name": "Three-lobed Sumac",
+      "Part_Used": "Whole Plant",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of the whole plant is used as diuretic, and for kidney stones."
+    },
+    {
+      "﻿plant_id": "203",
+      "Scientific_Name": "Rosmarinus officinalis L.",
+      "Arabic_Name": "اكليل الجبل (Eklil aljabal)",
+      "English_Name": "Rosemary",
+      "Part_Used": "Leaf",
+      "Cultivation": "Cultivated",
+      "Method_of_Use": "Infusion",
+      "Folk_Uses": "An infusion of leaves is used for respiratory diseases, heart disorders, to enhance memory and immunity, and relieve headache. It is also used as antidepressant, and tonic."
+    },
+    {
+      "﻿plant_id": "204",
+      "Scientific_Name": "Rubia aucheri Boiss.",
+      "Arabic_Name": "روبيا (Robia)",
+      "English_Name": "Aucher’s Madder",
+      "Part_Used": "Root",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of roots is used internally for kidney and bladder stones, and topically for strengthening the hair."
+    },
+    {
+      "﻿plant_id": "205",
+      "Scientific_Name": "Rubus fruticosus G.N.Jones",
+      "Arabic_Name": "توت العليق (toot alealiq)",
+      "English_Name": "Blackberry",
+      "Part_Used": "Fruit, Root",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Infusion",
+      "Folk_Uses": "An infusion of fruits and root is used for kidney stones. It is also used as hyperglycemic, atherosclerosis, hypotensive, and anticoagulant."
+    },
+    {
+      "﻿plant_id": "206",
+      "Scientific_Name": "Rubus sanctus Schreb.",
+      "Arabic_Name": "الديس، توت العليق (Dees)",
+      "English_Name": "Holy Bramble",
+      "Part_Used": "Fruit, Leaf",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Infusion",
+      "Folk_Uses": "An infusion of fruits is used as diuretic, laxative and general tonic. A decoction of leaves is used for disorders of the gastrointestinal tract, and the respiratory tract."
+    },
+    {
+      "﻿plant_id": "207",
+      "Scientific_Name": "Rumex conglomeratus Murray",
+      "Arabic_Name": "حماض (Hamad)",
+      "English_Name": "Clustered Dock",
+      "Part_Used": "Aerial Parts, Root",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Infusion",
+      "Folk_Uses": "An infusion of aerial parts and roots of the plants is used as diuretic and analgesic, as well as to improve digestion, relieve coughs of all kinds, colds and bronchitis."
+    },
+    {
+      "﻿plant_id": "208",
+      "Scientific_Name": "Rumex acetosa L.",
+      "Arabic_Name": "حميضة، مصيص (Homedah)",
+      "English_Name": "Sorrel",
+      "Part_Used": "Leaf",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Infusion",
+      "Folk_Uses": "An infusion of leaves is used for mouth ulcers, anemia, adjust sugar levels in the blood, and improve blood circulation. The cooked leaves are edible as special traditional Syrian recipe known as Syrian saleeg."
+    },
+    {
+      "﻿plant_id": "209",
+      "Scientific_Name": "Ruscus aculeatus L.",
+      "Arabic_Name": "الصفندر، سفندر مدبب (Safandar)",
+      "English_Name": "Butcher’s Broom",
+      "Part_Used": "Leaf",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of leaves and fruit peels are used as astringent, for menstruation, hepatitis, colon disorders, venous insufficiency, hemorrhoids, asthma,  uterine infections, and a diuretic for cases of urinary system infections, as well as in the treatment of jaundice, and urinary tract stones. It is also used to heal broken bones, and twisted joints."
+    },
+    {
+      "﻿plant_id": "210",
+      "Scientific_Name": "Salix alba L.",
+      "Arabic_Name": "صفصاف أبيض (Sasaf abiad)",
+      "English_Name": "White Willow",
+      "Part_Used": "Leaf, Peel",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of leaves and peels is used for intermittent fevers, joint pain, gout, bladder infections and high temperature."
+    },
+    {
+      "﻿plant_id": "211",
+      "Scientific_Name": "Salvia aramiensis Rech.f.",
+      "Arabic_Name": "ميرمية (Meiramiea)",
+      "English_Name": "Aram Sage",
+      "Part_Used": "Leaf, Root",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Infusion",
+      "Folk_Uses": "An infusion of leaves is used for stomach and colon disorders, as regulator and sterilizer for uterine diseases, intestinal antiseptic, and diuretic. A decoction of roots is used for treating diabetes."
+    },
+    {
+      "﻿plant_id": "212",
+      "Scientific_Name": "Sambucus ebulus L.",
+      "Arabic_Name": "بيلسان (Baylasn)",
+      "English_Name": "Dwarf Elder",
+      "Part_Used": "Flower, Seed",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Infusion",
+      "Folk_Uses": "An infusion of flowers and seeds is used in the treatment of diabetes, constipation, abdominal gas, cold and flu symptoms."
+    },
+    {
+      "﻿plant_id": "213",
+      "Scientific_Name": "Sarcopoterium spinosum L. Spach",
+      "Arabic_Name": "بلان شوكي (Ballan shawki)",
+      "English_Name": "Thorny Burnet",
+      "Part_Used": "Root, Seed",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of roots is used topically for treating joints and spinal disc. A decoction of seeds is used for hemorrhoids, diabetes."
+    },
+    {
+      "﻿plant_id": "214",
+      "Scientific_Name": "Saponaria officinalis L.",
+      "Arabic_Name": "شرش الحلاوة، العصلج (Aslag)",
+      "English_Name": "Soapwort",
+      "Part_Used": "Root",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of roots is used for removal of phlegm and relieving congestion of the respiratory system, for cases of gout and joint pain, and in cases of constipation."
+    },
+    {
+      "﻿plant_id": "215",
+      "Scientific_Name": "Sarothamnus scoparius (L.) W.D.J.Koch",
+      "Arabic_Name": "وزال (Wazal)",
+      "English_Name": "Scotch Broom",
+      "Part_Used": "Flower, Seed, Branch",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of flowers, seeds and soft branches is used to treat urinary disorders."
+    },
+    {
+      "﻿plant_id": "216",
+      "Scientific_Name": "Scabiosa syriaca L.",
+      "Arabic_Name": "زهرة الجرب، ماسح محرمته  (Zaret el-jarab)",
+      "English_Name": "Syrian Scabious",
+      "Part_Used": "Aerial Parts",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Juice",
+      "Folk_Uses": "The juice of aerial parts is used topically in the treatment of scabies."
+    },
+    {
+      "﻿plant_id": "217",
+      "Scientific_Name": "Scandix pecten-veneris L.",
+      "Arabic_Name": "مشط الزهرة، إبرة الراعي (Moushet elzahra)",
+      "English_Name": "Shepherd’s Needle",
+      "Part_Used": "Aerial Parts",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Fresh",
+      "Folk_Uses": "An edible wild green leafy plant that is used in the Mediterranean diet. It is consumed either boiled with just adding Syrian olive oil, or in pies."
+    },
+    {
+      "﻿plant_id": "218",
+      "Scientific_Name": "Scutellaria baicalensis Georgi.",
+      "Arabic_Name": "درقة (Darka)",
+      "English_Name": "Baikal Skullcap",
+      "Part_Used": "Aerial Parts, Root",
+      "Cultivation": "Cultivated",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of aerial parts and roots is used as diuretic. It is also used for asthma, mental and nervous distress, insomnia, epilepsy, dysmenorrhea."
+    },
+    {
+      "﻿plant_id": "219",
+      "Scientific_Name": "Securigera securidaca (L.) Degen & Dorfl",
+      "Arabic_Name": "صبيرة (Sobaira)",
+      "English_Name": "Goat’s Rue",
+      "Part_Used": "Seed",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of seeds is used for diabetes, hyperlipidemia, high blood pressure, and gastric reflux. It is used externally for wound healing."
+    },
+    {
+      "﻿plant_id": "220",
+      "Scientific_Name": "Setaria viridis (L.) P.Beauv.",
+      "Arabic_Name": "اللزيق (Lezeek)",
+      "English_Name": "Green Foxtail",
+      "Part_Used": "Leaf, Stem, Whole Plant, Seed",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of leaves and stems is used for stimulating digestion. The plant is crushed and mixed with water then used via external application in the treatment of psoriasis, bruises, various wounds, cutaneous eczema, and vaginal gonorrhea; while the seed is used as diuretic, febrifuge, refrigerant and tonic, to treat intestinal infection with parasites and worms, jaundice, and to reduce swelling of the legs and feet in patients with urinary tract diseases, and swollen lymph nodes. It helps in cases of cystitis."
+    },
+    {
+      "﻿plant_id": "221",
+      "Scientific_Name": "Silybum marianum (L.) Gaertn.",
+      "Arabic_Name": "اللبون، الخرفيش، السلبين المريمي (kharfish)",
+      "English_Name": "Milk Thistle",
+      "Part_Used": "Seed",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of seeds is used in treatment of Crohn's disease, ulcerative colitis, and inflammation of the gastrointestinal tract. It is used as an immune system booster, also to prevent cancer, treat liver diseases and liver infections, cleanse the liver from accumulated toxins, and contribute to the production of breast milk supply. Other uses include treatment of lack of appetite and indigestion, dyspepsia, aphrodisiac for women and men, diabetics, varicose veins, congestion of the uterus and uterine infections."
+    },
+    {
+      "﻿plant_id": "222",
+      "Scientific_Name": "Smilax aspera L.",
+      "Arabic_Name": "عنب الحية، العليق، الفشاغ، السمالكس (Enab elhaieh)",
+      "English_Name": "Rough Bindweed",
+      "Part_Used": "Root",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Dried",
+      "Folk_Uses": "Root powder is used as a male aphrodisiac to increases fertility, for joint pain and gout, chronic neuropathy, cough and colds, fatigue, muscle pain and weakness, and as flatulence and carminative. It is useful as treatment for low sexual desire, impotence, headache, gout, liver damage, indigestion, fluid retention and fever. It is also used for treating psoriasis, herpes, skin problems, foot fungus, wounds, and ulcers."
+    },
+    {
+      "﻿plant_id": "223",
+      "Scientific_Name": "Solidago virgaurea L.",
+      "Arabic_Name": "عصا الذهب، قَضيب الذَّهَب الشّائع (Asa eldahab)",
+      "English_Name": "Goldenrod",
+      "Part_Used": "Flower",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of flowers is used to treat diabetes and kidneys disorders, intestinal diseases, and diseases of the digestive system including the stomach. The plant secretes a sticky substance known locally as \"Nashiha\", which is taken from the Syrian dialect, meaning a sticky substance that attracts dust and soil."
+    },
+    {
+      "﻿plant_id": "224",
+      "Scientific_Name": "Sorbus flabellifolia (Spach) Hedl.,p.p.3144",
+      "Arabic_Name": "غبيراء (Gobaira)",
+      "English_Name": "Fan-leaved Rowan",
+      "Part_Used": "Fruit",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of fruits is used for kidney diseases, diabetes, joint pain, disorders of the uric acid, and menstruation disturbances."
+    },
+    {
+      "﻿plant_id": "225",
+      "Scientific_Name": "Sorghum halepense L. Pers.",
+      "Arabic_Name": "حليان (Halyan)",
+      "English_Name": "Johnson Grass",
+      "Part_Used": "Whole Plant",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Boiled",
+      "Folk_Uses": "It’s a poisonous plant that is used for the treatment of urinary tract disorders, kidney stone, and as diuretic."
+    },
+    {
+      "﻿plant_id": "226",
+      "Scientific_Name": "Stachys officinalis L. Trevis.",
+      "Arabic_Name": "القسطران (Qastaran)",
+      "English_Name": "Betony",
+      "Part_Used": "Root, Aerial Parts, Leaf",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of roots and aerial part is used as diuretic and tonic agent; also the fresh leaves are placed directly on sores and wounds to speed up the healing process."
+    },
+    {
+      "﻿plant_id": "227",
+      "Scientific_Name": "Stellaria media (L.) Vill.",
+      "Arabic_Name": "النجمية (Najmyeh)",
+      "English_Name": "Chickweed",
+      "Part_Used": "Root, Aerial Parts",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of roots and aerial part is used topically for cleaning wounds. Also, it is used internally for joint pain, and gout."
+    },
+    {
+      "﻿plant_id": "228",
+      "Scientific_Name": "Styrax officinalis L.",
+      "Arabic_Name": "الإصطرك، لبنى، شجرة المحلب (Mahlab)",
+      "English_Name": "Storax",
+      "Part_Used": "Gum",
+      "Cultivation": "Wild",
+      "Method_of_Use": "External",
+      "Folk_Uses": "It is attributed to Jableh area and is called styrax gabalite, a sticky gum that resembles very white honey called lactic honey. The gum that is extracted from the styrax tree is milky (in English: snowbell bush, in Arabic: Maiah). The gum extracted from the tree is used as an incense and also to treat cough as expectorant. It is also used in cases of respiratory tract infection, cold and hoarseness. Externally, it is used as an antiseptic to treat wounds, ulcers, joint pain, gout and joint diseases. Also it is used as a fixative agent in the manufacture of perfumes, and the gum resin called (Al-A'bhir) is used in the manufacture of a sacred aromatic incense used in churches. Burning the plant is used as means of keeping snakes away."
+    },
+    {
+      "﻿plant_id": "229",
+      "Scientific_Name": "Symphytum officinale L.",
+      "Arabic_Name": "الشَّاغَة، سنفيتون (Synfiton)",
+      "English_Name": "Comfrey",
+      "Part_Used": "Root, Aerial Parts",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of roots and aerial part is used topically for wounds healing, and internally as expectorant."
+    },
+    {
+      "﻿plant_id": "230",
+      "Scientific_Name": "Tamarix articulata Vahl",
+      "Arabic_Name": "الطرفاء (Tarfa)",
+      "English_Name": "Jointed Tamarisk",
+      "Part_Used": "Leaf, Whole Plant",
+      "Cultivation": "Wild",
+      "Method_of_Use": "External",
+      "Folk_Uses": "The plant smoke is used for cold, the salt which is collected from trees is used to treat ophthalmic diseases. Its leaves are cooked to help treat spleen diseases, and is also used as anti-diarrhea and jaundice treatment. It is used for the treatment of toothache as gargle, and cups of its wood are prepared to make use of its medical properties. It is also placed on the head for those affected by lice and nits in order to remove of them, and the ashes of farash is scattered on wet sores to dry them up, especially sores from fire burns."
+    },
+    {
+      "﻿plant_id": "231",
+      "Scientific_Name": "Tamus communis L.",
+      "Arabic_Name": "الجرموع، حالق الشعر (Jarmoua')",
+      "English_Name": "Black Bryony",
+      "Part_Used": "Root, Tuber, Fruit",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Topical",
+      "Folk_Uses": "All parts of the black bryony plant, especially fruits are highly toxic, causing severe abdominal pain, staining and burning in the mouth, vomiting and diarrhea. Fruits often poison children due to their attractiveness, and cause burns and blisters the mouth and digestive system, as well as skin contact with plant sap, especially fruit sap, which cause sensitivity, redness and swelling. Some local people use it (by cutting the roots or tuber) externally, as it is applied to the site of pain in cases of joint pain and sciatica, as it increases the blood flow to the skin where the roots are applied. Internally, it is used for diabetes."
+    },
+    {
+      "﻿plant_id": "232",
+      "Scientific_Name": "Tanacetum vulgare L.",
+      "Arabic_Name": "حشيشة الدود، غرديب(Hasheshet eldood)",
+      "English_Name": "Tansy",
+      "Part_Used": "Aerial Parts",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Infusion",
+      "Folk_Uses": "An infusion of aerial parts is used as digestive stimulant, as well as to treat coughs, respiratory tract infections and gastritis, joint pain, venereal diseases and neurological diseases, in addition to it use in expelling intestinal worms It is used externally to treat wounds. The aromatic scent of the plant is used as repellent for certain types of ants."
+    },
+    {
+      "﻿plant_id": "233",
+      "Scientific_Name": "Taraxacum officinale (L.) Weber ex F.H.Wigg.",
+      "Arabic_Name": "طرخشقون، هندباء برية (Tarkhashqoun)",
+      "English_Name": "Dandelion",
+      "Part_Used": "Whole Plant",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Infusion",
+      "Folk_Uses": "An infusion of the whole plant is used as diuretic, general tonic, for slimming purposes, liver diseases, digestive disorders, diabetes, gallstones, detoxifying, colon conditions, joint pain, and gout. Also, it is used topically to treat skin diseases such as psoriasis, eczema, acne, itching and varicose veins."
+    },
+    {
+      "﻿plant_id": "234",
+      "Scientific_Name": "Teucrium chamaedrys L.",
+      "Arabic_Name": "البخورة (Bakhoura)",
+      "English_Name": "Wall Germander",
+      "Part_Used": "Whole Plant",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Infusion",
+      "Folk_Uses": "An infusion of the whole plant is used in the treatment of kidney stones."
+    },
+    {
+      "﻿plant_id": "235",
+      "Scientific_Name": "Teucrium polium L.",
+      "Arabic_Name": "الجعدة (Jowdeh)",
+      "English_Name": "Felty Germander",
+      "Part_Used": "Aerial Parts",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of aerial parts of the herb is used to treat jaundice, peptic ulcer, joint pain, intestinal and renal colic, cold diseases, and for cases of poor appetite and indigestion. It is also used as  diuretic and menstruation stimulant, and is cooked with eggs and eaten as a treatment for abdominal pain."
+    },
+    {
+      "﻿plant_id": "236",
+      "Scientific_Name": "Thymus vulgaris L.",
+      "Arabic_Name": "زعتر (Zaatar)",
+      "English_Name": "Thyme",
+      "Part_Used": "Leaf",
+      "Cultivation": "Cultivated",
+      "Method_of_Use": "Infusion",
+      "Folk_Uses": "An infusion of leaves is used as anti-cough agent, expectorant, carminative, antispasmodic, and anthelmintic; as well as in case of bronchitis, and in the treatment of diabetes."
+    },
+    {
+      "﻿plant_id": "237",
+      "Scientific_Name": "Trifolium campestre Schreb.",
+      "Arabic_Name": "أصفر، نفل حقلي (Asfar)",
+      "English_Name": "Field Clover",
+      "Part_Used": "Whole Plant",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Infusion",
+      "Folk_Uses": "An infusion of plant is used for coughs, colds, fevers, and as antirheumatic."
+    },
+    {
+      "﻿plant_id": "238",
+      "Scientific_Name": "Trifolium pratense L.",
+      "Arabic_Name": "نفل المروج (Nafel elmourooj)",
+      "English_Name": "Red Clover",
+      "Part_Used": "Leaf",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Infusion",
+      "Folk_Uses": "An infusion of leaves is used as diuretic, and anti-inflammatory."
+    },
+    {
+      "﻿plant_id": "239",
+      "Scientific_Name": "Trifolium purpureum Loisel.",
+      "Arabic_Name": "برسيم ارجواني(Barseem orguwani)",
+      "English_Name": "Purple Clover",
+      "Part_Used": "Aerial Parts",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Infusion",
+      "Folk_Uses": "An infusion of aerial parts is used for diarrhea, cough, insomnia, and nervousness."
+    },
+    {
+      "﻿plant_id": "240",
+      "Scientific_Name": "Trifolium repens L.",
+      "Arabic_Name": "نفل (Nafel)",
+      "English_Name": "White Clover",
+      "Part_Used": "Aerial Parts",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Infusion",
+      "Folk_Uses": "An infusion of aerial parts is used in the treatment of coughs, colds, fevers, acute bronchitis, and for menopausal syndrome. It is used topically for skin infections."
+    },
+    {
+      "﻿plant_id": "241",
+      "Scientific_Name": "Trigonella foenum-graecum L.",
+      "Arabic_Name": "حلبة، مزيقة (Helbeh)",
+      "English_Name": "Fenugreek",
+      "Part_Used": "Seed",
+      "Cultivation": "Cultivated",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of seeds is used as antitussive and galactagogue; as well as in case of hypercholesterolemia, atherosclerosis, diabetes, blood pressure problems, heartburn, cold, inflammations, topical massage for joint and bone pain, kidney stones, and weight gain. The oil of seed is used topically for breast enlargement."
+    },
+    {
+      "﻿plant_id": "242",
+      "Scientific_Name": "Triticum aestivum L.",
+      "Arabic_Name": "حنطة (Hentah)",
+      "English_Name": "Wheat",
+      "Part_Used": "Seed, Peel",
+      "Cultivation": "Cultivated",
+      "Method_of_Use": "Infusion",
+      "Folk_Uses": "An infusion of seeds is used orally for constipation and obesity. The bran husk is used external compresses for itchy skin."
+    },
+    {
+      "﻿plant_id": "243",
+      "Scientific_Name": "Tussilago farfara L.",
+      "Arabic_Name": "حشيشة السعال، فرفرة (Farfrah)",
+      "English_Name": "Coltsfoot",
+      "Part_Used": "Flower",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of flowers is used in the treatment of productive cough with sputum, and in diseases of the respiratory system and bronchopulmonary."
+    },
+    {
+      "﻿plant_id": "244",
+      "Scientific_Name": "Ulmus canescens Melville",
+      "Arabic_Name": "النشم، دردار حقلي، شجرة البق (Nashem)",
+      "English_Name": "Grey Elm",
+      "Part_Used": "Bark, Leaf, Peel",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of bark and leaves is used for soft wounds healing. If soaked with vinegar, it is used to expel phlegm. The crushed peels with white medical Vaseline is used to dress the affected skin areas as astringent and cleanser for the skin, especially in cases of impetigo, and freckles. Eau d'Orme water is used in cleaning and disinfecting wounds and in washing eyes affected by conjunctivitis."
+    },
+    {
+      "﻿plant_id": "245",
+      "Scientific_Name": "Urtica dioica L.",
+      "Arabic_Name": "قريص (Kurrais)",
+      "English_Name": "Stinging Nettle",
+      "Part_Used": "Flower, Seed, Root",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Infusion",
+      "Folk_Uses": "An infusion of flowering parts, seeds and roots is used orally for joint pain, and chest pain, diabetes, anemia, digestive diseases, kidney disease, gallbladder diseases, cough and respiratory system and as diuretic. It is also used for stopping nosebleeds. The oil is used for cases of hair loss and burns. "
+    },
+    {
+      "﻿plant_id": "246",
+      "Scientific_Name": "Verbascum thapsus L.",
+      "Arabic_Name": "بوصير أبيض (Boseer abiad)",
+      "English_Name": "Common Mullein",
+      "Part_Used": "Flower, Leaf",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of flowers and leaves is used as diuretic."
+    },
+    {
+      "﻿plant_id": "247",
+      "Scientific_Name": "Verbena officinalis L.",
+      "Arabic_Name": "حشيشة الأوجاع (Hasheshet elawjaa)",
+      "English_Name": "Vervain",
+      "Part_Used": "Aerial Parts",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Infusion",
+      "Folk_Uses": "An infusion of aerial parts is used as antispasmodic and general tonic."
+    },
+    {
+      "﻿plant_id": "248",
+      "Scientific_Name": "Valeriana officinalis L.",
+      "Arabic_Name": "الناردين الطبي، حشيشة القطة(Nardien)",
+      "English_Name": "Valerian",
+      "Part_Used": "Root",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of roots is used as sedative and hypnotic for treating mild sleep disorders and nervous tension."
+    },
+    {
+      "﻿plant_id": "249",
+      "Scientific_Name": "Verbascum tripolitanum  Boiss.",
+      "Arabic_Name": "اللبيدة، البوصير (Lopedeh)",
+      "English_Name": "Tripoli Mullein",
+      "Part_Used": "Flower",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of flowers is used as expectorant and diuretic."
+    },
+    {
+      "﻿plant_id": "250",
+      "Scientific_Name": "Vicia faba L.",
+      "Arabic_Name": "فول (Fool)",
+      "English_Name": "Broad Bean",
+      "Part_Used": "Seed",
+      "Cultivation": "Cultivated",
+      "Method_of_Use": "Fresh",
+      "Folk_Uses": "Seeds are used as tonic and diuretic; they are beneficial to the heart, and good for women in the menopause stage. Moreover, they maintain the stable level of sugar in the blood, and increase hemoglobin level."
+    },
+    {
+      "﻿plant_id": "251",
+      "Scientific_Name": "Vicia hybrida L.",
+      "Arabic_Name": "البيقية، بازلاء ابليس (Baikieah)",
+      "English_Name": "Hybrid Vetch",
+      "Part_Used": "Seed",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Topical",
+      "Folk_Uses": "Its seeds are used against smallpox and erysipelas, and for skin edema. It is not used as fresh a foodstuff due to its toxic elements that do not go away until after soaking in cold water for 24-36 hours. Therefore, it’s soaked then cooked with salt water."
+    },
+    {
+      "﻿plant_id": "252",
+      "Scientific_Name": "Vigna sinensis (L.) Savi ex Hausskn.",
+      "Arabic_Name": "لوبيا خضراء، ذات العين السوداء (Lowbiah khadra)",
+      "English_Name": "Cowpea",
+      "Part_Used": "Seed, Stem",
+      "Cultivation": "Cultivated",
+      "Method_of_Use": "Fresh",
+      "Folk_Uses": "Green seeds and stems are used in cooked form to rid the body of toxins, slim sown the figure, and protect the heart. It is also used for diabetics, and in case of depression."
+    },
+    {
+      "﻿plant_id": "253",
+      "Scientific_Name": "Viola suavis M.Bieb.",
+      "Arabic_Name": "البنفسج (Banafsaj)",
+      "English_Name": "Sweet Violet",
+      "Part_Used": "Flower, Leaf",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Infusion",
+      "Folk_Uses": "An infusion of flowers and leaves is used to treat bronchitis and to facilitate spotting the respiratory tract infections. It is also used in the form of compresses for the eyelids affected by conjunctivitis, and in hot baths for the feet to treat insomnia."
+    },
+    {
+      "﻿plant_id": "254",
+      "Scientific_Name": "Vitex agnus-castus L.",
+      "Arabic_Name": "فرقة، كف مريم (Kaf Mariam)",
+      "English_Name": "Chaste Tree",
+      "Part_Used": "Fruit, Seed",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of fruits and seeds is used to reduce premenstrual symptoms, treat acne, and treat prostate enlargement."
+    },
+    {
+      "﻿plant_id": "255",
+      "Scientific_Name": "Vitis vinifera L.",
+      "Arabic_Name": "الكرمة البرية (Karmeh bareieh)",
+      "English_Name": "Grape Vine",
+      "Part_Used": "Fruit, Seed",
+      "Cultivation": "Cultivated",
+      "Method_of_Use": "Fresh",
+      "Folk_Uses": "Grapes fruit is popularly used as an optimal food to revitalize the body, especially the brain and the heart, and is considered one of the most important sources of energy for muscles. Besides, the fruits are used for constipation and gout, the seeds are used as antihypertensive and to reduce blood sugar level. The seeds are used for menstrual cramps and period regulation, dried fruits called (zabeb for the red-coloured fruit, and ashlamesh for the white) are used to strengthen the body's immunity as general tonic. The seeds oil is used as tonic for hair and skin diseases. The fruits vinegar is also used for slimming purposes."
+    },
+    {
+      "﻿plant_id": "256",
+      "Scientific_Name": "Xanthium strumarium L.",
+      "Arabic_Name": "الحسك (Hasak)",
+      "English_Name": "Cocklebur",
+      "Part_Used": "Seed, Leaf",
+      "Cultivation": "Wild",
+      "Method_of_Use": "Decoction",
+      "Folk_Uses": "A decoction of seeds and leaves is used for infertility and impotence in males, and as galactagogue for females."
+    },
+    {
+      "﻿plant_id": "257",
+      "Scientific_Name": "Zea mays L.",
+      "Arabic_Name": "شباشيل الذرة (Shabashel el-zurah)",
+      "English_Name": "Corn",
+      "Part_Used": "Silk",
+      "Cultivation": "Cultivated",
+      "Method_of_Use": "Infusion",
+      "Folk_Uses": "An infusion of cornsilk is used for regulating blood sugar, reducing cholesterol, weight loss, gout, bedwetting. It is also used as diuretic for kidney stone."
+    }
+  ],
+  "total_plants": 257
+}

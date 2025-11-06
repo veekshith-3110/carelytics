@@ -1,0 +1,28 @@
+{
+  "name": "Carelytics — AI Smart Health & Wellness Assistant",
+  "short_name": "Carelytics",
+  "description": "Your AI-powered health companion with symptom checking, multilingual support, and comprehensive health tracking",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0ea5a4",
+  "orientation": "portrait",
+  "icons": [],
+  "categories": ["health", "medical", "lifestyle"],
+  "screenshots": [],
+  "shortcuts": [
+    {
+      "name": "Symptom Checker",
+      "short_name": "Symptoms",
+      "description": "Check your symptoms",
+      "url": "/?action=symptom"
+    },
+    {
+      "name": "BMI Calculator",
+      "short_name": "BMI",
+      "description": "Calculate your BMI",
+      "url": "/?action=bmi"
+    }
+  ]
+}
+
