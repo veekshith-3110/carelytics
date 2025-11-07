@@ -174,7 +174,11 @@ export default function RiskDashboard() {
                   cx="50%"
                   cy="50%"
                   labelLine={false}
-                  label={({ name, value }) => `${name}: ${Math.round(value)}%`}
+                  label={(props: any) => {
+                    const value = props.value as number
+                    const name = props.name as string
+                    return `${name}: ${Math.round(value)}%`
+                  }}
                   outerRadius={80}
                   fill="#8884d8"
                   dataKey="value"

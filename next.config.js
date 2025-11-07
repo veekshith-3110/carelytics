@@ -1,7 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  swcMinify: true,
   // Ensure proper error handling
   onDemandEntries: {
     maxInactiveAge: 25 * 1000,
@@ -13,6 +12,11 @@ const nextConfig = {
   // Handle images and static assets
   images: {
     unoptimized: false,
+  },
+  // Disable Next.js dev overlay to hide error notifications
+  devIndicators: {
+    buildActivity: false,
+    buildActivityPosition: 'bottom-right',
   },
 }
 

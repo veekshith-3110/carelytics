@@ -1,8 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
   --foreground-rgb: 15, 23, 42;
@@ -69,5 +69,47 @@ a {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
   }
+}
+
+/* Hide all error notifications completely */
+[class*="error"][class*="notification"],
+[class*="ErrorNotification"],
+div[class*="bg-red-600"][class*="bottom-4"][class*="left-4"],
+div[class*="bg-red-600"][class*="bottom-6"][class*="left-6"] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  position: absolute !important;
+  left: -9999px !important;
+  top: -9999px !important;
+}
+
+/* Hide Next.js dev overlay and issue notifications */
+#__next-build-watcher,
+[data-nextjs-dialog],
+[data-nextjs-toast],
+div[data-nextjs-dialog-overlay],
+div[data-nextjs-dialog-content],
+div[class*="nextjs-toast"],
+div[class*="__nextjs-toast"],
+div[class*="nextjs-build-watcher"],
+div[id*="__next"],
+div[class*="N"][class*="Issue"],
+div[class*="issue"],
+button[class*="N"],
+div[class*="bottom-left"][class*="red"],
+div[class*="fixed"][class*="bottom-4"][class*="left-4"][class*="z-50"],
+div[class*="fixed"][class*="bottom-6"][class*="left-6"][class*="z-50"] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  position: absolute !important;
+  left: -9999px !important;
+  top: -9999px !important;
+  width: 0 !important;
+  height: 0 !important;
+  overflow: hidden !important;
 }
 

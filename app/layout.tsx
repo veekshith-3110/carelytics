@@ -3,7 +3,7 @@ import './globals.css'
 import { ErrorBoundary } from '@/components/ErrorBoundary'
 import { ToastContainer } from '@/components/Toast'
 import TextToSpeech from '@/components/TextToSpeech'
-import ErrorNotification from '@/components/ErrorNotification'
+import ErrorNotificationWrapper from '@/components/ErrorNotificationWrapper'
 import { GoogleOAuthProvider } from '@react-oauth/google'
 import { GOOGLE_CLIENT_ID } from '@/lib/googleAuth'
 
@@ -41,14 +41,14 @@ export default function RootLayout({
               {children}
               <ToastContainer />
               <TextToSpeech />
-              <ErrorNotification />
+              <ErrorNotificationWrapper />
             </GoogleOAuthProvider>
           ) : (
             <>
               {children}
               <ToastContainer />
               <TextToSpeech />
-              <ErrorNotification />
+              <ErrorNotificationWrapper />
             </>
           )}
         </ErrorBoundary>

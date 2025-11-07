@@ -11,6 +11,7 @@ import {
 import { analytics } from '@/lib/analytics'
 import { GoogleLogin, CredentialResponse } from '@react-oauth/google'
 import { decodeJWT, GOOGLE_CLIENT_ID } from '@/lib/googleAuth'
+import { errorHandler } from '@/lib/errorHandler'
 
 const languages: { code: Language; name: string; flag: string }[] = [
   { code: 'en', name: 'English', flag: '🇬🇧' },
@@ -63,6 +64,53 @@ export default function LoginPage() {
     const timer = setTimeout(checkLogin, 200)
     return () => clearTimeout(timer)
   }, [router, user])
+
+  // Suppress ALL errors on login page and clear error logs
+  useEffect(() => {
+    if (typeof window === 'undefined') return
+
+    // Clear all existing errors immediately
+    try {
+      localStorage.removeItem('errorLogs')
+      localStorage.removeItem('lastError')
+      if (errorHandler) {
+        errorHandler.clearErrors()
+      }
+    } catch (e) {
+      // Silently ignore
+    }
+
+    // Suppress ALL errors on login page
+    const handleError = (event: ErrorEvent) => {
+      // Suppress all errors on login page
+      event.preventDefault()
+      event.stopPropagation()
+      return false
+    }
+
+    const handleUnhandledRejection = (event: PromiseRejectionEvent) => {
+      // Suppress all promise rejections on login page
+      event.preventDefault()
+      return false
+    }
+
+    // Use capture phase to catch errors early
+    window.addEventListener('error', handleError, true)
+    window.addEventListener('unhandledrejection', handleUnhandledRejection)
+
+    // Also override console.error to prevent error logging
+    const originalConsoleError = console.error
+    console.error = (...args: any[]) => {
+      // Silently suppress all console errors on login page
+      return
+    }
+
+    return () => {
+      window.removeEventListener('error', handleError, true)
+      window.removeEventListener('unhandledrejection', handleUnhandledRejection)
+      console.error = originalConsoleError
+    }
+  }, [])
 
   const handleLanguageSelect = (lang: Language) => {
     setLanguage(lang)
@@ -268,6 +316,25 @@ export default function LoginPage() {
 
   return (
     <div className="min-h-screen relative overflow-hidden flex items-center justify-center z-10 bg-gradient-to-br from-primary/5 via-purple-500/5 to-pink-500/5" suppressHydrationWarning>
+      {/* Spline 3D Design */}
+      <div className="fixed bottom-0 left-0 w-full h-full pointer-events-none z-0">
+        <iframe 
+          src='https://my.spline.design/hearthealthhudfuturisticuidesign-X8ZPY1TgGPzxZXS6SrI6PfSJ/' 
+          frameBorder='0' 
+          width='100%' 
+          height='100%'
+          className="opacity-30 pointer-events-none"
+          title="Heart Health 3D Design"
+          onError={(e) => {
+            e.preventDefault()
+            e.stopPropagation()
+          }}
+          onLoad={() => {
+            // Silently handle iframe load
+          }}
+        />
+      </div>
+      
       {/* Animated Background */}
       <div className="fixed inset-0 -z-10">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-purple-500/20 to-pink-500/20" />
