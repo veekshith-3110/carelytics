@@ -1,0 +1,52 @@
+========================================
+🚀 QUICK START - Carelytics App
+========================================
+
+PROBLEM: You're running npm start from the wrong directory!
+
+SOLUTION: Use one of these methods:
+
+METHOD 1: Use the Helper Script (EASIEST)
+------------------------------------------
+Double-click: START_APP.bat
+OR
+Run in PowerShell: .\START_APP.ps1
+
+METHOD 2: Navigate Manually
+----------------------------
+1. Open PowerShell
+2. Run this command:
+   cd C:\Users\vemul\OneDrive\Desktop\carelytics\aiassist\carelytic
+3. Then run:
+   npm start
+
+METHOD 3: One-Line Command
+---------------------------
+cd C:\Users\vemul\OneDrive\Desktop\carelytics\aiassist\carelytic; npm start
+
+========================================
+✅ WHAT YOU SHOULD SEE:
+========================================
+1. "Starting Metro Bundler"
+2. QR Code appears
+3. "Metro waiting on exp://..."
+4. "Using Expo Go"
+5. "Android Bundled" message
+
+========================================
+📱 THEN:
+========================================
+1. Open Expo Go on your phone
+2. Scan the QR code
+3. Wait for app to load
+4. You should see "Carelytics Health Platform"
+
+========================================
+🐛 IF YOU GET ERRORS:
+========================================
+- Make sure you're in: aiassist\carelytic directory
+- Check that package.json exists in that folder
+- Try: npm install first, then npm start
+
+========================================
+

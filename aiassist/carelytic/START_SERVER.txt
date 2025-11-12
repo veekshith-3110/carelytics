@@ -1,0 +1,132 @@
+========================================
+EXPO APP - START SERVER INSTRUCTIONS
+========================================
+
+IMPORTANT: You must be in this directory:
+C:\Users\vemul\OneDrive\Desktop\carelytics\aiassist\carelytic
+
+========================================
+VERIFICATION (All should be ✓)
+========================================
+
+✓ Current directory is correct
+✓ package.json exists
+✓ app.json exists  
+✓ node_modules exists
+✓ Expo version: 54.0.16
+✓ All dependencies installed
+
+========================================
+TO START THE SERVER
+========================================
+
+Method 1: Using npm (Recommended)
+----------------------------------
+npm start
+
+Method 2: Using batch file
+---------------------------
+.\run-expo.bat
+
+Method 3: Using PowerShell script
+----------------------------------
+.\run-expo.ps1
+
+Method 4: With clear cache
+---------------------------
+npx expo start --clear
+
+========================================
+WHAT TO EXPECT
+========================================
+
+1. Metro bundler will start
+2. QR code will appear in terminal
+3. Server URL will be shown (exp://...)
+4. Instructions will be displayed
+
+Example output:
+---------------
+Starting Metro Bundler
+[QR CODE HERE]
+› Metro waiting on exp://10.38.5.204:8081
+› Scan the QR code above with Expo Go
+
+========================================
+CONNECT YOUR PHONE
+========================================
+
+1. Install Expo Go on your phone
+   - iOS: App Store
+   - Android: Play Store
+
+2. Make sure phone and computer are on SAME WiFi
+
+3. Open Expo Go app
+
+4. Tap "Scan QR Code"
+
+5. Point camera at QR code in terminal
+
+6. Wait for app to load (30-60 seconds first time)
+
+========================================
+IF YOU GET ERRORS
+========================================
+
+Error: "Cannot find package.json"
+→ You're in the wrong directory
+→ Run: cd C:\Users\vemul\OneDrive\Desktop\carelytics\aiassist\carelytic
+
+Error: "Expo not found"
+→ Run: npm install
+→ Then: npx expo install --fix
+
+Error: "Port already in use"
+→ Kill the process using port 8081
+→ Or use: npx expo start --port 8082
+
+Error: "Cannot connect"
+→ Check WiFi - both devices on same network
+→ Try: npx expo start --tunnel
+→ Check firewall settings
+
+========================================
+SUCCESS INDICATORS
+========================================
+
+✓ Metro bundler starts
+✓ QR code appears
+✓ No red error messages
+✓ Server running on port 8081
+✓ Expo Go connects
+✓ App loads on phone
+
+========================================
+QUICK COMMANDS
+========================================
+
+# Navigate to directory
+cd C:\Users\vemul\OneDrive\Desktop\carelytics\aiassist\carelytic
+
+# Start server
+npm start
+
+# Clear cache and start
+npx expo start --clear
+
+# Check dependencies
+npx expo install --check
+
+# Fix dependencies
+npx expo install --fix
+
+========================================
+
+For more help, see:
+- CHECK_AND_RUN.md - Complete guide
+- HOW_TO_RUN.md - Step-by-step instructions
+- MOBILE_LOADING_FIX.md - Troubleshooting
+
+========================================
+

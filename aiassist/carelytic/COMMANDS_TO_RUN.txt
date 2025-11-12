@@ -1,0 +1,121 @@
+========================================
+EXPO APP - COMMANDS TO RUN
+========================================
+
+IMPORTANT: Run these commands in order from the correct directory:
+C:\Users\vemul\OneDrive\Desktop\carelytics\aiassist\carelytic
+
+========================================
+STEP 1: Navigate to Directory
+========================================
+
+cd C:\Users\vemul\OneDrive\Desktop\carelytics\aiassist\carelytic
+
+OR from project root:
+cd aiassist\carelytic
+
+========================================
+STEP 2: Verify You're in the Right Place
+========================================
+
+dir package.json
+dir app.json
+
+(Both should exist)
+
+========================================
+STEP 3: Start Expo Development Server
+========================================
+
+Choose ONE of these methods:
+
+Method 1 (Recommended):
+npm start
+
+Method 2:
+npx expo start --clear
+
+Method 3:
+.\start.bat
+
+Method 4:
+.\start.ps1
+
+========================================
+STEP 4: Wait for QR Code
+========================================
+
+After running the command, you should see:
+- Metro bundler starting
+- QR code in the terminal
+- Instructions on how to connect
+
+========================================
+STEP 5: Connect Your Phone
+========================================
+
+1. Install Expo Go on your phone (if not already installed)
+   - iOS: https://apps.apple.com/app/expo-go/id982107779
+   - Android: https://play.google.com/store/apps/details?id=host.exp.exponent
+
+2. Make sure phone and computer are on the SAME WiFi network
+
+3. Open Expo Go app on your phone
+
+4. Tap "Scan QR Code"
+
+5. Point camera at the QR code in the terminal
+
+6. Wait for app to load (30-60 seconds first time)
+
+========================================
+TROUBLESHOOTING COMMANDS
+========================================
+
+If app doesn't load:
+
+1. Clear cache and restart:
+   npx expo start --clear
+
+2. Try tunnel mode (if WiFi issues):
+   npx expo start --tunnel
+
+3. Check dependencies:
+   npx expo install --check
+
+4. Fix dependencies:
+   npx expo install --fix
+
+5. Clean install:
+   npm run fresh-install
+
+========================================
+QUICK REFERENCE
+========================================
+
+Current Directory: aiassist\carelytic
+Start Command: npm start
+Expo Version: 54.0.23
+React: 19.1.0
+React Native: 0.81.5
+
+========================================
+SUCCESS INDICATORS
+========================================
+
+✅ Metro bundler starts
+✅ QR code appears
+✅ Expo Go connects
+✅ App loads on phone
+✅ No red error messages
+
+========================================
+
+For more help, see:
+- HOW_TO_RUN.md - Step-by-step guide
+- RUN_COMMANDS.md - Command reference
+- MOBILE_LOADING_FIX.md - Troubleshooting
+- QUICK_START.md - Quick start guide
+
+========================================
+

@@ -1,0 +1,66 @@
+========================================
+🚀 QUICK START - EXPO APP
+========================================
+
+STEP 1: Open Terminal/PowerShell
+----------------------------------
+(You're already in the correct directory!)
+
+STEP 2: Run This Command
+-------------------------
+npm start
+
+STEP 3: Wait for QR Code
+-------------------------
+A QR code will appear in the terminal
+
+STEP 4: Connect Your Phone
+---------------------------
+1. Install Expo Go (if not installed)
+   - iOS: App Store
+   - Android: Play Store
+
+2. Make sure phone and computer are on SAME WiFi
+
+3. Open Expo Go app
+
+4. Tap "Scan QR Code"
+
+5. Point camera at QR code in terminal
+
+6. Wait for app to load (30-60 seconds)
+
+========================================
+THAT'S IT! 🎉
+========================================
+
+The app will load on your phone after scanning the QR code.
+
+========================================
+IF YOU GET ERRORS
+========================================
+
+Error: "Cannot find package.json"
+→ Make sure you're in: aiassist\carelytic
+
+Error: "Expo not found"  
+→ Run: npm install
+
+Error: "Cannot connect"
+→ Try: npx expo start --tunnel
+
+========================================
+QUICK COMMANDS
+========================================
+
+Start server:
+  npm start
+
+Clear cache and start:
+  npx expo start --clear
+
+Tunnel mode (if WiFi issues):
+  npx expo start --tunnel
+
+========================================
+

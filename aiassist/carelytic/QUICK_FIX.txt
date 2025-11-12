@@ -1,0 +1,66 @@
+========================================
+🔧 QUICK FIX - npm start Error
+========================================
+
+PROBLEM:
+You're running npm start from the wrong directory.
+
+SOLUTION:
+Navigate to the correct directory first!
+
+========================================
+QUICK FIX (Copy & Paste):
+========================================
+
+cd C:\Users\vemul\OneDrive\Desktop\carelytics\aiassist\carelytic
+npm start
+
+========================================
+STEP-BY-STEP:
+========================================
+
+1. Open Terminal/PowerShell
+
+2. Copy and paste this command:
+   cd C:\Users\vemul\OneDrive\Desktop\carelytics\aiassist\carelytic
+
+3. Press Enter
+
+4. Run this command:
+   npm start
+
+5. Wait for QR code to appear
+
+6. Scan QR code with Expo Go
+
+========================================
+VERIFY YOU'RE IN THE RIGHT PLACE:
+========================================
+
+After navigating, run:
+dir package.json
+
+You should see package.json in the list.
+If not, you're in the wrong directory.
+
+========================================
+ALTERNATIVE: Use Scripts
+========================================
+
+From aiassist directory:
+  .\START_EXPO.bat
+  or
+  .\START_EXPO.ps1
+
+From project root:
+  .\START_EXPO_FROM_ROOT.bat
+
+========================================
+THAT'S IT! 🎉
+========================================
+
+The error was just the wrong directory.
+Navigate to aiassist\carelytic and run npm start!
+
+========================================
+
